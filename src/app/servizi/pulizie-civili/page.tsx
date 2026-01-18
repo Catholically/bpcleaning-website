@@ -1,0 +1,234 @@
+import { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight, CheckCircle, Clock, Shield, Leaf, Phone } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Pulizie Civili - Case e Appartamenti | BP Cleaning Varese",
+  description: "Servizio di pulizie civili professionali per case, appartamenti e condomini a Varese e Milano. Pulizie ordinarie, straordinarie, post-cantiere e fine locazione.",
+};
+
+const serviceTypes = [
+  {
+    title: "Pulizia Ordinaria",
+    description: "Manutenzione regolare degli ambienti domestici",
+    includes: [
+      "Spolveratura mobili e superfici",
+      "Aspirazione e lavaggio pavimenti",
+      "Pulizia bagni e sanitari",
+      "Pulizia cucina e elettrodomestici",
+      "Cambio lenzuola e riassetto letti",
+      "Svuotamento cestini",
+    ],
+  },
+  {
+    title: "Pulizia Straordinaria",
+    description: "Interventi approfonditi per pulizie intense",
+    includes: [
+      "Tutto della pulizia ordinaria",
+      "Pulizia vetri interni",
+      "Pulizia interno armadi",
+      "Lavaggio tende",
+      "Pulizia lampadari",
+      "Sgrassatura profonda cucina",
+    ],
+  },
+  {
+    title: "Post-Cantiere",
+    description: "Pulizia dopo lavori di ristrutturazione",
+    includes: [
+      "Rimozione polvere edile",
+      "Pulizia residui di vernice",
+      "Lavaggio vetri e infissi",
+      "Sgrassatura pavimenti",
+      "Pulizia sanitari e rubinetteria",
+      "Rimozione etichette e adesivi",
+    ],
+  },
+  {
+    title: "Fine Locazione",
+    description: "Pulizia completa per consegna immobile",
+    includes: [
+      "Pulizia approfondita ogni ambiente",
+      "Sgrassatura forno e frigo",
+      "Pulizia vetri interno/esterno",
+      "Lavaggio interno mobili",
+      "Rimozione calcare bagni",
+      "Certificato pulizia (su richiesta)",
+    ],
+  },
+];
+
+const faqs = [
+  {
+    q: "Quanto costa una pulizia domestica?",
+    a: "Il costo dipende dalla metratura e dal tipo di intervento. Le pulizie ordinarie partono da 15 euro/ora. Contattaci per un preventivo preciso.",
+  },
+  {
+    q: "Con quale frequenza consigliate la pulizia?",
+    a: "Per una casa abitata consigliamo pulizie settimanali o quindicinali. Per seconde case o uffici, anche mensili. La frequenza dipende dalle tue esigenze.",
+  },
+  {
+    q: "Portate voi i prodotti e le attrezzature?",
+    a: "Si, portiamo tutto il necessario: prodotti professionali, attrezzature e strumenti. Su richiesta utilizziamo prodotti BIO certificati.",
+  },
+  {
+    q: "Lavorate anche nei weekend?",
+    a: "Si, operiamo anche nei weekend e festivi con un piccolo supplemento. Contattaci per verificare la disponibilita.",
+  },
+];
+
+export default function PulizieCiviliPage() {
+  return (
+    <>
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-3xl">
+            <nav className="text-sm text-gray-400 mb-4">
+              <Link href="/servizi" className="hover:text-white">Servizi</Link>
+              <span className="mx-2">/</span>
+              <span className="text-white">Pulizie Civili</span>
+            </nav>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Pulizie Civili</h1>
+            <p className="text-xl text-gray-300 mb-6">
+              Servizi completi di pulizia per case, appartamenti e condomini.
+              Personale qualificato e prodotti professionali per un risultato impeccabile.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/preventivo"
+                className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-6 py-3 rounded-lg font-semibold transition"
+              >
+                Richiedi Preventivo
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <a
+                href="tel:+393467483943"
+                className="inline-flex items-center gap-2 border border-white/30 hover:bg-white/10 text-white px-6 py-3 rounded-lg font-semibold transition"
+              >
+                <Phone className="w-5 h-5" />
+                Chiama Ora
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-8 bg-gray-50 border-b">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-8">
+            {[
+              { icon: Clock, text: "Orari flessibili" },
+              { icon: Shield, text: "Personale assicurato" },
+              { icon: Leaf, text: "Opzione prodotti BIO" },
+            ].map((item) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.text} className="flex items-center gap-2">
+                  <Icon className="w-5 h-5 text-[#0d9488]" />
+                  <span className="font-medium text-gray-700">{item.text}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Types */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+            Tipologie di Servizio
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {serviceTypes.map((type) => (
+              <div key={type.title} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{type.title}</h3>
+                <p className="text-gray-600 mb-4">{type.description}</p>
+                <h4 className="text-sm font-semibold text-gray-700 mb-3">Cosa include:</h4>
+                <ul className="space-y-2">
+                  {type.includes.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-gray-600">
+                      <CheckCircle className="w-4 h-4 text-[#0d9488] mt-0.5 flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Prezzi Indicativi</h2>
+          <p className="text-gray-600 mb-8">
+            I prezzi variano in base alla metratura, frequenza e tipologia di intervento.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { label: "Pulizia Ordinaria", price: "da 15/ora", note: "min. 3 ore" },
+              { label: "Pulizia Straordinaria", price: "da 18/ora", note: "min. 4 ore" },
+              { label: "Post-Cantiere", price: "preventivo", note: "sopralluogo gratuito" },
+            ].map((item) => (
+              <div key={item.label} className="bg-white rounded-xl p-6 shadow-sm">
+                <h3 className="font-semibold text-gray-900 mb-2">{item.label}</h3>
+                <p className="text-3xl font-bold text-[#0d9488] mb-1">{item.price}</p>
+                <p className="text-sm text-gray-500">{item.note}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-gray-500 mt-6">
+            Prezzi IVA esclusa. Sconti per contratti continuativi.
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+            Domande Frequenti
+          </h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <h3 className="font-semibold text-gray-900 mb-2">{faq.q}</h3>
+                <p className="text-gray-600">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-gradient-to-br from-[#0d9488] to-[#0f766e] text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Richiedi un Preventivo Gratuito</h2>
+          <p className="text-xl text-white/80 mb-8">
+            Contattaci per un preventivo personalizzato. Risposta entro 2 ore.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/preventivo"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#0d9488] px-8 py-4 rounded-lg font-semibold transition hover:bg-gray-100"
+            >
+              Calcola Preventivo Online
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <a
+              href="tel:+393467483943"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
+            >
+              <Phone className="w-5 h-5" />
+              346 748 3943
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
