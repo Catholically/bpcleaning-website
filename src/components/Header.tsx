@@ -40,25 +40,31 @@ export default function Header() {
       {/* Main header */}
       <nav className="max-w-7xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="BP Cleaning - Pulizie Professionali"
-              width={180}
-              height={60}
-              className="h-12 w-auto"
-              priority
+          {/* Logo + Text */}
+          <Link href="/" className="flex items-center gap-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo-icon.svg"
+              alt="BP Cleaning"
+              className="h-14 w-auto md:h-16"
             />
+            <div className="flex flex-col">
+              <span className="text-xl md:text-2xl font-semibold text-[#0077b6] tracking-tight" style={{ fontFamily: "'Segoe UI', 'Roboto', 'Arial', sans-serif" }}>
+                BP Cleaning
+              </span>
+              <span className="text-xs md:text-sm font-medium text-[#1e3a5f] tracking-wide">
+                SRL Multiservice
+              </span>
+            </div>
           </Link>
 
           {/* Desktop navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-[#0d9488] font-medium transition"
+                className="text-gray-700 hover:text-[#0077b6] font-medium transition"
               >
                 {item.name}
               </Link>
@@ -78,7 +84,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden p-2 text-gray-700"
+            className="lg:hidden p-2 text-gray-700"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
@@ -91,13 +97,13 @@ export default function Header() {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t pt-4">
+          <div className="lg:hidden mt-4 pb-4 border-t pt-4">
             <div className="flex flex-col gap-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-[#0d9488] font-medium transition"
+                  className="text-gray-700 hover:text-[#0077b6] font-medium transition"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}

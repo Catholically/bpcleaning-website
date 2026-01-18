@@ -26,14 +26,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="mb-4">
-              <Image
-                src="/logo.png"
+            <div className="flex items-center gap-3 mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo-icon.svg"
                 alt="BP Cleaning"
-                width={150}
-                height={50}
-                className="h-10 w-auto brightness-0 invert"
+                className="h-12 w-auto brightness-0 invert"
               />
+              <div className="flex flex-col">
+                <span className="text-xl font-semibold text-white">BP Cleaning</span>
+                <span className="text-xs text-gray-300">SRL Multiservice</span>
+              </div>
             </div>
             <p className="text-gray-300 mb-4">
               Impresa di pulizie professionali con oltre 10 anni di esperienza.
