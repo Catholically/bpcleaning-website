@@ -40,14 +40,22 @@ export default function Header() {
       {/* Main header */}
       <nav className="max-w-7xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/">
+          {/* Logo + Text */}
+          <Link href="/" className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo.png"
-              alt="BP Cleaning srl Multiservice"
-              className="h-16 w-auto md:h-20"
+              src="/logo-drop.svg"
+              alt="BP Cleaning"
+              className="h-14 w-auto md:h-16"
             />
+            <div className="flex flex-col">
+              <span className="text-xl md:text-2xl font-semibold text-[#0077b6]">
+                BP Cleaning srl
+              </span>
+              <span className="text-sm md:text-base font-medium text-[#0096c7]">
+                Multiservice
+              </span>
+            </div>
           </Link>
 
           {/* Desktop navigation */}
