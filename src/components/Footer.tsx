@@ -8,6 +8,7 @@ const services = [
   { name: "Sanificazioni", href: "/servizi/sanificazioni" },
   { name: "Disinfestazioni", href: "/servizi/disinfestazioni" },
   { name: "Trattamento Pavimenti", href: "/servizi/trattamento-pavimenti" },
+  { name: "Aree Verdi", href: "/servizi/aree-verdi" },
 ];
 
 const areas = [
