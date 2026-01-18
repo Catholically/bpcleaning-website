@@ -27,12 +27,14 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/drop.png"
-                alt="BP Cleaning"
-                className="h-12 w-auto brightness-0 invert"
-              />
+              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center p-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/drop.png"
+                  alt="BP Cleaning"
+                  className="h-10 w-auto"
+                />
+              </div>
               <div className="flex flex-col">
                 <span className="text-lg font-semibold text-white">BP Cleaning srl</span>
                 <span className="text-sm text-gray-300">Multiservice</span>
