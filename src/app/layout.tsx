@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   title: "BP Cleaning - Pulizie Professionali Varese e Milano",
   description: "Impresa di pulizie professionali a Varese e Milano. Pulizie civili, industriali, sanificazioni, disinfestazioni. Preventivo gratuito in 2 ore. Oltre 10 anni di esperienza.",
   keywords: "pulizie varese, pulizie milano, impresa pulizie, sanificazione, disinfestazione, pulizie uffici, pulizie condomini",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "BP Cleaning - Pulizie Professionali Varese e Milano",
     description: "Impresa di pulizie professionali. Preventivo gratuito in 2 ore.",
