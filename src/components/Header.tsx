@@ -40,22 +40,14 @@ export default function Header() {
       {/* Main header */}
       <nav className="max-w-7xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo + Text */}
-          <Link href="/" className="flex items-center gap-3">
+          {/* Logo */}
+          <Link href="/">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.png"
-              alt="BP Cleaning"
-              className="h-14 w-auto md:h-16"
+              alt="BP Cleaning srl Multiservice"
+              className="h-16 w-auto md:h-20"
             />
-            <div className="flex flex-col">
-              <span className="text-xl md:text-2xl font-semibold text-[#0077b6] tracking-tight" style={{ fontFamily: "'Segoe UI', 'Roboto', 'Arial', sans-serif" }}>
-                BP Cleaning
-              </span>
-              <span className="text-xs md:text-sm font-medium text-[#1e3a5f] tracking-wide">
-                Multiservice
-              </span>
-            </div>
           </Link>
 
           {/* Desktop navigation */}
