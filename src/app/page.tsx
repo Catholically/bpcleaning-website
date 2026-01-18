@@ -112,25 +112,25 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
-        <div className="max-w-7xl mx-auto px-4 py-12 lg:py-20 relative">
+        <div className="max-w-7xl mx-auto px-4 py-8 lg:py-12 relative">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left content */}
             <div>
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm mb-6">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm mb-4">
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                 <span>Preventivo gratuito entro 2 ore</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
                 Pulizie Professionali in provincia di{" "}
                 <span className="text-[#0d9488]">Varese</span> e{" "}
                 <span className="text-[#0d9488]">Milano</span>
               </h1>
-              <p className="text-xl text-gray-300 mb-8 max-w-xl">
+              <p className="text-lg text-gray-300 mb-6 max-w-xl">
                 Oltre 10 anni di esperienza al servizio di privati e aziende.
                 Pulizie, sanificazioni e disinfestazioni con standard certificati.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <Link
                   href="/preventivo"
                   className="inline-flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-8 py-4 rounded-lg font-semibold transition shadow-lg hover:shadow-xl"
