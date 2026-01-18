@@ -31,9 +31,9 @@ const contactInfo = [
   },
   {
     icon: MapPin,
-    title: "Sede",
-    value: "Via Campagna 80/a, Induno Olona (VA)",
-    href: "https://maps.google.com/?q=Via+Campagna+80a+Induno+Olona+VA",
+    title: "Sede Legale",
+    value: "Piazza Giovine Italia 4, 21100 Varese",
+    href: "https://maps.google.com/?q=Piazza+Giovine+Italia+4+Varese",
     description: "Solo su appuntamento",
   },
 ];

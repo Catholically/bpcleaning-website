@@ -110,7 +110,10 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2 text-gray-300">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span>Via Campagna 80/a, Induno Olona (VA)</span>
+                <div className="text-sm">
+                  <span className="block">Piazza Giovine Italia 4</span>
+                  <span className="block">21100 Varese (VA)</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -119,7 +122,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-gray-600 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} BP Cleaning SRL - P.IVA 03661340129 - Tutti i diritti riservati
+            © {new Date().getFullYear()} BP Cleaning SRL - Piazza Giovine Italia 4, 21100 Varese - P.IVA 03661340129
           </p>
           <div className="flex gap-4 text-sm">
             <Link href="/privacy" className="text-gray-400 hover:text-white transition">
