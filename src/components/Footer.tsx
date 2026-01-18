@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/logo-drop.svg"
+                src="/drop.png"
                 alt="BP Cleaning"
                 className="h-12 w-auto brightness-0 invert"
               />

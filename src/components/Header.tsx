@@ -44,7 +44,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo-drop.svg"
+              src="/drop.png"
               alt="BP Cleaning"
               className="h-14 w-auto md:h-16"
             />
