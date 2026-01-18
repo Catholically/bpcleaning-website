@@ -127,14 +127,14 @@ export default function QuoteCalculator() {
         />
       </div>
 
-      <div className="p-4 md:p-5">
+      <div className="p-6 md:p-8">
         {/* Step 1: Service Type */}
         {step === 1 && (
           <div className="animate-fade-in-up">
-            <h3 className="text-lg font-bold text-gray-900 mb-1">Che tipo di pulizia ti serve?</h3>
-            <p className="text-gray-600 text-sm mb-4">Seleziona il tipo di ambiente</p>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Che tipo di pulizia ti serve?</h3>
+            <p className="text-gray-600 mb-6">Seleziona il tipo di ambiente</p>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-4">
               {serviceTypes.map((service) => {
                 const Icon = service.icon;
                 return (
@@ -144,14 +144,14 @@ export default function QuoteCalculator() {
                       setFormData(prev => ({ ...prev, serviceType: service.id }));
                       setStep(2);
                     }}
-                    className={`p-4 rounded-xl border-2 transition-all hover:border-[#0d9488] hover:bg-[#0d9488]/5 ${
+                    className={`p-6 rounded-xl border-2 transition-all hover:border-[#0d9488] hover:bg-[#0d9488]/5 ${
                       formData.serviceType === service.id
                         ? "border-[#0d9488] bg-[#0d9488]/10"
                         : "border-gray-200"
                     }`}
                   >
-                    <Icon className="w-6 h-6 text-[#0d9488] mx-auto mb-1" />
-                    <span className="font-medium text-gray-900 text-sm">{service.label}</span>
+                    <Icon className="w-8 h-8 text-[#0d9488] mx-auto mb-2" />
+                    <span className="font-medium text-gray-900">{service.label}</span>
                   </button>
                 );
               })}
@@ -162,13 +162,13 @@ export default function QuoteCalculator() {
         {/* Step 2: Size & Frequency */}
         {step === 2 && (
           <div className="animate-fade-in-up">
-            <h3 className="text-lg font-bold text-gray-900 mb-1">Dimensioni e frequenza</h3>
-            <p className="text-gray-600 text-sm mb-4">Aiutaci a stimare il preventivo</p>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Dimensioni e frequenza</h3>
+            <p className="text-gray-600 mb-6">Aiutaci a stimare il preventivo</p>
 
-            <div className="space-y-4">
+            <div className="space-y-6">
               {/* Size slider */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
                   Metratura: <span className="text-[#0d9488] font-bold">{formData.sqm} mq</span>
                 </label>
                 <input
@@ -188,15 +188,15 @@ export default function QuoteCalculator() {
 
               {/* Frequency */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
                   Frequenza
                 </label>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-2 gap-3">
                   {frequencies.map((freq) => (
                     <button
                       key={freq.id}
                       onClick={() => setFormData(prev => ({ ...prev, frequency: freq.id }))}
-                      className={`p-2.5 rounded-lg border-2 transition-all text-sm ${
+                      className={`p-3 rounded-lg border-2 transition-all text-sm ${
                         formData.frequency === freq.id
                           ? "border-[#0d9488] bg-[#0d9488]/10"
                           : "border-gray-200 hover:border-[#0d9488]"
@@ -214,17 +214,17 @@ export default function QuoteCalculator() {
               </div>
             </div>
 
-            <div className="flex gap-3 mt-4">
+            <div className="flex gap-3 mt-6">
               <button
                 onClick={() => setStep(1)}
-                className="px-4 py-2.5 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition text-sm"
+                className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition"
               >
                 Indietro
               </button>
               <button
                 onClick={() => formData.frequency && setStep(3)}
                 disabled={!formData.frequency}
-                className="flex-1 px-4 py-2.5 bg-[#0d9488] text-white rounded-lg font-semibold hover:bg-[#0f766e] transition disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                className="flex-1 px-6 py-3 bg-[#0d9488] text-white rounded-lg font-semibold hover:bg-[#0f766e] transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Continua
               </button>
@@ -235,11 +235,11 @@ export default function QuoteCalculator() {
         {/* Step 3: Location */}
         {step === 3 && (
           <div className="animate-fade-in-up">
-            <h3 className="text-lg font-bold text-gray-900 mb-1">Dove ti trovi?</h3>
-            <p className="text-gray-600 text-sm mb-4">Verifichiamo la copertura nella tua zona</p>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Dove ti trovi?</h3>
+            <p className="text-gray-600 mb-6">Verifichiamo la copertura nella tua zona</p>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
                 CAP
               </label>
               <input
@@ -252,7 +252,7 @@ export default function QuoteCalculator() {
                   setFormData(prev => ({ ...prev, cap: value }));
                   setCapError("");
                 }}
-                className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition text-sm"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition"
               />
               {capError && (
                 <p className="text-red-500 text-sm mt-1">{capError}</p>
@@ -261,12 +261,12 @@ export default function QuoteCalculator() {
 
             {/* Price preview */}
             {price && formData.cap.length === 5 && validateCAP(formData.cap) && (
-              <div className="mt-4 bg-[#0d9488]/10 rounded-xl p-4 text-center">
-                <div className="flex items-center justify-center gap-2 mb-1">
-                  <Calculator className="w-4 h-4 text-[#0d9488]" />
+              <div className="mt-6 bg-[#0d9488]/10 rounded-xl p-6 text-center">
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <Calculator className="w-5 h-5 text-[#0d9488]" />
                   <span className="text-sm font-medium text-gray-600">Stima indicativa</span>
                 </div>
-                <p className="text-2xl font-bold text-[#0d9488]">
+                <p className="text-3xl font-bold text-[#0d9488]">
                   €{price.min} - €{price.max}
                 </p>
                 <p className="text-xs text-gray-500 mt-1">
@@ -275,10 +275,10 @@ export default function QuoteCalculator() {
               </div>
             )}
 
-            <div className="flex gap-3 mt-4">
+            <div className="flex gap-3 mt-6">
               <button
                 onClick={() => setStep(2)}
-                className="px-4 py-2.5 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition text-sm"
+                className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition"
               >
                 Indietro
               </button>
@@ -291,7 +291,7 @@ export default function QuoteCalculator() {
                   setStep(4);
                 }}
                 disabled={formData.cap.length !== 5}
-                className="flex-1 px-4 py-2.5 bg-[#0d9488] text-white rounded-lg font-semibold hover:bg-[#0f766e] transition disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                className="flex-1 px-6 py-3 bg-[#0d9488] text-white rounded-lg font-semibold hover:bg-[#0f766e] transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Continua
               </button>
@@ -302,10 +302,10 @@ export default function QuoteCalculator() {
         {/* Step 4: Contact */}
         {step === 4 && (
           <form onSubmit={handleSubmit} className="animate-fade-in-up">
-            <h3 className="text-lg font-bold text-gray-900 mb-1">Ultimo passo!</h3>
-            <p className="text-gray-600 text-sm mb-3">Lasciaci i tuoi contatti per ricevere il preventivo</p>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Ultimo passo!</h3>
+            <p className="text-gray-600 mb-6">Lasciaci i tuoi contatti per ricevere il preventivo</p>
 
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Nome e Cognome *
@@ -315,7 +315,7 @@ export default function QuoteCalculator() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition text-sm"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition"
                 />
               </div>
               <div>
@@ -327,7 +327,7 @@ export default function QuoteCalculator() {
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition text-sm"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition"
                 />
               </div>
               <div>
@@ -339,20 +339,20 @@ export default function QuoteCalculator() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition text-sm"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition"
                 />
               </div>
             </div>
 
             {/* Final price */}
             {price && (
-              <div className="mt-4 bg-gradient-to-r from-[#0d9488] to-[#0f766e] rounded-xl p-4 text-white">
+              <div className="mt-6 bg-gradient-to-r from-[#0d9488] to-[#0f766e] rounded-xl p-6 text-white">
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-xs opacity-90">La tua stima:</p>
-                    <p className="text-2xl font-bold">€{price.min} - €{price.max}</p>
+                    <p className="text-sm opacity-90">La tua stima:</p>
+                    <p className="text-3xl font-bold">€{price.min} - €{price.max}</p>
                   </div>
-                  <div className="text-right text-xs opacity-90">
+                  <div className="text-right text-sm opacity-90">
                     <p>{formData.sqm} mq</p>
                     <p>{frequencies.find(f => f.id === formData.frequency)?.label}</p>
                   </div>
@@ -360,24 +360,24 @@ export default function QuoteCalculator() {
               </div>
             )}
 
-            <div className="flex gap-3 mt-4">
+            <div className="flex gap-3 mt-6">
               <button
                 type="button"
                 onClick={() => setStep(3)}
-                className="px-4 py-2.5 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition text-sm"
+                className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition"
               >
                 Indietro
               </button>
               <button
                 type="submit"
-                className="flex-1 px-4 py-2.5 bg-[#f97316] text-white rounded-lg font-semibold hover:bg-[#ea580c] transition flex items-center justify-center gap-2 text-sm"
+                className="flex-1 px-6 py-3 bg-[#f97316] text-white rounded-lg font-semibold hover:bg-[#ea580c] transition flex items-center justify-center gap-2"
               >
-                <Send className="w-4 h-4" />
+                <Send className="w-5 h-5" />
                 Richiedi Preventivo
               </button>
             </div>
 
-            <p className="text-xs text-gray-500 text-center mt-3">
+            <p className="text-xs text-gray-500 text-center mt-4">
               Cliccando accetti la nostra Privacy Policy. Ti contatteremo entro 2 ore.
             </p>
           </form>
