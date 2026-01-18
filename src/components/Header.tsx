@@ -44,7 +44,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo-icon.svg"
+              src="/logo.png"
               alt="BP Cleaning"
               className="h-14 w-auto md:h-16"
             />
@@ -53,7 +53,7 @@ export default function Header() {
                 BP Cleaning
               </span>
               <span className="text-xs md:text-sm font-medium text-[#1e3a5f] tracking-wide">
-                SRL Multiservice
+                Multiservice
               </span>
             </div>
           </Link>

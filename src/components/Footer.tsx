@@ -29,13 +29,13 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/logo-icon.svg"
+                src="/logo.png"
                 alt="BP Cleaning"
                 className="h-12 w-auto brightness-0 invert"
               />
               <div className="flex flex-col">
                 <span className="text-xl font-semibold text-white">BP Cleaning</span>
-                <span className="text-xs text-gray-300">SRL Multiservice</span>
+                <span className="text-xs text-gray-300">Multiservice</span>
               </div>
             </div>
             <p className="text-gray-300 mb-4">
