@@ -92,7 +92,7 @@ export default function PulizieIndustrialiPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Pulizie Industriali</h1>
             <p className="text-xl text-gray-300 mb-6">
               Servizi professionali per uffici, aziende, banche e spazi commerciali.
-              Contratti personalizzati e massima affidabilita.
+              Contratti personalizzati e massima affidabilità.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

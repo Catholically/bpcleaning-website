@@ -63,7 +63,7 @@ const certifications = [
   "Utilizzo prodotti PMC (Presidi Medico Chirurgici)",
   "Rilascio certificazione di avvenuta sanificazione",
   "Protocolli conformi alle normative ASL",
-  "Tracciabilita completa degli interventi",
+  "Tracciabilità completa degli interventi",
   "Assicurazione RC specifica per settore sanitario",
 ];
 

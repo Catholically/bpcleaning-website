@@ -39,7 +39,7 @@ const contactInfo = [
 ];
 
 const workingHours = [
-  { day: "Lunedi - Venerdi", hours: "8:00 - 18:00" },
+  { day: "Lunedì - Venerdì", hours: "8:00 - 18:00" },
   { day: "Sabato", hours: "9:00 - 13:00" },
   { day: "Domenica", hours: "Chiuso" },
 ];

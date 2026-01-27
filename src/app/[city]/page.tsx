@@ -222,7 +222,7 @@ export default async function CityPage({ params }: PageProps) {
               </h2>
               <p className="text-gray-600 mb-8">
                 Siamo un&apos;impresa di pulizie con oltre 18 anni di esperienza nel settore.
-                Operiamo a {city.name} e in tutta la provincia di {provinciaName} con professionalita e puntualita.
+                Operiamo a {city.name} e in tutta la provincia di {provinciaName} con professionalità e puntualità.
               </p>
               <ul className="space-y-4">
                 {benefits.map((benefit) => (

@@ -52,7 +52,7 @@ const serviceContent: Record<string, {
   faqs: { q: string; a: string }[];
 }> = {
   "pulizie-uffici": {
-    heroText: "Pulizia professionale per uffici, studi professionali e spazi commerciali. Ambiente di lavoro pulito e igienizzato per una maggiore produttivita.",
+    heroText: "Pulizia professionale per uffici, studi professionali e spazi commerciali. Ambiente di lavoro pulito e igienizzato per una maggiore produttività.",
     features: ["Orari flessibili", "Personale dedicato", "Prodotti professionali"],
     includes: [
       "Pulizia e sanificazione scrivanie",

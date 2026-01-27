@@ -60,7 +60,7 @@ export default function PreventivePage() {
             Preferisci parlare con noi?
           </h3>
           <p className="text-gray-600 mb-6">
-            Siamo disponibili dal lunedi al venerdi, dalle 8:00 alle 18:00
+            Siamo disponibili dal lunedì al venerdì, dalle 8:00 alle 18:00
           </p>
           <a
             href="tel:+393467483943"
@@ -82,7 +82,7 @@ export default function PreventivePage() {
             {[
               {
                 q: "Quanto costa il preventivo?",
-                a: "Il preventivo e sempre gratuito e senza impegno. Anche il sopralluogo, se necessario, e completamente gratuito.",
+                a: "Il preventivo è sempre gratuito e senza impegno. Anche il sopralluogo, se necessario, è completamente gratuito.",
               },
               {
                 q: "Quanto tempo ci vuole per ricevere il preventivo?",
@@ -90,7 +90,7 @@ export default function PreventivePage() {
               },
               {
                 q: "Quali zone servite?",
-                a: "Operiamo in tutta la provincia di Varese e Milano, oltre che nel Canton Ticino (Svizzera). Contattaci per verificare la copertura nella tua zona.",
+                a: "Operiamo in tutta la provincia di Varese, Milano e Monza Brianza, oltre che nel Canton Ticino (Svizzera). Contattaci per verificare la copertura nella tua zona.",
               },
               {
                 q: "Posso richiedere una pulizia urgente?",
