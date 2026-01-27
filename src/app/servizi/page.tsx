@@ -23,7 +23,6 @@ const services = [
     description: "Servizi completi per case, appartamenti e condomini. Pulizie ordinarie, straordinarie e post-cantiere.",
     href: "/servizi/pulizie-civili",
     features: ["Pulizia ordinaria", "Pulizia straordinaria", "Post-cantiere", "Fine locazione"],
-    price: "da 15/h",
   },
   {
     icon: Building2,
@@ -31,7 +30,6 @@ const services = [
     description: "Soluzioni professionali per uffici, aziende, banche, studi medici e spazi commerciali.",
     href: "/servizi/pulizie-industriali",
     features: ["Uffici e studi", "Negozi e showroom", "Banche e assicurazioni", "Studi medici"],
-    price: "da 12/h",
   },
   {
     icon: Wind,
@@ -39,7 +37,6 @@ const services = [
     description: "Sanificazione certificata con perossido di idrogeno atomizzato. Dispositivi conformi alle normative europee.",
     href: "/servizi/sanificazioni",
     features: ["Perossido di idrogeno", "Certificazione intervento", "Ambienti di lavoro", "Strutture sanitarie"],
-    price: "preventivo",
   },
   {
     icon: Bug,
@@ -47,7 +44,6 @@ const services = [
     description: "Interventi professionali contro insetti, roditori e volatili. Allontanamento piccioni e bonifica.",
     href: "/servizi/disinfestazioni",
     features: ["Insetti striscianti", "Roditori", "Allontanamento volatili", "Zanzare e vespe"],
-    price: "preventivo",
   },
   {
     icon: Layers,
@@ -55,7 +51,6 @@ const services = [
     description: "Pulizia, levigatura e lucidatura di marmo, granito, cotto, parquet e altre superfici.",
     href: "/servizi/trattamento-pavimenti",
     features: ["Marmo e granito", "Cotto e pietra", "Parquet", "Gres e ceramica"],
-    price: "preventivo",
   },
   {
     icon: TreePine,
@@ -63,7 +58,6 @@ const services = [
     description: "Manutenzione giardini, potature, taglio erba e pulizia spazi esterni.",
     href: "/servizi/aree-verdi",
     features: ["Taglio erba", "Potature", "Pulizia foglie", "Irrigazione"],
-    price: "preventivo",
   },
 ];
 
@@ -109,7 +103,12 @@ export default function ServiziPage() {
                     </ul>
 
                     <div className="flex items-center justify-between pt-4 border-t">
-                      <span className="text-[#0d9488] font-semibold">{service.price}</span>
+                      <Link
+                        href="/preventivo"
+                        className="text-[#0d9488] font-semibold hover:underline"
+                      >
+                        Richiedi Preventivo
+                      </Link>
                       <Link
                         href={service.href}
                         className="inline-flex items-center gap-1 text-[#1e3a5f] font-medium hover:text-[#0d9488] transition"
