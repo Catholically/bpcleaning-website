@@ -161,9 +161,10 @@ export default function HomePage() {
                 <span>Risposta entro 2 ore</span>
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-                Pulizie Professionali in provincia di{" "}
-                <span className="text-[#0d9488]">Varese</span> e{" "}
-                <span className="text-[#0d9488]">Milano</span>
+                Pulizie Professionali a{" "}
+                <span className="text-[#0d9488]">Varese</span>,{" "}
+                <span className="text-[#0d9488]">Milano</span> e{" "}
+                <span className="text-[#0d9488]">Monza Brianza</span>
               </h1>
               <p className="text-lg text-gray-300 mb-6 max-w-xl">
                 Oltre 18 anni di esperienza al servizio di privati e aziende.

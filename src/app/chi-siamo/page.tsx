@@ -20,28 +20,28 @@ const timeline = [
 const values = [
   {
     icon: Award,
-    title: "Qualita",
+    title: "Qualità",
     description: "Standard elevati in ogni intervento. Utilizziamo prodotti professionali e attrezzature all'avanguardia.",
   },
   {
     icon: Shield,
-    title: "Affidabilita",
+    title: "Affidabilità",
     description: "Personale selezionato, formato e assicurato. Rispettiamo tempi e accordi presi.",
   },
   {
     icon: Users,
-    title: "Professionalita",
+    title: "Professionalità",
     description: "Team dedicato e competente. Formazione continua secondo le normative vigenti.",
   },
   {
     icon: Clock,
-    title: "Puntualita",
-    description: "Rispetto degli orari concordati. Flessibilita per venire incontro alle tue esigenze.",
+    title: "Puntualità",
+    description: "Rispetto degli orari concordati. Flessibilità per venire incontro alle tue esigenze.",
   },
 ];
 
 const certifications = [
-  "Conformita D.L. 81/2008 (Sicurezza sul lavoro)",
+  "Conformità D.L. 81/2008 (Sicurezza sul lavoro)",
   "Prodotti conformi normative europee",
   "Assicurazione RC fino a 2.000.000 euro",
   "Dispositivi sanificazione certificati CE",
@@ -158,7 +158,7 @@ export default function ChiSiamoPage() {
             Certificazioni e Standard
           </h2>
           <p className="text-gray-600 text-center mb-12">
-            Operiamo nel rispetto delle normative vigenti e degli standard di qualita piu elevati.
+            Operiamo nel rispetto delle normative vigenti e degli standard di qualità più elevati.
           </p>
 
           {/* ISO Certifications */}
@@ -173,12 +173,12 @@ export default function ChiSiamoPage() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/certifications/lochiecertificazioniiso/9001.jpg"
-                  alt="ISO 9001 - Sistema di Gestione Qualita"
+                  alt="ISO 9001 - Sistema di Gestione Qualità"
                   className="w-full h-full object-contain bg-white p-2"
                 />
               </div>
               <h3 className="font-bold text-gray-900 group-hover:text-[#0d9488] transition">ISO 9001:2015</h3>
-              <p className="text-sm text-gray-600">Sistema di Gestione Qualita</p>
+              <p className="text-sm text-gray-600">Sistema di Gestione Qualità</p>
               <p className="text-xs text-[#0d9488] mt-1">Visualizza certificato</p>
             </a>
             <a
