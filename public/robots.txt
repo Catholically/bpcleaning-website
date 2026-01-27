@@ -1,0 +1,6 @@
+# BP Cleaning - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.bpcleaning.it/sitemap.xml
