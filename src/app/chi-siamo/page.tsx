@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 };
 
 const timeline = [
-  { year: "2014", event: "Fondazione di BP Cleaning a Varese" },
-  { year: "2016", event: "Espansione servizi a Milano e provincia" },
-  { year: "2018", event: "Ottenimento certificazioni ISO" },
+  { year: "2008", event: "Nasce Belli & Puliti, la nostra prima impresa di pulizie" },
+  { year: "2012", event: "Espansione servizi in provincia di Varese" },
+  { year: "2018", event: "Costituzione di BP Cleaning SRL, evoluzione di Belli & Puliti" },
   { year: "2020", event: "Lancio servizi di sanificazione certificata" },
   { year: "2022", event: "Espansione nel Canton Ticino" },
   { year: "2024", event: "Oltre 500 clienti attivi" },
@@ -57,7 +57,7 @@ export default function ChiSiamoPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Chi Siamo</h1>
             <p className="text-xl text-gray-300">
-              Da oltre 10 anni siamo il punto di riferimento per le pulizie professionali
+              Dal 2008 siamo il punto di riferimento per le pulizie professionali
               nelle province di Varese e Milano. Il multiservice a portata di tutti.
             </p>
           </div>
@@ -72,18 +72,20 @@ export default function ChiSiamoPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">La Nostra Storia</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  BP Cleaning nasce nel 2014 a Varese con una missione chiara: offrire
-                  servizi di pulizia professionali di alta qualita a prezzi accessibili
-                  per privati e aziende.
+                  La nostra storia inizia nel 2008 con <strong>Belli &amp; Puliti</strong>,
+                  la prima impresa di pulizie fondata a Varese con una missione chiara: offrire
+                  servizi di pulizia professionali di alta qualita a prezzi accessibili.
                 </p>
                 <p>
-                  Nel corso degli anni abbiamo ampliato la nostra offerta includendo
-                  sanificazioni, disinfestazioni e trattamenti speciali, diventando
-                  un vero e proprio multiservice per tutte le esigenze di pulizia.
+                  Nel 2018, dopo 10 anni di esperienza e crescita, nasce <strong>BP Cleaning SRL</strong>,
+                  l&apos;evoluzione naturale di Belli &amp; Puliti. Con la nuova struttura abbiamo
+                  ampliato la nostra offerta includendo sanificazioni, disinfestazioni e
+                  trattamenti speciali, diventando un vero e proprio multiservice.
                 </p>
                 <p>
-                  Oggi operiamo in tutta la Lombardia e nel Canton Ticino, con un team
-                  di professionisti qualificati e attrezzature all'avanguardia.
+                  Oggi, con oltre 10 anni di esperienza nel settore, operiamo in tutta la
+                  Lombardia e nel Canton Ticino, con un team di professionisti qualificati
+                  e attrezzature all&apos;avanguardia.
                 </p>
               </div>
             </div>
