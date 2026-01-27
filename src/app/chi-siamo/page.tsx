@@ -183,7 +183,7 @@ export default function ChiSiamoPage() {
                   className="w-full h-full"
                 />
               </div>
-              <h3 className="font-bold text-gray-900">ISO 45001:2018</h3>
+              <h3 className="font-bold text-gray-900">ISO 45001:2025</h3>
               <p className="text-sm text-gray-600">Salute e Sicurezza sul Lavoro</p>
             </div>
           </div>
