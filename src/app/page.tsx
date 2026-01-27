@@ -1,5 +1,4 @@
 import Link from "next/link";
-import QuoteCalculator from "@/components/QuoteCalculator";
 import {
   Shield,
   Clock,
@@ -14,6 +13,8 @@ import {
   Wind,
   TreePine,
   Layers,
+  Home,
+  Phone,
 } from "lucide-react";
 
 const services = [
@@ -51,6 +52,45 @@ const services = [
     icon: TreePine,
     title: "Aree Verdi",
     description: "Manutenzione giardini, potature e pulizia spazi esterni.",
+    href: "/servizi/aree-verdi",
+  },
+];
+
+const heroServices = [
+  {
+    icon: Home,
+    title: "Pulizie Civili",
+    subtitle: "Case e appartamenti",
+    href: "/servizi/pulizie-civili",
+  },
+  {
+    icon: Building2,
+    title: "Industriali",
+    subtitle: "Uffici e aziende",
+    href: "/servizi/pulizie-industriali",
+  },
+  {
+    icon: Wind,
+    title: "Sanificazioni",
+    subtitle: "Certificate",
+    href: "/servizi/sanificazioni",
+  },
+  {
+    icon: Bug,
+    title: "Disinfestazioni",
+    subtitle: "Insetti e roditori",
+    href: "/servizi/disinfestazioni",
+  },
+  {
+    icon: Layers,
+    title: "Pavimenti",
+    subtitle: "Marmo e parquet",
+    href: "/servizi/trattamento-pavimenti",
+  },
+  {
+    icon: TreePine,
+    title: "Aree Verdi",
+    subtitle: "Giardini",
     href: "/servizi/aree-verdi",
   },
 ];
@@ -112,7 +152,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-8 lg:py-12 relative">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10 lg:py-14 relative">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left content */}
             <div>
@@ -130,7 +170,7 @@ export default function HomePage() {
                 Pulizie, sanificazioni e disinfestazioni con standard certificati.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link
                   href="/preventivo"
                   className="inline-flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-8 py-4 rounded-lg font-semibold transition shadow-lg hover:shadow-xl"
@@ -142,6 +182,7 @@ export default function HomePage() {
                   href="tel:+393467483943"
                   className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
                 >
+                  <Phone className="w-5 h-5" />
                   Chiama Ora
                 </a>
               </div>
@@ -159,9 +200,28 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right - Calculator */}
-            <div className="lg:pl-8">
-              <QuoteCalculator />
+            {/* Right - Services Grid */}
+            <div className="lg:pl-4">
+              <div className="grid grid-cols-3 gap-3">
+                {heroServices.map((service) => {
+                  const Icon = service.icon;
+                  return (
+                    <Link
+                      key={service.title}
+                      href={service.href}
+                      className="group bg-white hover:shadow-xl rounded-xl p-4 text-center transition-all duration-300"
+                    >
+                      <div className="w-12 h-12 bg-[#0d9488]/10 group-hover:bg-[#0d9488] rounded-xl flex items-center justify-center mx-auto mb-3 transition-colors">
+                        <Icon className="w-6 h-6 text-[#0d9488] group-hover:text-white transition-colors" />
+                      </div>
+                      <h3 className="font-semibold text-gray-900 text-sm mb-1">
+                        {service.title}
+                      </h3>
+                      <p className="text-xs text-gray-500">{service.subtitle}</p>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
