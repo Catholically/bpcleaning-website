@@ -31,10 +31,10 @@ const contactInfo = [
   },
   {
     icon: MapPin,
-    title: "Sede Legale",
-    value: "Piazza Giovine Italia 4, 21100 Varese",
-    href: "https://maps.google.com/?q=Piazza+Giovine+Italia+4+Varese",
-    description: "Solo su appuntamento",
+    title: "Sede Operativa",
+    value: "Via Campagna 21, 21056 Induno Olona (VA)",
+    href: "https://maps.google.com/?q=Via+Campagna+21+Induno+Olona+VA",
+    description: "Riceve su appuntamento",
   },
 ];
 
@@ -115,14 +115,14 @@ export default function ContattiPage() {
               {/* Google Maps */}
               <div className="rounded-xl overflow-hidden h-64">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.5!2d8.8253!3d45.8181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478679c8e7d8a0a1%3A0x5e1e8c0b8d6c0e0a!2sPiazza%20Giovine%20Italia%2C%2021100%20Varese%20VA!5e0!3m2!1sit!2sit!4v1705600000000!5m2!1sit!2sit"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.5!2d8.8653!3d45.8481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47867a0a0a0a0a0a%3A0x5e1e8c0b8d6c0e0a!2sVia%20Campagna%2021%2C%2021056%20Induno%20Olona%20VA!5e0!3m2!1sit!2sit!4v1705600000000!5m2!1sit!2sit"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="BP Cleaning - Sede Varese"
+                  title="BP Cleaning - Sede Operativa Induno Olona"
                 />
               </div>
 

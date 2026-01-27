@@ -211,7 +211,9 @@ export default async function CityServicePage({ params }: PageProps) {
       "telephone": "+39 346 748 3943",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Varese",
+        "streetAddress": "Via Campagna 21",
+        "addressLocality": "Induno Olona",
+        "postalCode": "21056",
         "addressCountry": "IT"
       }
     },

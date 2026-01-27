@@ -103,9 +103,9 @@ export default async function CityPage({ params }: PageProps) {
     "email": "info@bpcleaning.it",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Piazza Giovine Italia 4",
-      "addressLocality": "Varese",
-      "postalCode": "21100",
+      "streetAddress": "Via Campagna 21",
+      "addressLocality": "Induno Olona",
+      "postalCode": "21056",
       "addressCountry": "IT"
     },
     "areaServed": {
