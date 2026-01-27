@@ -131,15 +131,11 @@ export default function ContattiPage() {
                 <h3 className="font-semibold text-gray-900 mb-3">Zone Operative</h3>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "Varese",
+                    "Varese e provincia",
                     "Milano",
+                    "Monza Brianza",
                     "Como",
-                    "Gallarate",
-                    "Busto Arsizio",
-                    "Saronno",
-                    "Legnano",
-                    "Lugano",
-                    "Mendrisio",
+                    "Svizzera",
                   ].map((city) => (
                     <span
                       key={city}
