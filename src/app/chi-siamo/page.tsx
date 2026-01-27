@@ -135,7 +135,7 @@ export default function ChiSiamoPage() {
           <div className="bg-gradient-to-br from-[#0d9488] to-[#0f766e] rounded-2xl p-8 md:p-12 text-white">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               {[
-                { value: "10+", label: "Anni di esperienza" },
+                { value: "18+", label: "Anni di esperienza" },
                 { value: "500+", label: "Clienti soddisfatti" },
                 { value: "15+", label: "Collaboratori" },
                 { value: "99%", label: "Tasso soddisfazione" },
@@ -159,6 +159,35 @@ export default function ChiSiamoPage() {
           <p className="text-gray-600 text-center mb-12">
             Operiamo nel rispetto delle normative vigenti e degli standard di qualita piu elevati.
           </p>
+
+          {/* ISO Certifications */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-12">
+            <div className="text-center">
+              <div className="w-32 h-32 mx-auto mb-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/iso-9001.svg"
+                  alt="ISO 9001 - Sistema di Gestione Qualita"
+                  className="w-full h-full"
+                />
+              </div>
+              <h3 className="font-bold text-gray-900">ISO 9001:2015</h3>
+              <p className="text-sm text-gray-600">Sistema di Gestione Qualita</p>
+            </div>
+            <div className="text-center">
+              <div className="w-32 h-32 mx-auto mb-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/iso-45001.svg"
+                  alt="ISO 45001 - Salute e Sicurezza sul Lavoro"
+                  className="w-full h-full"
+                />
+              </div>
+              <h3 className="font-bold text-gray-900">ISO 45001:2018</h3>
+              <p className="text-sm text-gray-600">Salute e Sicurezza sul Lavoro</p>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-4">
             {certifications.map((cert) => (
               <div key={cert} className="flex items-start gap-3 bg-white rounded-lg p-4 shadow-sm">

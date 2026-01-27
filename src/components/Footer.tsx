@@ -12,12 +12,11 @@ const services = [
 ];
 
 const areas = [
-  "Varese",
-  "Induno Olona",
+  "Varese e provincia",
   "Milano",
-  "Gallarate",
-  "Busto Arsizio",
+  "Monza Brianza",
   "Svizzera",
+  "Como",
 ];
 
 export default function Footer() {
