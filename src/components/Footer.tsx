@@ -114,7 +114,7 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <div className="text-sm">
                   <span className="block font-medium text-white">Sede Operativa</span>
-                  <span className="block">Via Campagna 21</span>
+                  <span className="block">Via Campagna 80</span>
                   <span className="block">21056 Induno Olona (VA)</span>
                   <span className="block text-xs mt-1 text-gray-400">Su appuntamento</span>
                 </div>

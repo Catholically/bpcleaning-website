@@ -103,7 +103,7 @@ export default async function CityPage({ params }: PageProps) {
     "email": "info@bpcleaning.it",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Via Campagna 21",
+      "streetAddress": "Via Campagna 80",
       "addressLocality": "Induno Olona",
       "postalCode": "21056",
       "addressCountry": "IT"

@@ -32,8 +32,8 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Sede Operativa",
-    value: "Via Campagna 21, 21056 Induno Olona (VA)",
-    href: "https://maps.google.com/?q=Via+Campagna+21+Induno+Olona+VA",
+    value: "Via Campagna 80, 21056 Induno Olona (VA)",
+    href: "https://maps.google.com/?q=Via+Campagna+80+Induno+Olona+VA",
     description: "Riceve su appuntamento",
   },
 ];
@@ -115,7 +115,7 @@ export default function ContattiPage() {
               {/* Google Maps */}
               <div className="rounded-xl overflow-hidden h-64">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.5!2d8.8653!3d45.8481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47867a0a0a0a0a0a%3A0x5e1e8c0b8d6c0e0a!2sVia%20Campagna%2021%2C%2021056%20Induno%20Olona%20VA!5e0!3m2!1sit!2sit!4v1705600000000!5m2!1sit!2sit"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.5!2d8.8653!3d45.8481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47867a0a0a0a0a0a%3A0x5e1e8c0b8d6c0e0a!2sVia%20Campagna%2080%2C%2021056%20Induno%20Olona%20VA!5e0!3m2!1sit!2sit!4v1705600000000!5m2!1sit!2sit"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
