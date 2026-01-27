@@ -148,7 +148,7 @@ const serviceContent: Record<string, {
     ],
   },
   "pulizie-negozi": {
-    heroText: "Servizio di pulizia professionale per negozi, showroom e punti vendita. Un ambiente pulito attrae piu clienti.",
+    heroText: "Servizio di pulizia professionale per negozi, showroom e punti vendita. Un ambiente pulito attrae più clienti.",
     features: ["Orari flessibili", "Pulizia vetrine", "Contratti personalizzati"],
     includes: [
       "Pulizia pavimenti e superfici",

@@ -61,7 +61,7 @@ const serviceTypes = [
 const faqs = [
   {
     q: "Ogni quanto va trattato un pavimento in marmo?",
-    a: "Dipende dal traffico. Per abitazioni private consigliamo una lucidatura ogni 2-3 anni, per attivita commerciali anche annuale. La manutenzione ordinaria puo essere piu frequente.",
+    a: "Dipende dal traffico. Per abitazioni private consigliamo una lucidatura ogni 2-3 anni, per attività commerciali anche annuale. La manutenzione ordinaria può essere più frequente.",
   },
   {
     q: "E possibile rimuovere graffi profondi dal marmo?",

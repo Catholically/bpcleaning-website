@@ -277,7 +277,7 @@ export default function HomePage() {
                   </h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <span className="inline-flex items-center text-[#0d9488] font-medium">
-                    Scopri di piu
+                    Scopri di più
                     <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>

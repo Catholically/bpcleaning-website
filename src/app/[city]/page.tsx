@@ -202,7 +202,7 @@ export default async function CityPage({ params }: PageProps) {
                   </h3>
                   <p className="text-gray-600">{service.description}</p>
                   <div className="mt-4 text-[#0d9488] font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Scopri di piu
+                    Scopri di più
                     <ArrowRight className="w-4 h-4" />
                   </div>
                 </Link>

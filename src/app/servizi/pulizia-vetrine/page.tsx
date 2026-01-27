@@ -77,7 +77,7 @@ const benefits = [
   {
     icon: Building,
     title: "Qualsiasi Altezza",
-    desc: "Attrezzature per raggiungere anche le vetrate piu alte",
+    desc: "Attrezzature per raggiungere anche le vetrate più alte",
   },
 ];
 
@@ -96,7 +96,7 @@ const faqs = [
   },
   {
     q: "Che prodotti usate?",
-    a: "Utilizziamo prodotti professionali specifici per vetri che non lasciano aloni. Su richiesta applichiamo trattamenti idrorepellenti che mantengono i vetri puliti piu a lungo.",
+    a: "Utilizziamo prodotti professionali specifici per vetri che non lasciano aloni. Su richiesta applichiamo trattamenti idrorepellenti che mantengono i vetri puliti più a lungo.",
   },
 ];
 
