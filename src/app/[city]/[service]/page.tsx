@@ -211,7 +211,7 @@ export default async function CityServicePage({ params }: PageProps) {
       "telephone": "+39 346 748 3943",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Via Campagna 80",
+        "streetAddress": "Via Campagna 80A",
         "addressLocality": "Induno Olona",
         "postalCode": "21056",
         "addressCountry": "IT"
