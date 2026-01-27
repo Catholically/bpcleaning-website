@@ -8,12 +8,13 @@ export const metadata: Metadata = {
 };
 
 const timeline = [
-  { year: "2008", event: "Nasce Belli & Puliti, la nostra prima impresa di pulizie" },
-  { year: "2012", event: "Espansione servizi in provincia di Varese" },
+  { year: "2008", event: "Nasce Belli & Puliti, la nostra prima impresa di pulizie a Varese" },
+  { year: "2012", event: "Espansione in provincia di Milano" },
   { year: "2018", event: "Costituzione di BP Cleaning SRL, evoluzione di Belli & Puliti" },
   { year: "2020", event: "Lancio servizi di sanificazione certificata" },
   { year: "2022", event: "Espansione nel Canton Ticino" },
   { year: "2024", event: "Oltre 500 clienti attivi" },
+  { year: "2025", event: "Espansione in Monza Brianza" },
 ];
 
 const values = [
