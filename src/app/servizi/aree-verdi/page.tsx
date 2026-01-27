@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     q: "Smaltite voi i rifiuti verdi?",
-    a: "Si, il servizio include la raccolta e lo smaltimento presso centri autorizzati di tutti i residui di potatura, sfalcio e pulizia.",
+    a: "Sì, il servizio include la raccolta e lo smaltimento presso centri autorizzati di tutti i residui di potatura, sfalcio e pulizia.",
   },
   {
     q: "Lavorate anche per aziende?",
@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: "Intervenite anche in inverno?",
-    a: "Si, offriamo anche servizi invernali come rimozione foglie, potature invernali e, su richiesta, sgombero neve per vialetti e accessi.",
+    a: "Sì, offriamo anche servizi invernali come rimozione foglie, potature invernali e, su richiesta, sgombero neve per vialetti e accessi.",
   },
 ];
 

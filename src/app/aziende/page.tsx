@@ -62,13 +62,13 @@ const benefits = [
   },
   {
     icon: Clock,
-    title: "Flessibilita Oraria",
-    description: "Interventi in orario serale, notturno o weekend per non disturbare le attivita.",
+    title: "Flessibilità Oraria",
+    description: "Interventi in orario serale, notturno o weekend per non disturbare le attività.",
   },
   {
     icon: Shield,
     title: "Copertura Assicurativa",
-    description: "Assicurazione RC fino a 2 milioni di euro per la massima tranquillita.",
+    description: "Assicurazione RC fino a 2 milioni di euro per la massima tranquillità.",
   },
 ];
 
@@ -111,7 +111,7 @@ export default function AziendePage() {
 
             {/* Stats */}
             <div className="bg-white/10 backdrop-blur rounded-2xl p-8">
-              <h3 className="text-xl font-bold mb-6">Perche sceglierci</h3>
+              <h3 className="text-xl font-bold mb-6">Perché sceglierci</h3>
               <div className="space-y-4">
                 {[
                   "Oltre 100 aziende clienti attive",
@@ -209,7 +209,7 @@ export default function AziendePage() {
               {
                 step: "4",
                 title: "Monitoraggio Continuo",
-                description: "Verifiche periodiche della qualita e comunicazione costante per garantire la tua soddisfazione.",
+                description: "Verifiche periodiche della qualità e comunicazione costante per garantire la tua soddisfazione.",
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-6 items-start">

@@ -84,7 +84,7 @@ const benefits = [
 const faqs = [
   {
     q: "Pulite anche vetri molto alti?",
-    a: "Si, siamo attrezzati per lavori in quota con aste telescopiche fino a 15 metri e piattaforme aeree per altezze superiori. Per edifici molto alti utilizziamo tecniche rope access.",
+    a: "Sì, siamo attrezzati per lavori in quota con aste telescopiche fino a 15 metri e piattaforme aeree per altezze superiori. Per edifici molto alti utilizziamo tecniche rope access.",
   },
   {
     q: "Con che frequenza consigliate la pulizia delle vetrine?",
@@ -92,7 +92,7 @@ const faqs = [
   },
   {
     q: "Lavorate anche di domenica?",
-    a: "Si, operiamo 7 giorni su 7. Per i negozi possiamo intervenire di domenica o nelle prime ore del mattino per non disturbare l'attivita commerciale.",
+    a: "Sì, operiamo 7 giorni su 7. Per i negozi possiamo intervenire di domenica o nelle prime ore del mattino per non disturbare l'attività commerciale.",
   },
   {
     q: "Che prodotti usate?",
@@ -119,7 +119,7 @@ export default function PuliziaVetrinePage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Pulizia Vetrine e Vetrate</h1>
             <p className="text-xl text-gray-300 mb-6">
               Servizio professionale di pulizia vetrine, vetrate e finestre per negozi, uffici e privati.
-              Vetri impeccabili che valorizzano la tua attivita e i tuoi ambienti.
+              Vetri impeccabili che valorizzano la tua attività e i tuoi ambienti.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -166,7 +166,7 @@ export default function PuliziaVetrinePage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Perche Sceglierci
+            Perché Sceglierci
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((benefit) => {

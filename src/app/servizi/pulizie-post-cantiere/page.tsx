@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: "Usate attrezzature professionali?",
-    a: "Si, utilizziamo aspiratori industriali con filtri HEPA, idropulitrici, levigatrici e prodotti specifici per la rimozione di residui edili.",
+    a: "Sì, utilizziamo aspiratori industriali con filtri HEPA, idropulitrici, levigatrici e prodotti specifici per la rimozione di residui edili.",
   },
 ];
 
@@ -173,7 +173,7 @@ export default function PuliziePostCantierePage() {
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "1", title: "Sopralluogo", desc: "Valutiamo l'entita dei lavori e le esigenze specifiche" },
+              { step: "1", title: "Sopralluogo", desc: "Valutiamo l'entità dei lavori e le esigenze specifiche" },
               { step: "2", title: "Preventivo", desc: "Rispondiamo entro 2 ore" },
               { step: "3", title: "Intervento", desc: "Il nostro team esegue la pulizia completa" },
               { step: "4", title: "Verifica", desc: "Controlliamo insieme il risultato finale" },

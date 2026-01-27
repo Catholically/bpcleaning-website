@@ -32,7 +32,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Sede Operativa",
-    value: "Via Campagna 80A, 21056 Induno Olona (VA)",
+    value: "Via Campagna 80A, Induno Olona (VA)",
     href: "https://maps.google.com/?q=Via+Campagna+80A+Induno+Olona+VA",
     description: "Riceve su appuntamento",
   },

@@ -69,11 +69,11 @@ const faqs = [
   },
   {
     q: "Offrite servizi per aziende alimentari?",
-    a: "Si, siamo specializzati in interventi per attivita soggette a normativa HACCP. Rilasciamo tutta la documentazione necessaria per le ispezioni.",
+    a: "Sì, siamo specializzati in interventi per attività soggette a normativa HACCP. Rilasciamo tutta la documentazione necessaria per le ispezioni.",
   },
   {
     q: "Intervenite anche in emergenza?",
-    a: "Si, per infestazioni gravi offriamo interventi rapidi entro 24-48 ore. Contattaci telefonicamente per emergenze.",
+    a: "Sì, per infestazioni gravi offriamo interventi rapidi entro 24-48 ore. Contattaci telefonicamente per emergenze.",
   },
 ];
 

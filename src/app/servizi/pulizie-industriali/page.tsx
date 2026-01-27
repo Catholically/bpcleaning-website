@@ -65,15 +65,15 @@ const faqs = [
   },
   {
     q: "Lavorate fuori orario ufficio?",
-    a: "Assolutamente si. La maggior parte dei nostri clienti business preferisce interventi serali, notturni o nel weekend per non interferire con le attivita lavorative.",
+    a: "Assolutamente sì. La maggior parte dei nostri clienti business preferisce interventi serali, notturni o nel weekend per non interferire con le attività lavorative.",
   },
   {
-    q: "Il personale e formato e assicurato?",
-    a: "Tutto il nostro personale e regolarmente assunto, formato secondo D.L. 81/2008 e coperto da assicurazione RC fino a 2 milioni di euro.",
+    q: "Il personale è formato e assicurato?",
+    a: "Tutto il nostro personale è regolarmente assunto, formato secondo D.L. 81/2008 e coperto da assicurazione RC fino a 2 milioni di euro.",
   },
   {
     q: "Possiamo richiedere sempre lo stesso operatore?",
-    a: "Si, per i contratti continuativi garantiamo la stessa squadra o operatore, per una migliore conoscenza degli ambienti e delle vostre preferenze.",
+    a: "Sì, per i contratti continuativi garantiamo la stessa squadra o operatore, per una migliore conoscenza degli ambienti e delle vostre preferenze.",
   },
 ];
 
@@ -190,7 +190,7 @@ export default function PulizieIndustrialiPage() {
               href="/preventivo"
               className="inline-flex items-center justify-center gap-2 bg-white text-[#0d9488] px-8 py-4 rounded-lg font-semibold transition hover:bg-gray-100"
             >
-              Calcola Preventivo Online
+              Richiedi Preventivo
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a

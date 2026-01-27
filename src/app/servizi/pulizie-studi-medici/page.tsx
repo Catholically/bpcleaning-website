@@ -69,12 +69,12 @@ const certifications = [
 
 const faqs = [
   {
-    q: "Il vostro personale e formato per ambienti sanitari?",
-    a: "Si, il nostro personale riceve formazione specifica sui protocolli di pulizia e sanificazione in ambito sanitario, incluse procedure per la gestione dei rifiuti speciali.",
+    q: "Il vostro personale è formato per ambienti sanitari?",
+    a: "Sì, il nostro personale riceve formazione specifica sui protocolli di pulizia e sanificazione in ambito sanitario, incluse procedure per la gestione dei rifiuti speciali.",
   },
   {
     q: "Rilasciate certificazioni di sanificazione?",
-    a: "Si, al termine di ogni intervento rilasciamo certificazione di avvenuta sanificazione valida per le normative sanitarie e assicurative.",
+    a: "Sì, al termine di ogni intervento rilasciamo certificazione di avvenuta sanificazione valida per le normative sanitarie e assicurative.",
   },
   {
     q: "Quali prodotti utilizzate?",
@@ -82,7 +82,7 @@ const faqs = [
   },
   {
     q: "Lavorate anche di domenica?",
-    a: "Si, operiamo 7 giorni su 7 per garantire la massima flessibilita. Gli interventi possono essere programmati anche durante i giorni di chiusura dello studio.",
+    a: "Sì, operiamo 7 giorni su 7 per garantire la massima flessibilità. Gli interventi possono essere programmati anche durante i giorni di chiusura dello studio.",
   },
 ];
 

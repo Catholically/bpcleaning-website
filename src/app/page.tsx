@@ -161,8 +161,9 @@ export default function HomePage() {
                 <span>Risposta entro 2 ore</span>
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-                Pulizie Professionali a{" "}
-                <span className="text-[#0d9488]">Varese</span>,{" "}
+                Pulizie Professionali in provincia di{" "}
+                <span className="text-[#0d9488]">Varese</span>
+                <span className="text-[#0d9488]">,</span>{" "}
                 <span className="text-[#0d9488]">Milano</span> e{" "}
                 <span className="text-[#0d9488]">Monza Brianza</span>
               </h1>
@@ -303,7 +304,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Perche Scegliere BP Cleaning?
+                Perché Scegliere BP Cleaning?
               </h2>
               <p className="text-xl text-gray-600 mb-8">
                 Da oltre 18 anni siamo il punto di riferimento per le pulizie
@@ -315,7 +316,7 @@ export default function HomePage() {
                   "Risposta rapida entro 2 ore",
                   "Personale qualificato e assicurato",
                   "Prodotti professionali e opzione BIO certificata",
-                  "Flessibilita oraria (anche weekend e festivi)",
+                  "Flessibilità oraria (anche weekend e festivi)",
                   "Contratti personalizzati per aziende",
                   "Certificazioni D.L. 81/2008 e normative europee",
                 ].map((item) => (
@@ -373,7 +374,7 @@ export default function HomePage() {
               Cosa Dicono di Noi
             </h2>
             <p className="text-xl text-gray-600">
-              La soddisfazione dei nostri clienti e la nostra priorita
+              La soddisfazione dei nostri clienti è la nostra priorità
             </p>
           </div>
 
@@ -414,7 +415,7 @@ export default function HomePage() {
               href="/preventivo"
               className="inline-flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-8 py-4 rounded-lg font-semibold transition shadow-lg hover:shadow-xl"
             >
-              Calcola Preventivo Online
+              Richiedi Preventivo
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a

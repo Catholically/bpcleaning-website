@@ -190,7 +190,7 @@ export default function PulizieCiviliPage() {
               href="/preventivo"
               className="inline-flex items-center justify-center gap-2 bg-white text-[#0d9488] px-8 py-4 rounded-lg font-semibold transition hover:bg-gray-100"
             >
-              Calcola Preventivo Online
+              Richiedi Preventivo
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a

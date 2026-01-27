@@ -94,7 +94,7 @@ export default function PreventivePage() {
               },
               {
                 q: "Posso richiedere una pulizia urgente?",
-                a: "Si, offriamo anche servizi di pulizia urgente con intervento entro 24-48 ore, compatibilmente con la disponibilita del nostro team.",
+                a: "Sì, offriamo anche servizi di pulizia urgente con intervento entro 24-48 ore, compatibilmente con la disponibilità del nostro team.",
               },
             ].map((faq, i) => (
               <div key={i} className="bg-white rounded-xl p-6 shadow-sm">

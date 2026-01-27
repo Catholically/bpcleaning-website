@@ -218,7 +218,7 @@ export default async function CityPage({ params }: PageProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Perche Scegliere BP Cleaning a {city.name}
+                Perché Scegliere BP Cleaning a {city.name}
               </h2>
               <p className="text-gray-600 mb-8">
                 Siamo un&apos;impresa di pulizie con oltre 18 anni di esperienza nel settore.
@@ -294,7 +294,7 @@ export default async function CityPage({ params }: PageProps) {
               href="/preventivo"
               className="inline-flex items-center justify-center gap-2 bg-white text-[#0d9488] px-8 py-4 rounded-lg font-semibold transition hover:bg-gray-100"
             >
-              Calcola Preventivo Online
+              Richiedi Preventivo
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a

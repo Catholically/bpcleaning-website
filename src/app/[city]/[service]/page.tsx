@@ -143,7 +143,7 @@ const serviceContent: Record<string, {
       "Trattamento anti-alone",
     ],
     faqs: [
-      { q: "Pulite anche vetri in altezza?", a: "Si, siamo attrezzati per lavori in quota con aste telescopiche e piattaforme aeree." },
+      { q: "Pulite anche vetri in altezza?", a: "Sì, siamo attrezzati per lavori in quota con aste telescopiche e piattaforme aeree." },
       { q: "Con che frequenza consigliate la pulizia?", a: "Per negozi consigliamo settimanale o quindicinale. Per abitazioni, mensile o stagionale." },
     ],
   },
@@ -175,8 +175,8 @@ const serviceContent: Record<string, {
       "Irrigazione",
     ],
     faqs: [
-      { q: "Fate anche piccoli giardini?", a: "Si, ci occupiamo di giardini di qualsiasi dimensione, dai piccoli cortili ai grandi parchi." },
-      { q: "Offrite contratti annuali?", a: "Si, offriamo contratti di manutenzione annuale con interventi programmati stagionali." },
+      { q: "Fate anche piccoli giardini?", a: "Sì, ci occupiamo di giardini di qualsiasi dimensione, dai piccoli cortili ai grandi parchi." },
+      { q: "Offrite contratti annuali?", a: "Sì, offriamo contratti di manutenzione annuale con interventi programmati stagionali." },
     ],
   },
 };
@@ -314,7 +314,7 @@ export default async function CityServicePage({ params }: PageProps) {
             </div>
             <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Perche Scegliere BP Cleaning
+                Perché Scegliere BP Cleaning
               </h3>
               <ul className="space-y-4">
                 {[
@@ -394,7 +394,7 @@ export default async function CityServicePage({ params }: PageProps) {
               href="/preventivo"
               className="inline-flex items-center justify-center gap-2 bg-white text-[#0d9488] px-8 py-4 rounded-lg font-semibold transition hover:bg-gray-100"
             >
-              Calcola Preventivo Online
+              Richiedi Preventivo
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a

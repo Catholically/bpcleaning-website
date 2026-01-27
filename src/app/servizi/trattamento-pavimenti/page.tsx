@@ -64,8 +64,8 @@ const faqs = [
     a: "Dipende dal traffico. Per abitazioni private consigliamo una lucidatura ogni 2-3 anni, per attività commerciali anche annuale. La manutenzione ordinaria può essere più frequente.",
   },
   {
-    q: "E possibile rimuovere graffi profondi dal marmo?",
-    a: "Si, con la levigatura professionale possiamo rimuovere graffi, macchie e segni di usura, riportando il pavimento alle condizioni originali.",
+    q: "È possibile rimuovere graffi profondi dal marmo?",
+    a: "Sì, con la levigatura professionale possiamo rimuovere graffi, macchie e segni di usura, riportando il pavimento alle condizioni originali.",
   },
   {
     q: "Trattate anche scale e davanzali?",
