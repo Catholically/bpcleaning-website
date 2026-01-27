@@ -1,11 +1,10 @@
 import { Metadata } from "next";
-import QuoteCalculator from "@/components/QuoteCalculator";
 import ContactForm from "@/components/ContactForm";
-import { Calculator, MessageSquare, Phone, Clock, Shield, CheckCircle } from "lucide-react";
+import { MessageSquare, Phone, Clock, Shield, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Richiedi Preventivo Gratuito | BP Cleaning",
-  description: "Richiedi un preventivo gratuito per pulizie professionali. Calcola online il costo stimato o compila il form. Risposta entro 2 ore.",
+  description: "Richiedi un preventivo gratuito per pulizie professionali. Compila il form e ricevi risposta entro 2 ore. Sopralluogo gratuito.",
 };
 
 export default function PreventivePage() {
@@ -18,8 +17,8 @@ export default function PreventivePage() {
             Richiedi un Preventivo Gratuito
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Scegli come vuoi procedere: calcola subito una stima online
-            oppure compila il form per una richiesta personalizzata.
+            Compila il form per ricevere un preventivo personalizzato.
+            Ti ricontattiamo entro 2 ore!
           </p>
           <div className="flex flex-wrap justify-center gap-6 mt-8">
             <div className="flex items-center gap-2">
@@ -38,38 +37,19 @@ export default function PreventivePage() {
         </div>
       </section>
 
-      {/* Forms Section */}
+      {/* Form Section */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Calculator */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#0d9488] rounded-lg flex items-center justify-center">
-                  <Calculator className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900">Calcola Preventivo</h2>
-                  <p className="text-gray-600">Ottieni subito una stima del costo</p>
-                </div>
-              </div>
-              <QuoteCalculator />
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 bg-[#0d9488] rounded-lg flex items-center justify-center">
+              <MessageSquare className="w-6 h-6 text-white" />
             </div>
-
-            {/* Contact Form */}
             <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center">
-                  <MessageSquare className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900">Richiesta Personalizzata</h2>
-                  <p className="text-gray-600">Descrivi le tue esigenze specifiche</p>
-                </div>
-              </div>
-              <ContactForm />
+              <h2 className="text-2xl font-bold text-gray-900">Richiedi Preventivo</h2>
+              <p className="text-gray-600">Descrivi le tue esigenze e ti ricontattiamo</p>
             </div>
           </div>
+          <ContactForm />
         </div>
       </section>
 
@@ -107,10 +87,6 @@ export default function PreventivePage() {
               {
                 q: "Quanto tempo ci vuole per ricevere il preventivo?",
                 a: "Rispondiamo a tutte le richieste entro 2 ore lavorative. Per preventivi complessi che richiedono sopralluogo, fisseremo un appuntamento entro 48 ore.",
-              },
-              {
-                q: "I prezzi del calcolatore sono definitivi?",
-                a: "Il calcolatore fornisce una stima indicativa. Il prezzo finale viene confermato dopo aver valutato le specifiche esigenze e, se necessario, dopo un sopralluogo.",
               },
               {
                 q: "Quali zone servite?",
