@@ -32,7 +32,7 @@ export default function Header() {
             </a>
           </div>
           <div className="text-[#0d9488] font-medium">
-            Preventivo gratuito entro 2 ore!
+            Risposta entro 2 ore!
           </div>
         </div>
       </div>

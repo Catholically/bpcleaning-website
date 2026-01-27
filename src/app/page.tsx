@@ -110,7 +110,7 @@ const features = [
   },
   {
     icon: Clock,
-    title: "Preventivo in 2 Ore",
+    title: "Risposta in 2 Ore",
     description: "Rispondiamo rapidamente",
   },
   {
@@ -158,7 +158,7 @@ export default function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm mb-4">
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span>Preventivo gratuito entro 2 ore</span>
+                <span>Risposta entro 2 ore</span>
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
                 Pulizie Professionali in provincia di{" "}
@@ -311,7 +311,7 @@ export default function HomePage() {
 
               <div className="space-y-4">
                 {[
-                  "Preventivo gratuito e senza impegno entro 2 ore",
+                  "Risposta rapida entro 2 ore",
                   "Personale qualificato e assicurato",
                   "Prodotti professionali e opzione BIO certificata",
                   "Flessibilita oraria (anche weekend e festivi)",

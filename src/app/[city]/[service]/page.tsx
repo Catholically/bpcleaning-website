@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `${service.name} ${city.name} | BP Cleaning - Servizio Professionale`,
-    description: `${service.description} a ${city.name}. Preventivo gratuito in 2 ore. Personale qualificato e assicurato. BP Cleaning - La tua impresa di pulizie di fiducia.`,
+    description: `${service.description} a ${city.name}. Risposta entro 2 ore. Personale qualificato e assicurato. BP Cleaning - La tua impresa di pulizie di fiducia.`,
     openGraph: {
       title: `${service.name} ${city.name} | BP Cleaning`,
       description: `${service.description} a ${city.name} e dintorni.`,
@@ -320,7 +320,7 @@ export default async function CityServicePage({ params }: PageProps) {
                 {[
                   "Oltre 18 anni di esperienza",
                   "Personale qualificato e assicurato",
-                  "Preventivo gratuito entro 2 ore",
+                  "Risposta entro 2 ore",
                   "Prodotti professionali certificati",
                   "Assistenza clienti dedicata",
                   "Prezzi trasparenti e competitivi",

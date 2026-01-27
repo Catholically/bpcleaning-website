@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `Impresa di Pulizie ${city.name} | BP Cleaning - Pulizie Professionali`,
-    description: `Impresa di pulizie professionali a ${city.name}. Pulizie civili, industriali, sanificazioni, disinfestazioni. Preventivo gratuito in 2 ore. Servizio rapido e affidabile.`,
+    description: `Impresa di pulizie professionali a ${city.name}. Pulizie civili, industriali, sanificazioni, disinfestazioni. Risposta entro 2 ore. Servizio rapido e affidabile.`,
     openGraph: {
       title: `Impresa di Pulizie ${city.name} | BP Cleaning`,
       description: `Servizi di pulizia professionale a ${city.name} e dintorni. Oltre 18 anni di esperienza.`,
@@ -74,7 +74,7 @@ const mainServices = [
 ];
 
 const benefits = [
-  "Preventivo gratuito entro 2 ore",
+  "Risposta entro 2 ore",
   "Personale qualificato e assicurato",
   "Prodotti professionali e BIO",
   "Orari flessibili, anche weekend",

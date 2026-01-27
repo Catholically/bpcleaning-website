@@ -174,7 +174,7 @@ export default function PuliziePostCantierePage() {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               { step: "1", title: "Sopralluogo", desc: "Valutiamo l'entita dei lavori e le esigenze specifiche" },
-              { step: "2", title: "Preventivo", desc: "Ti forniamo un preventivo dettagliato entro 2 ore" },
+              { step: "2", title: "Preventivo", desc: "Rispondiamo entro 2 ore" },
               { step: "3", title: "Intervento", desc: "Il nostro team esegue la pulizia completa" },
               { step: "4", title: "Verifica", desc: "Controlliamo insieme il risultato finale" },
             ].map((item) => (

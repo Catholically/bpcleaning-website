@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "BP Cleaning - Pulizie Professionali Varese e Milano",
-  description: "Impresa di pulizie professionali a Varese e Milano. Pulizie civili, industriali, sanificazioni, disinfestazioni. Preventivo gratuito in 2 ore. Oltre 18 anni di esperienza.",
+  description: "Impresa di pulizie professionali a Varese e Milano. Pulizie civili, industriali, sanificazioni, disinfestazioni. Risposta entro 2 ore. Oltre 18 anni di esperienza.",
   keywords: "pulizie varese, pulizie milano, impresa pulizie, sanificazione, disinfestazione, pulizie uffici, pulizie condomini",
   icons: {
     icon: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "BP Cleaning - Pulizie Professionali Varese e Milano",
-    description: "Impresa di pulizie professionali. Preventivo gratuito in 2 ore.",
+    description: "Impresa di pulizie professionali. Risposta entro 2 ore.",
     locale: "it_IT",
     type: "website",
   },

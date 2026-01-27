@@ -87,7 +87,7 @@ export default function QuoteCalculator() {
         </div>
         <h3 className="text-2xl font-bold text-gray-900 mb-2">Richiesta Inviata!</h3>
         <p className="text-gray-600 mb-4">
-          Ti contatteremo entro 2 ore con un preventivo dettagliato.
+          Ti risponderemo entro 2 ore.
         </p>
         {price && (
           <div className="bg-[#0d9488]/10 rounded-lg p-4 mb-4">

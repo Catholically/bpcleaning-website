@@ -161,31 +161,43 @@ export default function ChiSiamoPage() {
           </p>
 
           {/* ISO Certifications */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-12">
-            <div className="text-center">
-              <div className="w-32 h-32 mx-auto mb-3">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-12 mb-12">
+            <a
+              href="/certifications/lochiecertificazioniiso/CIB_OD090101-20_9001_BP_Cleaning_IT.PDF"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center group"
+            >
+              <div className="w-36 h-36 mx-auto mb-3 rounded-lg overflow-hidden shadow-md group-hover:shadow-lg transition">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/iso-9001.svg"
+                  src="/certifications/lochiecertificazioniiso/9001.jpg"
                   alt="ISO 9001 - Sistema di Gestione Qualita"
-                  className="w-full h-full"
+                  className="w-full h-full object-contain bg-white p-2"
                 />
               </div>
-              <h3 className="font-bold text-gray-900">ISO 9001:2015</h3>
+              <h3 className="font-bold text-gray-900 group-hover:text-[#0d9488] transition">ISO 9001:2015</h3>
               <p className="text-sm text-gray-600">Sistema di Gestione Qualita</p>
-            </div>
-            <div className="text-center">
-              <div className="w-32 h-32 mx-auto mb-3">
+              <p className="text-xs text-[#0d9488] mt-1">Visualizza certificato</p>
+            </a>
+            <a
+              href="/certifications/lochiecertificazioniiso/CIB_OD090101-20_45001_BP_Cleaning_IT.PDF"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center group"
+            >
+              <div className="w-36 h-36 mx-auto mb-3 rounded-lg overflow-hidden shadow-md group-hover:shadow-lg transition">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/iso-45001.svg"
+                  src="/certifications/lochiecertificazioniiso/45001.png"
                   alt="ISO 45001 - Salute e Sicurezza sul Lavoro"
-                  className="w-full h-full"
+                  className="w-full h-full object-contain bg-white p-2"
                 />
               </div>
-              <h3 className="font-bold text-gray-900">ISO 45001:2018</h3>
+              <h3 className="font-bold text-gray-900 group-hover:text-[#0d9488] transition">ISO 45001:2018</h3>
               <p className="text-sm text-gray-600">Salute e Sicurezza sul Lavoro</p>
-            </div>
+              <p className="text-xs text-[#0d9488] mt-1">Visualizza certificato</p>
+            </a>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">

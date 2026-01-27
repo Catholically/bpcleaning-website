@@ -46,7 +46,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-[#0d9488] font-semibold">
               <Clock className="w-4 h-4" />
-              <span>Preventivo entro 2 ore</span>
+              <span>Risposta entro 2 ore</span>
             </div>
           </div>
 
