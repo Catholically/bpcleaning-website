@@ -436,15 +436,11 @@ export default function HomePage() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Varese",
+              "Varese e provincia",
               "Milano",
-              "Gallarate",
-              "Busto Arsizio",
-              "Saronno",
-              "Legnano",
+              "Monza Brianza",
+              "Svizzera",
               "Como",
-              "Lugano",
-              "Mendrisio",
             ].map((city) => (
               <span
                 key={city}
