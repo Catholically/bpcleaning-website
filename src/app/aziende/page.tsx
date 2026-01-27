@@ -245,10 +245,10 @@ export default function AziendePage() {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a
-              href="mailto:aziende@bpcleaning.it"
+              href="mailto:info@bpcleaning.it"
               className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
             >
-              aziende@bpcleaning.it
+              info@bpcleaning.it
             </a>
           </div>
         </div>
