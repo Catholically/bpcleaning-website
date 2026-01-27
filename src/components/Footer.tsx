@@ -42,7 +42,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 mb-4">
-              Impresa di pulizie professionali con oltre 10 anni di esperienza.
+              Impresa di pulizie professionali con oltre 18 anni di esperienza.
               Serviamo privati e aziende nelle province di Varese e Milano.
             </p>
             <div className="flex items-center gap-2 text-[#0d9488] font-semibold">

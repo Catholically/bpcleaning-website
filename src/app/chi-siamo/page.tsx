@@ -4,7 +4,7 @@ import { ArrowRight, Award, Shield, Users, Clock, CheckCircle } from "lucide-rea
 
 export const metadata: Metadata = {
   title: "Chi Siamo | BP Cleaning - Impresa di Pulizie Varese",
-  description: "Scopri BP Cleaning: oltre 10 anni di esperienza nelle pulizie professionali a Varese e Milano. Personale qualificato, certificazioni e standard elevati.",
+  description: "Scopri BP Cleaning: oltre 18 anni di esperienza nelle pulizie professionali a Varese e Milano. Personale qualificato, certificazioni e standard elevati.",
 };
 
 const timeline = [
@@ -83,7 +83,7 @@ export default function ChiSiamoPage() {
                   trattamenti speciali, diventando un vero e proprio multiservice.
                 </p>
                 <p>
-                  Oggi, con oltre 10 anni di esperienza nel settore, operiamo in tutta la
+                  Oggi, con oltre 18 anni di esperienza nel settore, operiamo in tutta la
                   Lombardia e nel Canton Ticino, con un team di professionisti qualificati
                   e attrezzature all&apos;avanguardia.
                 </p>

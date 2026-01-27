@@ -96,7 +96,7 @@ const heroServices = [
 ];
 
 const stats = [
-  { value: "10+", label: "Anni di esperienza" },
+  { value: "18+", label: "Anni di esperienza" },
   { value: "500+", label: "Clienti soddisfatti" },
   { value: "2h", label: "Tempo risposta preventivo" },
   { value: "4.8/5", label: "Valutazione media" },
@@ -166,7 +166,7 @@ export default function HomePage() {
                 <span className="text-[#0d9488]">Milano</span>
               </h1>
               <p className="text-lg text-gray-300 mb-6 max-w-xl">
-                Oltre 10 anni di esperienza al servizio di privati e aziende.
+                Oltre 18 anni di esperienza al servizio di privati e aziende.
                 Pulizie, sanificazioni e disinfestazioni con standard certificati.
               </p>
 
@@ -305,7 +305,7 @@ export default function HomePage() {
                 Perche Scegliere BP Cleaning?
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Da oltre 10 anni siamo il punto di riferimento per le pulizie
+                Da oltre 18 anni siamo il punto di riferimento per le pulizie
                 professionali nelle province di Varese e Milano.
               </p>
 

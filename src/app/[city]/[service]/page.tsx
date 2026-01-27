@@ -318,7 +318,7 @@ export default async function CityServicePage({ params }: PageProps) {
               </h3>
               <ul className="space-y-4">
                 {[
-                  "Oltre 10 anni di esperienza",
+                  "Oltre 18 anni di esperienza",
                   "Personale qualificato e assicurato",
                   "Preventivo gratuito entro 2 ore",
                   "Prodotti professionali certificati",

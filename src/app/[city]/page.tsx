@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: `Impresa di pulizie professionali a ${city.name}. Pulizie civili, industriali, sanificazioni, disinfestazioni. Preventivo gratuito in 2 ore. Servizio rapido e affidabile.`,
     openGraph: {
       title: `Impresa di Pulizie ${city.name} | BP Cleaning`,
-      description: `Servizi di pulizia professionale a ${city.name} e dintorni. Oltre 10 anni di esperienza.`,
+      description: `Servizi di pulizia professionale a ${city.name} e dintorni. Oltre 18 anni di esperienza.`,
     },
   };
 }
@@ -221,7 +221,7 @@ export default async function CityPage({ params }: PageProps) {
                 Perche Scegliere BP Cleaning a {city.name}
               </h2>
               <p className="text-gray-600 mb-8">
-                Siamo un&apos;impresa di pulizie con oltre 10 anni di esperienza nel settore.
+                Siamo un&apos;impresa di pulizie con oltre 18 anni di esperienza nel settore.
                 Operiamo a {city.name} e in tutta la provincia di {provinciaName} con professionalita e puntualita.
               </p>
               <ul className="space-y-4">
