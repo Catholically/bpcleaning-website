@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(vercel:*)",
+      "Bash(start \"\" \"C:\\\\AI_Projects\\\\bpcleaning-website\\\\docs\\\\calcolatore-preventivi-guida.html\")",
+      "Bash(npm install:*)",
+      "Bash(node scripts/generate-pdf.mjs:*)",
+      "Bash(start \"\" \"C:\\\\AI_Projects\\\\bpcleaning-website\\\\docs\\\\calcolatore-preventivi-guida.pdf\")",
+      "Bash(node scripts/generate-pdf-cliente.mjs:*)",
+      "Bash(start \"\" \"C:\\\\AI_Projects\\\\bpcleaning-website\\\\docs\\\\calcolatore-guida-cliente.pdf\")"
+    ]
+  }
+}

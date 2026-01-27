@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guida Calcolatore Preventivi - BP Cleaning</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      background: #f8fafc;
+      padding: 40px;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 20px;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #0d9488, #0f766e);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      opacity: 0.9;
+      font-size: 16px;
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    h2 {
+      color: #0d9488;
+      font-size: 22px;
+      margin: 32px 0 16px 0;
+      padding-bottom: 8px;
+      border-bottom: 3px solid #0d9488;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    h3 {
+      color: #1e3a5f;
+      font-size: 18px;
+      margin: 24px 0 12px 0;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #475569;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #f0fdfa, #e0f2fe);
+      border-left: 4px solid #0d9488;
+      padding: 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 20px 0;
+    }
+
+    .highlight-box.warning {
+      background: linear-gradient(135deg, #fef3c7, #fef9c3);
+      border-left-color: #f59e0b;
+    }
+
+    .highlight-box.orange {
+      background: linear-gradient(135deg, #ffedd5, #fed7aa);
+      border-left-color: #f97316;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    th {
+      background: #1e3a5f;
+      color: white;
+      padding: 14px 16px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .price {
+      font-weight: 700;
+      color: #0d9488;
+      font-size: 18px;
+    }
+
+    .discount {
+      background: #f97316;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .formula-box {
+      background: #1e293b;
+      color: white;
+      padding: 24px;
+      border-radius: 12px;
+      font-family: 'Courier New', monospace;
+      margin: 20px 0;
+    }
+
+    .formula-box .step {
+      margin: 8px 0;
+      padding-left: 20px;
+      border-left: 2px solid #0d9488;
+    }
+
+    .example-card {
+      background: white;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+
+    .example-card h4 {
+      color: #1e3a5f;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .example-result {
+      background: linear-gradient(135deg, #0d9488, #0f766e);
+      color: white;
+      padding: 16px 24px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .example-result .label {
+      font-size: 13px;
+      opacity: 0.9;
+    }
+
+    .example-result .value {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .step-list {
+      list-style: none;
+      counter-reset: steps;
+    }
+
+    .step-list li {
+      counter-increment: steps;
+      padding: 12px 0 12px 50px;
+      position: relative;
+    }
+
+    .step-list li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+      background: #0d9488;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .code-snippet {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      overflow-x: auto;
+      margin: 12px 0;
+    }
+
+    .footer {
+      background: #f1f5f9;
+      padding: 24px 40px;
+      text-align: center;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 8px;
+    }
+
+    .badge.green { background: #d1fae5; color: #059669; }
+    .badge.blue { background: #dbeafe; color: #2563eb; }
+    .badge.orange { background: #fed7aa; color: #c2410c; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Calcolatore Preventivi</h1>
+      <p>Guida completa per BP Cleaning</p>
+    </div>
+
+    <div class="content">
+
+      <h2>Come Funziona</h2>
+
+      <p>Il calcolatore guida il cliente in <strong>4 semplici step</strong> per ottenere una stima di prezzo immediata:</p>
+
+      <ul class="step-list">
+        <li><strong>Tipo di servizio</strong> - Casa, Ufficio, Condominio o Industriale</li>
+        <li><strong>Metratura e frequenza</strong> - Slider da 20 a 500 mq + scelta frequenza</li>
+        <li><strong>Localita</strong> - Inserimento CAP per verifica copertura</li>
+        <li><strong>Contatti</strong> - Nome, telefono, email per ricevere il preventivo</li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>Importante:</strong> Il calcolatore fornisce una <em>stima indicativa</em>. Il prezzo finale viene confermato dopo sopralluogo gratuito.
+      </div>
+
+      <!-- PAGE BREAK -->
+      <div class="page-break"></div>
+
+      <h2>Prezzi Base per Metro Quadro</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo Servizio</th>
+            <th>Prezzo/mq</th>
+            <th>Perche questo prezzo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Casa</strong></td>
+            <td class="price">€2.50</td>
+            <td>Maggiore attenzione ai dettagli, mobili, oggetti personali</td>
+          </tr>
+          <tr>
+            <td><strong>Ufficio</strong></td>
+            <td class="price">€2.00</td>
+            <td>Standard, spazi aperti, meno ostacoli</td>
+          </tr>
+          <tr>
+            <td><strong>Condominio</strong></td>
+            <td class="price">€1.80</td>
+            <td>Spazi comuni ripetitivi (scale, androni)</td>
+          </tr>
+          <tr>
+            <td><strong>Industriale</strong></td>
+            <td class="price">€1.50</td>
+            <td>Grandi superfici, economia di scala</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Sconti per Contratto Continuativo</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Frequenza</th>
+            <th>Sconto</th>
+            <th>Strategia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Una tantum</strong></td>
+            <td><span class="badge blue">0%</span></td>
+            <td>Prezzo pieno, costi fissi di avvio</td>
+          </tr>
+          <tr>
+            <td><strong>Mensile</strong></td>
+            <td><span class="discount">-10%</span></td>
+            <td>Sconto minimo per contratto base</td>
+          </tr>
+          <tr>
+            <td><strong>Quindicinale</strong></td>
+            <td><span class="discount">-15%</span></td>
+            <td>Buon compromesso qualita/prezzo</td>
+          </tr>
+          <tr>
+            <td><strong>Settimanale</strong></td>
+            <td><span class="discount">-25%</span></td>
+            <td>Massimo sconto per fidelizzazione</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="highlight-box warning">
+        <strong>Perche sconti cosi alti per settimanale?</strong><br>
+        Lo sconto del 25% sembra alto ma: fidelizza il cliente a lungo termine, riduce i costi di acquisizione nuovi clienti, e permette di organizzare meglio i turni di lavoro.
+      </div>
+
+      <!-- PAGE BREAK -->
+      <div class="page-break"></div>
+
+      <h2>La Formula del Calcolo</h2>
+
+      <div class="formula-box">
+        <div class="step">1. Prezzo Base = Metri Quadri × Prezzo/mq</div>
+        <div class="step">2. Prezzo Scontato = Prezzo Base × (1 - Sconto)</div>
+        <div class="step">3. Range = Prezzo Scontato × 0.85 ~ 1.15</div>
+      </div>
+
+      <p>Il prezzo viene mostrato come <strong>range ±15%</strong> per permettere flessibilita in base a:</p>
+      <ul style="margin-left: 20px; margin-bottom: 20px;">
+        <li>Stato dell'immobile</li>
+        <li>Difficolta di accesso</li>
+        <li>Richieste speciali del cliente</li>
+        <li>Margine di negoziazione commerciale</li>
+      </ul>
+
+      <h3>Esempio Pratico</h3>
+
+      <div class="example-card">
+        <h4>Scenario: Ufficio 100 mq, pulizia settimanale</h4>
+
+        <div class="two-col">
+          <div>
+            <p><strong>Input:</strong></p>
+            <ul style="margin-left: 20px;">
+              <li>Tipo: Ufficio (€2.00/mq)</li>
+              <li>Metratura: 100 mq</li>
+              <li>Frequenza: Settimanale (-25%)</li>
+            </ul>
+          </div>
+          <div>
+            <p><strong>Calcolo:</strong></p>
+            <ul style="margin-left: 20px;">
+              <li>Base: 100 × €2.00 = €200</li>
+              <li>Scontato: €200 × 0.75 = €150</li>
+              <li>Min: €150 × 0.85 = €127</li>
+              <li>Max: €150 × 1.15 = €172</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="example-result">
+          <div class="label">Prezzo mostrato al cliente</div>
+          <div class="value">€127 - €172</div>
+        </div>
+      </div>
+
+      <!-- PAGE BREAK -->
+      <div class="page-break"></div>
+
+      <h2>Come Modificare i Parametri</h2>
+
+      <p>Tutti i parametri sono nel file:</p>
+      <div class="code-snippet">src/components/QuoteCalculator.tsx</div>
+
+      <h3>Modificare i Prezzi (righe 19-24)</h3>
+      <div class="code-snippet">
+const serviceTypes = [<br>
+&nbsp;&nbsp;{ id: "casa", label: "Casa", pricePerSqm: <strong style="color:#0d9488">2.5</strong> },<br>
+&nbsp;&nbsp;{ id: "ufficio", label: "Ufficio", pricePerSqm: <strong style="color:#0d9488">2.0</strong> },<br>
+&nbsp;&nbsp;{ id: "condominio", label: "Condominio", pricePerSqm: <strong style="color:#0d9488">1.8</strong> },<br>
+&nbsp;&nbsp;{ id: "industriale", label: "Industriale", pricePerSqm: <strong style="color:#0d9488">1.5</strong> },<br>
+];
+      </div>
+
+      <h3>Modificare gli Sconti (righe 26-31)</h3>
+      <div class="code-snippet">
+const frequencies = [<br>
+&nbsp;&nbsp;{ id: "una_tantum", label: "Una tantum", discount: <strong style="color:#f97316">0</strong> },<br>
+&nbsp;&nbsp;{ id: "settimanale", label: "Settimanale", discount: <strong style="color:#f97316">0.25</strong> },<br>
+&nbsp;&nbsp;{ id: "quindicinale", label: "Quindicinale", discount: <strong style="color:#f97316">0.15</strong> },<br>
+&nbsp;&nbsp;{ id: "mensile", label: "Mensile", discount: <strong style="color:#f97316">0.10</strong> },<br>
+];
+      </div>
+      <p><em>Nota: 0.25 significa 25%, 0.10 significa 10%</em></p>
+
+      <h3>Modificare il Range ±15% (righe 60-63)</h3>
+      <div class="code-snippet">
+return {<br>
+&nbsp;&nbsp;min: Math.round(discountedPrice * <strong style="color:#f97316">0.85</strong>),<br>
+&nbsp;&nbsp;max: Math.round(discountedPrice * <strong style="color:#f97316">1.15</strong>),<br>
+};
+      </div>
+      <p><em>Cambia 0.85/1.15 per range piu stretto o largo</em></p>
+
+      <!-- PAGE BREAK -->
+      <div class="page-break"></div>
+
+      <h2>Checklist per il Cliente</h2>
+
+      <div class="highlight-box orange">
+        <strong>Domande da verificare:</strong>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+          <li>I prezzi €/mq sono realistici per il mercato locale?</li>
+          <li>Lo sconto 25% settimanale e sostenibile economicamente?</li>
+          <li>Il range ±15% da abbastanza margine?</li>
+          <li>Servono altri tipi di servizio? (es. vetri, post-cantiere)</li>
+          <li>Le zone CAP coperte sono corrette?</li>
+        </ul>
+      </div>
+
+      <h2>Zone Coperte (CAP)</h2>
+
+      <p>Attualmente il calcolatore accetta:</p>
+      <ul style="margin-left: 20px; margin-bottom: 20px;">
+        <li><strong>21xxx</strong> - Provincia di Varese</li>
+        <li><strong>20xxx</strong> - Provincia di Milano</li>
+      </ul>
+
+      <p>Per aggiungere altre province (es. Como 22xxx, Monza 20900), modificare la funzione <code>validateCAP</code> nel file.</p>
+
+      <h2>Riepilogo Strategia Prezzi</h2>
+
+      <div class="two-col">
+        <div class="highlight-box" style="margin: 0;">
+          <strong style="color: #059669;">Punti di Forza</strong>
+          <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Prezzi competitivi</li>
+            <li>Sconti attraenti per contratti</li>
+            <li>Range protegge i margini</li>
+            <li>Sopralluogo gratuito rassicura</li>
+          </ul>
+        </div>
+        <div class="highlight-box warning" style="margin: 0;">
+          <strong style="color: #d97706;">Attenzione</strong>
+          <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Prezzi NON vincolanti</li>
+            <li>Sempre confermare con sopralluogo</li>
+            <li>Valutare caso per caso</li>
+            <li>Aggiornare se costi aumentano</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <strong>BP Cleaning</strong> - Documento interno<br>
+      Per modifiche contattare il team tecnico
+    </div>
+  </div>
+</body>
+</html>
