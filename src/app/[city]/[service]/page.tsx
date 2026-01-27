@@ -63,13 +63,13 @@ const serviceContent: Record<string, {
       "Pulizia sale riunioni",
     ],
     faqs: [
-      { q: "Con quale frequenza pulite gli uffici?", a: "Offriamo servizi giornalieri, settimanali o mensili in base alle vostre esigenze. La frequenza dipende dal numero di dipendenti e dal tipo di attivita." },
-      { q: "Lavorate fuori orario?", a: "Si, operiamo anche in orari serali o notturni per non disturbare le attivita lavorative." },
+      { q: "Con quale frequenza pulite gli uffici?", a: "Offriamo servizi giornalieri, settimanali o mensili in base alle vostre esigenze. La frequenza dipende dal numero di dipendenti e dal tipo di attività." },
+      { q: "Lavorate fuori orario?", a: "Sì, operiamo anche in orari serali o notturni per non disturbare le attività lavorative." },
     ],
   },
   "pulizie-condomini": {
     heroText: "Servizio di pulizia scale, androni e parti comuni condominiali. Manteniamo pulito e accogliente il vostro condominio.",
-    features: ["Contratti mensili", "Interventi regolari", "Prezzi competitivi"],
+    features: ["Contratti mensili", "Interventi regolari", "Preventivo gratuito"],
     includes: [
       "Pulizia scale e pianerottoli",
       "Lavaggio pavimenti androne",
@@ -79,8 +79,8 @@ const serviceContent: Record<string, {
       "Rimozione ragnatele",
     ],
     faqs: [
-      { q: "Quanto costa la pulizia condominiale?", a: "Il costo dipende dal numero di piani, frequenza e servizi richiesti. Contattaci per un preventivo personalizzato." },
-      { q: "Firmate contratti con gli amministratori?", a: "Si, lavoriamo regolarmente con amministratori condominiali offrendo contratti annuali con fatturazione mensile." },
+      { q: "Come richiedere un preventivo?", a: "Contattaci telefonicamente o via form. Valutiamo il numero di piani, la frequenza e i servizi richiesti per un preventivo personalizzato." },
+      { q: "Firmate contratti con gli amministratori?", a: "Sì, lavoriamo regolarmente con amministratori condominiali offrendo contratti annuali con fatturazione mensile." },
     ],
   },
   "sanificazione": {
@@ -95,8 +95,8 @@ const serviceContent: Record<string, {
       "Trattamento condotti aria",
     ],
     faqs: [
-      { q: "Quanto dura una sanificazione?", a: "Il tempo dipende dalla metratura. Per un ufficio medio (100mq) circa 1-2 ore. L'ambiente e agibile dopo 30 minuti." },
-      { q: "Rilasciate certificazione?", a: "Si, al termine dell'intervento rilasciamo certificazione di avvenuta sanificazione valida per normative sanitarie." },
+      { q: "Quanto dura una sanificazione?", a: "Il tempo dipende dalla metratura. Per un ufficio medio (100mq) circa 1-2 ore. L'ambiente è agibile dopo 30 minuti." },
+      { q: "Rilasciate certificazione?", a: "Sì, al termine dell'intervento rilasciamo certificazione di avvenuta sanificazione valida per normative sanitarie." },
     ],
   },
   "pulizie-post-cantiere": {
@@ -112,7 +112,7 @@ const serviceContent: Record<string, {
     ],
     faqs: [
       { q: "Quando posso prenotare?", a: "Consigliamo di contattarci qualche giorno prima della fine lavori per programmare l'intervento al momento giusto." },
-      { q: "Smaltite anche i rifiuti?", a: "Si, possiamo occuparci dello smaltimento dei rifiuti edili secondo normativa." },
+      { q: "Smaltite anche i rifiuti?", a: "Sì, possiamo occuparci dello smaltimento dei rifiuti edili secondo normativa." },
     ],
   },
   "trattamento-pavimenti": {
@@ -128,7 +128,7 @@ const serviceContent: Record<string, {
     ],
     faqs: [
       { q: "Ogni quanto va rifatto il trattamento?", a: "Dipende dall'usura. Per ambienti domestici ogni 5-10 anni, per commerciali ogni 2-5 anni." },
-      { q: "Si puo camminare subito dopo?", a: "Per alcuni trattamenti si, per altri (come la lucidatura a specchio) consigliamo di attendere 24 ore." },
+      { q: "Si può camminare subito dopo?", a: "Per alcuni trattamenti sì, per altri (come la lucidatura a specchio) consigliamo di attendere 24 ore." },
     ],
   },
   "pulizia-vetri": {
@@ -159,8 +159,8 @@ const serviceContent: Record<string, {
       "Svuotamento cestini",
     ],
     faqs: [
-      { q: "Pulite prima dell'apertura?", a: "Si, operiamo anche nelle prime ore del mattino o dopo la chiusura per non disturbare l'attivita." },
-      { q: "Offrite contratti continuativi?", a: "Si, offriamo contratti settimanali, quindicinali o mensili con prezzi agevolati." },
+      { q: "Pulite prima dell'apertura?", a: "Sì, operiamo anche nelle prime ore del mattino o dopo la chiusura per non disturbare l'attività." },
+      { q: "Offrite contratti continuativi?", a: "Sì, offriamo contratti settimanali, quindicinali o mensili personalizzati." },
     ],
   },
   "aree-verdi": {
@@ -192,7 +192,7 @@ export default async function CityServicePage({ params }: PageProps) {
 
   const content = serviceContent[serviceSlug] || {
     heroText: service.description,
-    features: ["Personale qualificato", "Preventivo gratuito", "Prezzi competitivi"],
+    features: ["Personale qualificato", "Preventivo gratuito", "Massima affidabilità"],
     includes: ["Servizio completo", "Attrezzature professionali", "Prodotti certificati"],
     faqs: [],
   };
@@ -323,7 +323,7 @@ export default async function CityServicePage({ params }: PageProps) {
                   "Risposta entro 2 ore",
                   "Prodotti professionali certificati",
                   "Assistenza clienti dedicata",
-                  "Prezzi trasparenti e competitivi",
+                  "Preventivo gratuito e senza impegno",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-[#0d9488] mt-0.5 flex-shrink-0" />

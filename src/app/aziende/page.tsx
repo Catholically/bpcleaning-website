@@ -199,7 +199,7 @@ export default function AziendePage() {
               {
                 step: "2",
                 title: "Proposta Personalizzata",
-                description: "Ti presentiamo un piano di lavoro con frequenze, orari e costi definiti. Nessuna sorpresa.",
+                description: "Ti presentiamo un piano di lavoro con frequenze, orari e servizi definiti. Nessuna sorpresa.",
               },
               {
                 step: "3",

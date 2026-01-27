@@ -61,7 +61,7 @@ const serviceTypes = [
 const faqs = [
   {
     q: "Offrite contratti di manutenzione annuali?",
-    a: "Si, proponiamo contratti personalizzati con interventi programmati (settimanali, quindicinali o mensili) a tariffe agevolate rispetto agli interventi singoli.",
+    a: "Sì, proponiamo contratti personalizzati con interventi programmati (settimanali, quindicinali o mensili) su misura per le tue esigenze.",
   },
   {
     q: "Smaltite voi i rifiuti verdi?",

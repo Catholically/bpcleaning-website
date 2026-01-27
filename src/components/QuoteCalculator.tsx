@@ -87,14 +87,8 @@ export default function QuoteCalculator() {
         </div>
         <h3 className="text-2xl font-bold text-gray-900 mb-2">Richiesta Inviata!</h3>
         <p className="text-gray-600 mb-4">
-          Ti risponderemo entro 2 ore.
+          Ti risponderemo entro 2 ore con un preventivo personalizzato.
         </p>
-        {price && (
-          <div className="bg-[#0d9488]/10 rounded-lg p-4 mb-4">
-            <p className="text-sm text-gray-600">Stima indicativa:</p>
-            <p className="text-2xl font-bold text-[#0d9488]">€{price.min} - €{price.max}</p>
-          </div>
-        )}
         <button
           onClick={() => {
             setSubmitted(false);
@@ -259,21 +253,6 @@ export default function QuoteCalculator() {
               )}
             </div>
 
-            {/* Price preview */}
-            {price && formData.cap.length === 5 && validateCAP(formData.cap) && (
-              <div className="mt-6 bg-[#0d9488]/10 rounded-xl p-6 text-center">
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  <Calculator className="w-5 h-5 text-[#0d9488]" />
-                  <span className="text-sm font-medium text-gray-600">Stima indicativa</span>
-                </div>
-                <p className="text-3xl font-bold text-[#0d9488]">
-                  €{price.min} - €{price.max}
-                </p>
-                <p className="text-xs text-gray-500 mt-1">
-                  Prezzo finale dopo sopralluogo gratuito
-                </p>
-              </div>
-            )}
 
             <div className="flex gap-3 mt-6">
               <button
@@ -343,22 +322,6 @@ export default function QuoteCalculator() {
                 />
               </div>
             </div>
-
-            {/* Final price */}
-            {price && (
-              <div className="mt-6 bg-gradient-to-r from-[#0d9488] to-[#0f766e] rounded-xl p-6 text-white">
-                <div className="flex justify-between items-center">
-                  <div>
-                    <p className="text-sm opacity-90">La tua stima:</p>
-                    <p className="text-3xl font-bold">€{price.min} - €{price.max}</p>
-                  </div>
-                  <div className="text-right text-sm opacity-90">
-                    <p>{formData.sqm} mq</p>
-                    <p>{frequencies.find(f => f.id === formData.frequency)?.label}</p>
-                  </div>
-                </div>
-              </div>
-            )}
 
             <div className="flex gap-3 mt-6">
               <button

@@ -129,7 +129,7 @@ const testimonials = [
   {
     name: "Marco R.",
     role: "Amministratore Condominio",
-    text: "Collaboriamo con BP Cleaning da 3 anni per il nostro condominio. Puntuali, professionali e prezzi onesti.",
+    text: "Collaboriamo con BP Cleaning da 3 anni per il nostro condominio. Puntuali, professionali e sempre affidabili.",
     rating: 5,
   },
   {
@@ -345,7 +345,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Il Multiservice a Portata di Tutti</h3>
                   <p className="text-white/80 mb-6">
-                    Qualita professionale a prezzi accessibili
+                    Qualità professionale e affidabilità
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div className="bg-white/10 rounded-lg p-4">

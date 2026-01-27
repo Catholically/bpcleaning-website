@@ -60,8 +60,8 @@ const serviceTypes = [
 
 const faqs = [
   {
-    q: "Quanto costa una pulizia domestica?",
-    a: "Il costo dipende dalla metratura e dal tipo di intervento. Le pulizie ordinarie partono da 15 euro/ora. Contattaci per un preventivo preciso.",
+    q: "Come funziona il preventivo?",
+    a: "Contattaci telefonicamente o via form. Valutiamo la metratura, il tipo di intervento e le tue esigenze per fornirti un preventivo personalizzato e senza impegno.",
   },
   {
     q: "Con quale frequenza consigliate la pulizia?",
@@ -69,11 +69,11 @@ const faqs = [
   },
   {
     q: "Portate voi i prodotti e le attrezzature?",
-    a: "Si, portiamo tutto il necessario: prodotti professionali, attrezzature e strumenti. Su richiesta utilizziamo prodotti BIO certificati.",
+    a: "Sì, portiamo tutto il necessario: prodotti professionali, attrezzature e strumenti. Su richiesta utilizziamo prodotti BIO certificati.",
   },
   {
     q: "Lavorate anche nei weekend?",
-    a: "Si, operiamo anche nei weekend e festivi con un piccolo supplemento. Contattaci per verificare la disponibilita.",
+    a: "Sì, operiamo anche nei weekend e festivi. Contattaci per verificare la disponibilità.",
   },
 ];
 
@@ -158,32 +158,6 @@ export default function PulizieCiviliPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Prezzi Indicativi</h2>
-          <p className="text-gray-600 mb-8">
-            I prezzi variano in base alla metratura, frequenza e tipologia di intervento.
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { label: "Pulizia Ordinaria", price: "da 15/ora", note: "min. 3 ore" },
-              { label: "Pulizia Straordinaria", price: "da 18/ora", note: "min. 4 ore" },
-              { label: "Post-Cantiere", price: "preventivo", note: "sopralluogo gratuito" },
-            ].map((item) => (
-              <div key={item.label} className="bg-white rounded-xl p-6 shadow-sm">
-                <h3 className="font-semibold text-gray-900 mb-2">{item.label}</h3>
-                <p className="text-3xl font-bold text-[#0d9488] mb-1">{item.price}</p>
-                <p className="text-sm text-gray-500">{item.note}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-sm text-gray-500 mt-6">
-            Prezzi IVA esclusa. Sconti per contratti continuativi.
-          </p>
         </div>
       </section>
 

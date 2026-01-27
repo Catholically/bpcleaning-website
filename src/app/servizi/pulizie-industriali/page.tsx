@@ -61,7 +61,7 @@ const serviceTypes = [
 const faqs = [
   {
     q: "Offrite contratti continuativi?",
-    a: "Si, offriamo contratti settimanali, bisettimanali o mensili con tariffe agevolate. Il contratto viene personalizzato in base alle vostre esigenze.",
+    a: "Sì, offriamo contratti settimanali, bisettimanali o mensili personalizzati in base alle vostre esigenze.",
   },
   {
     q: "Lavorate fuori orario ufficio?",

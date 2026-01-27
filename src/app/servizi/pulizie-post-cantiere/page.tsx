@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "Smaltite anche i rifiuti edili?",
-    a: "Si, possiamo occuparci dello smaltimento dei rifiuti edili secondo la normativa vigente. Il costo viene preventivato separatamente.",
+    a: "Sì, possiamo occuparci dello smaltimento dei rifiuti edili secondo la normativa vigente. Contattaci per maggiori informazioni.",
   },
   {
     q: "Usate attrezzature professionali?",

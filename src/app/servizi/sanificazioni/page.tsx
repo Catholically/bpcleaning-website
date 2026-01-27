@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle, Shield, Award, Phone, Wind } from "lucide-reac
 
 export const metadata: Metadata = {
   title: "Sanificazioni Certificate | BP Cleaning Varese",
-  description: "Servizio di sanificazione professionale con perossido di idrogeno atomizzato. Certificazioni per ambienti sanitari, uffici e attivita commerciali a Varese e Milano.",
+  description: "Servizio di sanificazione professionale con perossido di idrogeno atomizzato. Certificazioni per ambienti sanitari, uffici e attività commerciali a Varese e Milano.",
 };
 
 const serviceTypes = [
@@ -65,15 +65,15 @@ const faqs = [
   },
   {
     q: "Rilasciate certificazione?",
-    a: "Si, al termine di ogni intervento rilasciamo un certificato di sanificazione valido ai fini legali e assicurativi.",
+    a: "Sì, al termine di ogni intervento rilasciamo un certificato di sanificazione valido ai fini legali e assicurativi.",
   },
   {
-    q: "Quanto dura leffetto della sanificazione?",
-    a: "Lefficacia dipende dallutilizzo dellambiente. Per uffici consigliamo interventi settimanali o bisettimanali, per studi medici anche giornalieri.",
+    q: "Quanto dura l'effetto della sanificazione?",
+    a: "L'efficacia dipende dall'utilizzo dell'ambiente. Per uffici consigliamo interventi settimanali o bisettimanali, per studi medici anche giornalieri.",
   },
   {
-    q: "E sicura per persone e animali?",
-    a: "Assolutamente si. Il perossido di idrogeno si decompone in acqua e ossigeno, senza lasciare residui tossici. Lambiente e agibile dopo pochi minuti.",
+    q: "È sicura per persone e animali?",
+    a: "Assolutamente sì. Il perossido di idrogeno si decompone in acqua e ossigeno, senza lasciare residui tossici. L'ambiente è agibile dopo pochi minuti.",
   },
 ];
 

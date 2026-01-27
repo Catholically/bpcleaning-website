@@ -12,11 +12,15 @@ const services = [
 ];
 
 const areas = [
-  "Varese e provincia",
+  "Varese",
   "Milano",
-  "Monza Brianza",
-  "Svizzera",
+  "Gallarate",
+  "Busto Arsizio",
+  "Saronno",
+  "Legnano",
   "Como",
+  "Lugano",
+  "Mendrisio",
 ];
 
 export default function Footer() {

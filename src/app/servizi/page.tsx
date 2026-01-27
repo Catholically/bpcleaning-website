@@ -70,7 +70,7 @@ export default function ServiziPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">I Nostri Servizi</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Soluzioni complete di pulizia e sanificazione per privati e aziende.
-            Qualita professionale a prezzi accessibili.
+            Qualità professionale e affidabilità garantita.
           </p>
         </div>
       </section>

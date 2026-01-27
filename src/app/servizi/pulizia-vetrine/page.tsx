@@ -211,32 +211,6 @@ export default function PuliziaVetrinePage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Prezzi Indicativi</h2>
-          <p className="text-gray-600 mb-8">
-            I prezzi variano in base alla superficie, altezza e frequenza degli interventi.
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { label: "Vetrina Negozio", price: "da 25", note: "singola vetrina" },
-              { label: "Appartamento", price: "da 80", note: "tutti i vetri" },
-              { label: "Contratto Mensile", price: "-20%", note: "sconto garantito" },
-            ].map((item) => (
-              <div key={item.label} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                <h3 className="font-semibold text-gray-900 mb-2">{item.label}</h3>
-                <p className="text-3xl font-bold text-[#0d9488] mb-1">{item.price}</p>
-                <p className="text-sm text-gray-500">{item.note}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-sm text-gray-500 mt-6">
-            Prezzi IVA esclusa. Preventivo gratuito per interventi specifici.
-          </p>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
@@ -259,7 +233,7 @@ export default function PuliziaVetrinePage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Vuoi Vetrine Sempre Splendenti?</h2>
           <p className="text-xl text-white/80 mb-8">
-            Contattaci per un preventivo gratuito. Offriamo contratti di pulizia periodica con prezzi agevolati.
+            Contattaci per un preventivo gratuito. Offriamo contratti di pulizia periodica personalizzati.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

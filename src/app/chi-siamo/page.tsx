@@ -75,7 +75,7 @@ export default function ChiSiamoPage() {
                 <p>
                   La nostra storia inizia nel 2008 con <strong>Belli &amp; Puliti</strong>,
                   la prima impresa di pulizie fondata a Varese con una missione chiara: offrire
-                  servizi di pulizia professionali di alta qualita a prezzi accessibili.
+                  servizi di pulizia professionali di alta qualità per privati e aziende.
                 </p>
                 <p>
                   Nel 2018, dopo 10 anni di esperienza e crescita, nasce <strong>BP Cleaning SRL</strong>,
