@@ -157,11 +157,15 @@ export default function ContattiPage() {
           <p className="mb-4">Offriamo interventi rapidi entro 24-48 ore per emergenze.</p>
           <a
             href="tel:+393467483943"
-            className="inline-flex items-center gap-2 bg-white text-[#f97316] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+            className="sm:hidden inline-flex items-center gap-2 bg-white text-[#f97316] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
           >
             <Phone className="w-5 h-5" />
             Chiama per Urgenze
           </a>
+          <p className="hidden sm:flex items-center gap-2 bg-white text-[#f97316] px-6 py-3 rounded-lg font-semibold">
+            <Phone className="w-5 h-5" />
+            346 748 3943
+          </p>
         </div>
       </section>
     </>

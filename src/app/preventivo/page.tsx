@@ -64,11 +64,15 @@ export default function PreventivePage() {
           </p>
           <a
             href="tel:+393467483943"
-            className="inline-flex items-center gap-3 bg-[#0d9488] hover:bg-[#0f766e] text-white px-8 py-4 rounded-lg font-semibold transition text-lg"
+            className="sm:hidden inline-flex items-center gap-3 bg-[#0d9488] hover:bg-[#0f766e] text-white px-8 py-4 rounded-lg font-semibold transition text-lg"
           >
             <Phone className="w-6 h-6" />
             Chiama 346 748 3943
           </a>
+          <p className="hidden sm:block text-lg text-gray-800">
+            <Phone className="w-5 h-5 inline-block mr-2 text-[#0d9488]" />
+            346 748 3943
+          </p>
         </div>
       </section>
 

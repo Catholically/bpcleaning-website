@@ -96,7 +96,7 @@ export default function AziendePage() {
                 </Link>
                 <a
                   href="tel:+393467483943"
-                  className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
+                  className="sm:hidden inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
                 >
                   <Phone className="w-5 h-5" />
                   Parla con un Consulente

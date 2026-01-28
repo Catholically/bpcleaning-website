@@ -108,7 +108,7 @@ export default function PuliziePostCantierePage() {
               </Link>
               <a
                 href="tel:+393467483943"
-                className="inline-flex items-center gap-2 border border-white/30 hover:bg-white/10 text-white px-6 py-3 rounded-lg font-semibold transition"
+                className="sm:hidden inline-flex items-center gap-2 border border-white/30 hover:bg-white/10 text-white px-6 py-3 rounded-lg font-semibold transition"
               >
                 <Phone className="w-5 h-5" />
                 Chiama Ora
@@ -224,7 +224,7 @@ export default function PuliziePostCantierePage() {
             </Link>
             <a
               href="tel:+393467483943"
-              className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
+              className="sm:hidden inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
             >
               <Phone className="w-5 h-5" />
               346 748 3943

@@ -182,7 +182,7 @@ export default function HomePage() {
                 </Link>
                 <a
                   href="tel:+393467483943"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
+                  className="sm:hidden inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
                 >
                   <Phone className="w-5 h-5" />
                   Chiama Ora
@@ -367,7 +367,7 @@ export default function HomePage() {
       </section>
 
       {/* Certifications */}
-      <section className="py-12 md:py-16 bg-gray-50">
+      <section className="pb-12 md:pb-16 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-3">
             Certificazioni
@@ -478,7 +478,7 @@ export default function HomePage() {
             </Link>
             <a
               href="tel:+393467483943"
-              className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
+              className="sm:hidden inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold transition"
             >
               Preferisci Chiamare?
             </a>
