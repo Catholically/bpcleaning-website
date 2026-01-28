@@ -27,7 +27,6 @@ const serviceTypes = [
       "Sanificazione sale visite",
       "Trattamento sale attesa",
       "Disinfezione attrezzature",
-      "Protocolli HACCP",
       "Interventi programmati",
       "Documentazione completa",
     ],
@@ -40,20 +39,7 @@ const serviceTypes = [
       "Trattamento sale riunioni",
       "Disinfezione postazioni",
       "Sanificazione impianti HVAC",
-      "Interventi notturni",
       "Contratti periodici",
-    ],
-  },
-  {
-    title: "Sanificazione Veicoli",
-    description: "Per auto, furgoni e mezzi aziendali",
-    includes: [
-      "Sanificazione abitacolo",
-      "Trattamento impianto clima",
-      "Eliminazione odori",
-      "Disinfezione superfici",
-      "Intervento rapido",
-      "Certificato rilasciato",
     ],
   },
 ];

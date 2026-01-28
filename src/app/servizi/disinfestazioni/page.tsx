@@ -37,10 +37,8 @@ const serviceTypes = [
     description: "Soluzioni per piccioni e altri uccelli",
     includes: [
       "Piccioni e colombi",
-      "Gabbiani",
       "Installazione dissuasori",
       "Reti anti-intrusione",
-      "Sistemi a ultrasuoni",
       "Pulizia guano",
     ],
   },
@@ -53,7 +51,6 @@ const serviceTypes = [
       "Monitoraggio periodico",
       "Interventi programmati",
       "Report e documentazione",
-      "Consulenza HACCP",
     ],
   },
 ];

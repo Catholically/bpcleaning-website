@@ -30,17 +30,12 @@ const sectors = [
   {
     title: "Strutture Sanitarie",
     description: "Studi medici, dentistici, ambulatori",
-    features: ["Sanificazione certificata", "Protocolli HACCP", "Smaltimento rifiuti speciali"],
+    features: ["Sanificazione certificata", "Interventi programmati", "Documentazione completa"],
   },
   {
     title: "Banche e Assicurazioni",
     description: "Filiali, agenzie, sedi direzionali",
     features: ["Personale verificato", "Massima riservatezza", "Pulizia aree clienti"],
-  },
-  {
-    title: "Hotel e B&B",
-    description: "Strutture ricettive e affittacamere",
-    features: ["Cambio biancheria", "Pulizia camere", "Aree comuni"],
   },
   {
     title: "Industrie e Magazzini",
@@ -63,7 +58,7 @@ const benefits = [
   {
     icon: Clock,
     title: "Flessibilità Oraria",
-    description: "Interventi in orario serale, notturno o weekend per non disturbare le attività.",
+    description: "Interventi in orario serale o weekend per non disturbare le attività.",
   },
   {
     icon: Shield,
