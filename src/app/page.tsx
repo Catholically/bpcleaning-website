@@ -367,48 +367,58 @@ export default function HomePage() {
       </section>
 
       {/* Certifications */}
-      <section className="py-16 md:py-20">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+      <section className="py-12 md:py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-3">
             Certificazioni
           </h2>
-          <p className="text-gray-600 text-center mb-10">
+          <p className="text-gray-600 text-center mb-8">
             Operiamo nel rispetto delle normative vigenti e degli standard di qualità più elevati.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-12">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <a
               href="/certifications/lochiecertificazioniiso/CIB_OD090101-20_9001_BP_Cleaning_IT.PDF"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-center group"
+              className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#0d9488]/30 transition group"
             >
-              <div className="w-32 h-32 mx-auto mb-3 rounded-lg overflow-hidden shadow-md group-hover:shadow-lg transition">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/certifications/lochiecertificazioniiso/9001.jpg"
-                  alt="ISO 9001 - Sistema di Gestione Qualità"
-                  className="w-full h-full object-contain bg-white p-2"
-                />
+              <div className="flex items-center gap-4">
+                <div className="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/certifications/lochiecertificazioniiso/9001.jpg"
+                    alt="ISO 9001 - Sistema di Gestione Qualità"
+                    className="w-full h-full object-contain bg-white"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 group-hover:text-[#0d9488] transition">ISO 9001:2015</h3>
+                  <p className="text-sm font-medium text-[#0d9488]">Gestione Qualità</p>
+                  <p className="text-xs text-gray-500 mt-1">Processi standardizzati per garantire servizi di alta qualità</p>
+                </div>
               </div>
-              <h3 className="font-bold text-gray-900 group-hover:text-[#0d9488] transition">ISO 9001:2015</h3>
-              <p className="text-sm text-gray-600">Gestione Qualità</p>
             </a>
             <a
               href="/certifications/lochiecertificazioniiso/CIB_OD090101-20_45001_BP_Cleaning_IT.PDF"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-center group"
+              className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#0d9488]/30 transition group"
             >
-              <div className="w-32 h-32 mx-auto mb-3 rounded-lg overflow-hidden shadow-md group-hover:shadow-lg transition">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/certifications/lochiecertificazioniiso/45001.png"
-                  alt="ISO 45001 - Salute e Sicurezza sul Lavoro"
-                  className="w-full h-full object-contain bg-white p-2"
-                />
+              <div className="flex items-center gap-4">
+                <div className="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/certifications/lochiecertificazioniiso/45001.png"
+                    alt="ISO 45001 - Salute e Sicurezza sul Lavoro"
+                    className="w-full h-full object-contain bg-white"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 group-hover:text-[#0d9488] transition">ISO 45001:2018</h3>
+                  <p className="text-sm font-medium text-[#0d9488]">Sicurezza sul Lavoro</p>
+                  <p className="text-xs text-gray-500 mt-1">Personale formato e ambienti di lavoro sicuri</p>
+                </div>
               </div>
-              <h3 className="font-bold text-gray-900 group-hover:text-[#0d9488] transition">ISO 45001:2018</h3>
-              <p className="text-sm text-gray-600">Sicurezza sul Lavoro</p>
             </a>
           </div>
         </div>
