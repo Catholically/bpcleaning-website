@@ -162,8 +162,8 @@ export default function ContattiPage() {
             <Phone className="w-5 h-5" />
             Chiama per Urgenze
           </a>
-          <p className="hidden sm:flex items-center gap-2 bg-white text-[#f97316] px-6 py-3 rounded-lg font-semibold">
-            <Phone className="w-5 h-5" />
+          <p className="hidden sm:flex items-center justify-center gap-3 text-white text-3xl font-bold">
+            <Phone className="w-8 h-8" />
             346 748 3943
           </p>
         </div>
