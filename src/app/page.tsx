@@ -156,17 +156,9 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left content */}
             <div>
-              <div className="flex flex-wrap items-center gap-4 mb-4">
-                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm">
-                  <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                  <span>Risposta entro 2 ore</span>
-                </div>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/certifications/iso-9001-45001.png"
-                  alt="Certificazione ISO 9001 e ISO 45001"
-                  className="h-12 md:h-14 w-auto"
-                />
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm mb-4">
+                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                <span>Risposta entro 2 ore</span>
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
                 Pulizie Professionali in provincia di{" "}
@@ -180,10 +172,19 @@ export default function HomePage() {
                 Pulizie, sanificazioni e disinfestazioni con standard certificati.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-8">
+                {/* Logo ISO con sfondo bianco e bordi arrotondati */}
+                <div className="bg-white rounded-lg px-4 py-2 shadow-lg w-fit">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/certifications/iso-9001-45001.png"
+                    alt="Certificazione ISO 9001 e ISO 45001"
+                    className="h-10 md:h-12 w-auto"
+                  />
+                </div>
                 <Link
                   href="/preventivo"
-                  className="inline-flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-8 py-4 rounded-lg font-semibold transition shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-8 py-4 rounded-lg font-semibold transition shadow-lg hover:shadow-xl sm:ml-20"
                 >
                   Richiedi Preventivo
                   <ArrowRight className="w-5 h-5" />
