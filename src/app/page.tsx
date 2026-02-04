@@ -156,9 +156,17 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left content */}
             <div>
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm mb-4">
-                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span>Risposta entro 2 ore</span>
+              <div className="flex flex-wrap items-center gap-4 mb-4">
+                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm">
+                  <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                  <span>Risposta entro 2 ore</span>
+                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/certifications/iso-9001-45001.png"
+                  alt="Certificazione ISO 9001 e ISO 45001"
+                  className="h-12 md:h-14 w-auto"
+                />
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
                 Pulizie Professionali in provincia di{" "}
