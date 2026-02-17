@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Building2, Home, Building, Factory, Calculator, Send, CheckCircle } from "lucide-react";
+import { trackQuoteStep, trackFormSubmitted } from "@/lib/analytics";
 
 type ServiceType = "casa" | "ufficio" | "condominio" | "industriale" | null;
 type Frequency = "una_tantum" | "settimanale" | "quindicinale" | "mensile" | null;
@@ -74,6 +75,8 @@ export default function QuoteCalculator() {
 
     // Simulazione invio - in produzione connettere a Supabase/API
     console.log("Submitted:", formData);
+    trackQuoteStep(4, 'contact_info', formData.serviceType ?? undefined);
+    trackFormSubmitted('quote', formData.serviceType ?? undefined);
     setSubmitted(true);
   };
 
@@ -136,6 +139,7 @@ export default function QuoteCalculator() {
                     key={service.id}
                     onClick={() => {
                       setFormData(prev => ({ ...prev, serviceType: service.id }));
+                      trackQuoteStep(1, 'service_type', service.id);
                       setStep(2);
                     }}
                     className={`p-6 rounded-xl border-2 transition-all hover:border-[#0d9488] hover:bg-[#0d9488]/5 ${
@@ -216,7 +220,12 @@ export default function QuoteCalculator() {
                 Indietro
               </button>
               <button
-                onClick={() => formData.frequency && setStep(3)}
+                onClick={() => {
+                  if (formData.frequency) {
+                    trackQuoteStep(2, 'size_frequency', formData.serviceType ?? undefined);
+                    setStep(3);
+                  }
+                }}
                 disabled={!formData.frequency}
                 className="flex-1 px-6 py-3 bg-[#0d9488] text-white rounded-lg font-semibold hover:bg-[#0f766e] transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
@@ -267,6 +276,7 @@ export default function QuoteCalculator() {
                     setCapError("Insereisci un CAP valido (province VA o MI)");
                     return;
                   }
+                  trackQuoteStep(3, 'location', formData.serviceType ?? undefined);
                   setStep(4);
                 }}
                 disabled={formData.cap.length !== 5}

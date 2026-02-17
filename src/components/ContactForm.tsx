@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Send, CheckCircle } from "lucide-react";
+import { trackFormSubmitted } from "@/lib/analytics";
 
 interface FormData {
   name: string;
@@ -45,6 +46,7 @@ export default function ContactForm() {
     // Simulazione invio - in produzione connettere a API/Supabase
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log("Form submitted:", formData);
+    trackFormSubmitted('contact', formData.service);
 
     setLoading(false);
     setSubmitted(true);
