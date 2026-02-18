@@ -6,7 +6,7 @@ export const normativaPosts: BlogPost[] = [
     title: "HACCP e pulizia: tutti gli obblighi per le attività alimentari",
     metaTitle: "HACCP e pulizia: obblighi attività alimentari",
     metaDescription:
-      "Scopri gli obblighi HACCP in materia di pulizia per bar, ristoranti e attività alimentari. Procedure, registri e sanzioni previste dalla normativa vigente.",
+      "Obblighi HACCP di pulizia per bar, ristoranti e attività alimentari a Varese e provincia. Procedure, registri e sanzioni previste dalla normativa vigente.",
     date: "2025-09-15",
     category: "normativa",
     excerpt:
@@ -18,7 +18,7 @@ export const normativaPosts: BlogPost[] = [
       {
         heading: "Cos'è l'HACCP e perché riguarda la pulizia",
         content:
-          "L'HACCP (Hazard Analysis and Critical Control Points) è il sistema di autocontrollo obbligatorio per tutte le imprese alimentari, introdotto in Italia dal D.Lgs. 193/2007. Non si tratta solo di controllare la qualità degli alimenti, ma anche di garantire che gli ambienti in cui vengono preparati, conservati e somministrati siano igienicamente sicuri. La pulizia e la sanificazione rappresentano prerequisiti fondamentali del piano HACCP.",
+          "L'HACCP (Hazard Analysis and Critical Control Points) è il sistema di autocontrollo obbligatorio per tutte le imprese alimentari, introdotto in Italia dal D.Lgs. 193/2007. Non si tratta solo di controllare la qualità degli alimenti, ma anche di garantire che gli ambienti in cui vengono preparati, conservati e somministrati siano igienicamente sicuri. La pulizia e la sanificazione rappresentano prerequisiti fondamentali del piano HACCP. Le attività alimentari di Varese, Busto Arsizio e Gallarate devono prestare particolare attenzione a questi obblighi, considerata la frequenza dei controlli ASL nella provincia.",
       },
       {
         heading: "Obblighi specifici di pulizia nel piano HACCP",
@@ -46,7 +46,7 @@ export const normativaPosts: BlogPost[] = [
       {
         heading: "Sanzioni e controlli delle ASL",
         content:
-          "Le ASL effettuano ispezioni periodiche e senza preavviso per verificare il rispetto delle norme HACCP. Le carenze igieniche possono comportare diffide, sanzioni amministrative e nei casi più gravi la sospensione dell'attività. Affidarsi a un'impresa di pulizie specializzata nel settore alimentare garantisce il rispetto costante degli standard richiesti e la corretta compilazione della documentazione.",
+          "Le ASL effettuano ispezioni periodiche e senza preavviso per verificare il rispetto delle norme HACCP. Le carenze igieniche possono comportare diffide, sanzioni amministrative e nei casi più gravi la sospensione dell'attività. Affidarsi a un'impresa di pulizie certificata in provincia di Varese, specializzata nel settore alimentare, garantisce il rispetto costante degli standard richiesti e la corretta compilazione della documentazione.",
       },
     ],
     faqs: [
@@ -59,8 +59,8 @@ export const normativaPosts: BlogPost[] = [
         a: "Le superfici a contatto con gli alimenti vanno sanificate dopo ogni utilizzo. I pavimenti richiedono lavaggio quotidiano, mentre le attrezzature come cappe e celle frigorifere necessitano di pulizia approfondita almeno settimanale o mensile a seconda dell'elemento.",
       },
       {
-        q: "Cosa succede se non si rispettano gli obblighi HACCP di pulizia?",
-        a: "Le violazioni degli obblighi igienici HACCP possono comportare sanzioni amministrative, diffide con obbligo di adeguamento entro tempi prestabiliti e, nei casi più gravi, la sospensione temporanea o definitiva dell'attività.",
+        q: "Offrite servizi di pulizia HACCP nella zona di Varese?",
+        a: "Sì, BP Cleaning opera in tutta la provincia di Varese e Como, incluse Gallarate, Busto Arsizio, Saronno e Tradate. Offriamo servizi di pulizia e sanificazione HACCP per ristoranti, bar, mense e attività alimentari con personale formato e certificato.",
       },
     ],
     internalLinks: [
@@ -74,7 +74,7 @@ export const normativaPosts: BlogPost[] = [
     title: "DVR e pulizia: gli obblighi del datore di lavoro",
     metaTitle: "DVR e pulizia: obblighi del datore di lavoro",
     metaDescription:
-      "Il DVR include obblighi specifici di pulizia e igiene degli ambienti di lavoro. Scopri cosa prevede la legge e come adeguarsi al D.Lgs. 81/2008.",
+      "Il DVR include obblighi di pulizia e igiene degli ambienti di lavoro. Scopri cosa prevede il D.Lgs. 81/2008 per le aziende di Varese e provincia.",
     date: "2025-09-25",
     category: "normativa",
     excerpt:
@@ -103,7 +103,7 @@ export const normativaPosts: BlogPost[] = [
       {
         heading: "Responsabilità del datore di lavoro",
         content:
-          "Il datore di lavoro è il soggetto giuridicamente responsabile della salubrità degli ambienti. Questa responsabilità non si trasferisce automaticamente delegando il servizio a un'impresa esterna: il datore deve comunque verificare che gli standard siano mantenuti. La scelta di un'impresa certificata e affidabile diventa quindi un elemento fondamentale della compliance aziendale.",
+          "Il datore di lavoro è il soggetto giuridicamente responsabile della salubrità degli ambienti. Questa responsabilità non si trasferisce automaticamente delegando il servizio a un'impresa esterna: il datore deve comunque verificare che gli standard siano mantenuti. Per le aziende di Varese, Como e Monza, la scelta di un'impresa di pulizie certificata ISO 9001 e 45001 diventa un elemento fondamentale della compliance aziendale.",
       },
       {
         heading: "Come integrare il servizio di pulizia nel DVR",
@@ -127,8 +127,8 @@ export const normativaPosts: BlogPost[] = [
         a: "La responsabilità ricade sul datore di lavoro, anche quando il servizio è affidato a un'impresa esterna. Il datore deve verificare che gli standard igienici siano mantenuti e documentare i controlli nel DVR.",
       },
       {
-        q: "Cosa rischia il datore di lavoro senza procedure di pulizia nel DVR?",
-        a: "Un DVR carente in materia di igiene espone il datore di lavoro a sanzioni amministrative e penali in caso di ispezione. In caso di malattie professionali legate all'igiene, la responsabilità può essere aggravata dall'assenza di documentazione.",
+        q: "Offrite consulenza DVR e pulizia nella zona di Varese?",
+        a: "Sì, BP Cleaning supporta i datori di lavoro di Varese, Busto Arsizio, Gallarate, Saronno e tutta la provincia nella corretta integrazione del servizio di pulizia nel DVR, fornendo tutta la documentazione necessaria per la compliance aziendale.",
       },
     ],
     internalLinks: [
@@ -142,19 +142,19 @@ export const normativaPosts: BlogPost[] = [
     title: "Certificazioni per imprese di pulizia: ISO 9001, 45001 e altre",
     metaTitle: "Certificazioni imprese pulizia: ISO 9001 e 45001",
     metaDescription:
-      "Guida alle certificazioni per imprese di pulizia: ISO 9001, ISO 45001, SA 8000. Cosa significano, perché sono importanti e come verificarle.",
+      "Guida alle certificazioni per imprese di pulizia a Varese: ISO 9001, ISO 45001, SA 8000. Cosa significano e come verificare un'impresa certificata.",
     date: "2025-10-05",
     category: "normativa",
     excerpt:
       "Le certificazioni ISO non sono tutte uguali. Scopri cosa significano la ISO 9001, la ISO 45001 e le altre certificazioni nel settore delle pulizie professionali e perché sono importanti nella scelta dell'impresa.",
     readingTime: 6,
-    image: "/blog/cleaning-products.jpg",
-    imageAlt: "Certificazioni qualità imprese di pulizia",
+    image: "/blog/certification-document.jpg",
+    imageAlt: "Certificazioni ISO qualità imprese di pulizia professionali",
     sections: [
       {
         heading: "Perché le certificazioni sono importanti",
         content:
-          "Le certificazioni rappresentano una garanzia oggettiva della qualità e dell'affidabilità di un'impresa di pulizie. Non sono semplici attestati formali: richiedono audit periodici da parte di enti terzi indipendenti che verificano il rispetto di standard internazionali. Per il cliente, scegliere un'impresa certificata significa ridurre i rischi e avere la certezza di un servizio controllato e migliorato costantemente.",
+          "Le certificazioni rappresentano una garanzia oggettiva della qualità e dell'affidabilità di un'impresa di pulizie. Non sono semplici attestati formali: richiedono audit periodici da parte di enti terzi indipendenti che verificano il rispetto di standard internazionali. Per le aziende di Varese, Gallarate e Saronno, scegliere un'impresa di pulizie certificata significa ridurre i rischi e avere la certezza di un servizio controllato e migliorato costantemente.",
       },
       {
         heading: "ISO 9001: il sistema di gestione della qualità",
@@ -199,8 +199,8 @@ export const normativaPosts: BlogPost[] = [
         a: "Le certificazioni ISO sono rilasciate da enti accreditati da ACCREDIA. Si può verificare la validità sul sito di ACCREDIA o richiedere all'impresa copia del certificato in corso di validità, controllando la data di scadenza e l'ente certificatore.",
       },
       {
-        q: "Che differenza c'è tra ISO 9001 e ISO 45001?",
-        a: "La ISO 9001 riguarda la qualità del servizio e la soddisfazione del cliente, mentre la ISO 45001 si concentra sulla salute e sicurezza dei lavoratori. Sono complementari e un'impresa seria le possiede entrambe.",
+        q: "Esistono imprese di pulizia certificate ISO a Varese?",
+        a: "Sì, BP Cleaning è un'impresa di pulizie certificata ISO 9001 e ISO 45001 operativa a Varese, Busto Arsizio, Gallarate, Como, Tradate e in tutta la Lombardia. Le nostre certificazioni sono verificabili tramite gli enti accreditati ACCREDIA.",
       },
     ],
     internalLinks: [
@@ -214,19 +214,19 @@ export const normativaPosts: BlogPost[] = [
     title: "Sicurezza sul lavoro nelle pulizie professionali: norme e obblighi",
     metaTitle: "Sicurezza sul lavoro nelle pulizie professionali",
     metaDescription:
-      "Norme di sicurezza sul lavoro nel settore pulizie: DPI obbligatori, rischi specifici, formazione e obblighi del D.Lgs. 81/2008 per imprese e lavoratori.",
+      "Sicurezza sul lavoro nelle pulizie in provincia di Varese: DPI obbligatori, rischi specifici, formazione e obblighi del D.Lgs. 81/2008 per imprese.",
     date: "2025-10-18",
     category: "normativa",
     excerpt:
       "Il settore delle pulizie professionali presenta rischi specifici che richiedono attenzione particolare alla sicurezza. Ecco cosa prevede la normativa e quali sono gli obblighi per imprese e lavoratori.",
     readingTime: 7,
-    image: "/blog/industrial-cleaning.jpg",
-    imageAlt: "Sicurezza sul lavoro nelle pulizie professionali",
+    image: "/blog/safety-equipment.jpg",
+    imageAlt: "Dispositivi di sicurezza sul lavoro per pulizie professionali",
     sections: [
       {
         heading: "I rischi specifici del settore pulizie",
         content:
-          "Il lavoro di pulizia espone gli operatori a rischi diversificati che devono essere valutati e gestiti. I rischi chimici derivano dall'uso di detergenti e disinfettanti, i rischi ergonomici da movimenti ripetitivi e posture scorrette, i rischi biologici dal contatto con agenti patogeni. A questi si aggiungono il rischio di scivolamento su pavimenti bagnati e il rischio elettrico legato all'utilizzo di macchinari.",
+          "Il lavoro di pulizia espone gli operatori a rischi diversificati che devono essere valutati e gestiti. I rischi chimici derivano dall'uso di detergenti e disinfettanti, i rischi ergonomici da movimenti ripetitivi e posture scorrette, i rischi biologici dal contatto con agenti patogeni. A questi si aggiungono il rischio di scivolamento su pavimenti bagnati e il rischio elettrico legato all'utilizzo di macchinari. Le imprese di pulizia operative a Varese, Castellanza e Somma Lombardo devono garantire il pieno rispetto di queste norme in ogni cantiere.",
         list: [
           "Rischio chimico: esposizione a detergenti, solventi e disinfettanti",
           "Rischio ergonomico: movimenti ripetitivi e posture prolungate",
@@ -273,8 +273,8 @@ export const normativaPosts: BlogPost[] = [
         a: "Il DUVRI è il Documento Unico di Valutazione dei Rischi Interferenziali, obbligatorio quando un'impresa di pulizie opera nei locali di un committente. Serve a identificare e gestire i rischi che derivano dalla compresenza di più attività nello stesso luogo.",
       },
       {
-        q: "Chi è responsabile della sicurezza degli operatori di pulizia?",
-        a: "La responsabilità è condivisa: l'impresa di pulizie deve formare i lavoratori, fornire i DPI e rispettare le norme; il committente deve fornire informazioni sui rischi dei locali e cooperare per la sicurezza tramite il DUVRI.",
+        q: "Cercate un'impresa di pulizie sicura a Varese e provincia?",
+        a: "BP Cleaning è certificata ISO 45001 per la sicurezza sul lavoro e opera in tutta la provincia di Varese, Como, Gallarate, Busto Arsizio e Monza. Tutti i nostri operatori sono dotati di DPI adeguati e formati secondo il D.Lgs. 81/2008.",
       },
     ],
     internalLinks: [
@@ -291,7 +291,7 @@ export const normativaPosts: BlogPost[] = [
     title: "Smaltimento rifiuti speciali nelle pulizie: normativa e procedure",
     metaTitle: "Smaltimento rifiuti speciali nelle pulizie",
     metaDescription:
-      "Come smaltire correttamente i rifiuti speciali derivanti dalle pulizie professionali. Normativa, classificazione, registri e obblighi per le imprese.",
+      "Smaltimento rifiuti speciali nelle pulizie professionali a Varese e Lombardia. Normativa, classificazione, registri e obblighi per le imprese.",
     date: "2025-11-01",
     category: "normativa",
     excerpt:
@@ -303,7 +303,7 @@ export const normativaPosts: BlogPost[] = [
       {
         heading: "Cosa sono i rifiuti speciali nelle pulizie",
         content:
-          "Le attività di pulizia professionale generano rifiuti che non rientrano nella categoria dei rifiuti urbani. Contenitori di prodotti chimici, soluzioni esauste, materiali contaminati e filtri utilizzati sono classificati come rifiuti speciali ai sensi del D.Lgs. 152/2006 (Testo Unico Ambientale). La loro gestione richiede procedure specifiche e il coinvolgimento di operatori autorizzati.",
+          "Le attività di pulizia professionale generano rifiuti che non rientrano nella categoria dei rifiuti urbani. Contenitori di prodotti chimici, soluzioni esauste, materiali contaminati e filtri utilizzati sono classificati come rifiuti speciali ai sensi del D.Lgs. 152/2006 (Testo Unico Ambientale). La loro gestione richiede procedure specifiche e il coinvolgimento di operatori autorizzati. Nella provincia di Varese e Como, le imprese di pulizie devono rispettare anche le disposizioni regionali della Lombardia in materia ambientale.",
       },
       {
         heading: "Classificazione dei rifiuti nel settore pulizie",
@@ -343,8 +343,8 @@ export const normativaPosts: BlogPost[] = [
         a: "Dipende dal prodotto contenuto. I contenitori vuoti di detergenti comuni non pericolosi possono essere smaltiti come rifiuti assimilabili agli urbani. I contenitori di prodotti con pittogrammi di pericolo CLP sono rifiuti speciali pericolosi e richiedono procedure dedicate.",
       },
       {
-        q: "Cos'è il RENTRI e chi deve iscriversi?",
-        a: "Il RENTRI è il Registro Elettronico Nazionale per la Tracciabilità dei Rifiuti. Devono iscriversi i produttori di rifiuti speciali pericolosi, i trasportatori e gli impianti di trattamento. Digitalizza i registri e i formulari rendendo la tracciabilità più trasparente.",
+        q: "Gestite lo smaltimento rifiuti speciali a Varese e dintorni?",
+        a: "Sì, BP Cleaning gestisce correttamente lo smaltimento dei rifiuti speciali derivanti dalle pulizie professionali in tutta la provincia di Varese, incluse Gavirate, Sesto Calende e Somma Lombardo, nel pieno rispetto della normativa regionale lombarda.",
       },
     ],
     internalLinks: [
@@ -358,19 +358,19 @@ export const normativaPosts: BlogPost[] = [
     title: "Registro delle pulizie: come compilarlo correttamente",
     metaTitle: "Registro pulizie: guida alla compilazione",
     metaDescription:
-      "Come compilare correttamente il registro delle pulizie: modelli, informazioni obbligatorie, frequenze e consigli pratici per aziende e attività commerciali.",
+      "Come compilare il registro delle pulizie: modelli, informazioni obbligatorie e consigli pratici per aziende e attività commerciali a Varese e provincia.",
     date: "2025-11-15",
     category: "normativa",
     excerpt:
       "Il registro delle pulizie è un documento fondamentale per dimostrare la conformità alle normative igieniche. Ecco come compilarlo correttamente e quali informazioni non possono mancare.",
     readingTime: 6,
-    image: "/blog/office-cleaning.jpg",
-    imageAlt: "Compilazione registro pulizie professionale",
+    image: "/blog/contract-document.jpg",
+    imageAlt: "Compilazione registro pulizie e documentazione professionale",
     sections: [
       {
         heading: "A cosa serve il registro delle pulizie",
         content:
-          "Il registro delle pulizie è il documento che traccia tutte le operazioni di pulizia e sanificazione effettuate in un ambiente. Serve a dimostrare agli organi di controllo che l'igiene viene gestita in modo sistematico e documentato. È particolarmente importante nelle attività alimentari (HACCP), nelle strutture sanitarie e negli ambienti di lavoro soggetti al D.Lgs. 81/2008.",
+          "Il registro delle pulizie è il documento che traccia tutte le operazioni di pulizia e sanificazione effettuate in un ambiente. Serve a dimostrare agli organi di controllo che l'igiene viene gestita in modo sistematico e documentato. È particolarmente importante nelle attività alimentari (HACCP), nelle strutture sanitarie e negli ambienti di lavoro soggetti al D.Lgs. 81/2008. Le attività di Varese, Busto Arsizio e Tradate trovano in questo documento uno strumento indispensabile per superare i controlli ASL.",
       },
       {
         heading: "Informazioni obbligatorie nel registro",
@@ -412,8 +412,8 @@ export const normativaPosts: BlogPost[] = [
         a: "Sì, il registro delle pulizie può essere gestito in formato digitale purché garantisca l'inalterabilità dei dati, la tracciabilità delle modifiche e la possibilità di stampa immediata in caso di ispezione. Esistono software e app specifici per questa funzione.",
       },
       {
-        q: "Chi deve compilare il registro delle pulizie?",
-        a: "Il registro deve essere compilato dall'operatore che esegue materialmente l'intervento di pulizia, al momento dell'esecuzione. Se il servizio è affidato a un'impresa esterna, è l'operatore dell'impresa a compilarlo, ma il titolare dell'attività resta responsabile della sua corretta tenuta.",
+        q: "Fornite il registro delle pulizie compilato nella zona di Varese?",
+        a: "Sì, BP Cleaning fornisce il servizio di compilazione e gestione del registro delle pulizie per tutte le attività di Varese, Gallarate, Saronno, Como e province limitrofe. I nostri operatori compilano il registro a ogni intervento, garantendo la tracciabilità completa.",
       },
     ],
     internalLinks: [
@@ -427,19 +427,19 @@ export const normativaPosts: BlogPost[] = [
     title: "Normativa sulla disinfestazione: obblighi e procedure legali",
     metaTitle: "Normativa disinfestazione: obblighi e procedure",
     metaDescription:
-      "Tutto sulla normativa disinfestazione in Italia: obblighi per aziende e privati, autorizzazioni necessarie, prodotti consentiti e procedure professionali.",
+      "Normativa disinfestazione a Varese e provincia: obblighi per aziende e privati, autorizzazioni necessarie, prodotti consentiti e procedure professionali.",
     date: "2025-12-01",
     category: "normativa",
     excerpt:
       "La disinfestazione professionale è regolata da norme precise che riguardano autorizzazioni, prodotti consentiti e procedure operative. Ecco cosa prevede la legge e quando è obbligatorio intervenire.",
     readingTime: 7,
-    image: "/blog/outdoor-maintenance.jpg",
-    imageAlt: "Normativa disinfestazione professionale",
+    image: "/blog/pest-control.jpg",
+    imageAlt: "Disinfestazione professionale normativa e regolamenti",
     sections: [
       {
         heading: "Il quadro normativo della disinfestazione",
         content:
-          "In Italia la disinfestazione è regolata da diverse norme a livello nazionale e regionale. Il D.Lgs. 81/2008 impone al datore di lavoro di prevenire i rischi biologici, inclusi quelli derivanti da infestazioni. Il Regolamento CE 852/2004 obbliga le attività alimentari a prevenire le infestazioni come parte del sistema HACCP. A livello comunale, le ordinanze sindacali possono imporre interventi di disinfestazione in caso di emergenze sanitarie.",
+          "In Italia la disinfestazione è regolata da diverse norme a livello nazionale e regionale. Il D.Lgs. 81/2008 impone al datore di lavoro di prevenire i rischi biologici, inclusi quelli derivanti da infestazioni. Il Regolamento CE 852/2004 obbliga le attività alimentari a prevenire le infestazioni come parte del sistema HACCP. A livello comunale, le ordinanze sindacali possono imporre interventi di disinfestazione in caso di emergenze sanitarie. Nei comuni della provincia di Varese e Como, queste ordinanze vengono emesse regolarmente durante il periodo estivo.",
       },
       {
         heading: "Quando la disinfestazione è obbligatoria",
@@ -480,8 +480,8 @@ export const normativaPosts: BlogPost[] = [
         a: "Il condominio è obbligato quando lo dispone un'ordinanza comunale per emergenza sanitaria. In assenza di ordinanze, l'assemblea condominiale può deliberare interventi preventivi o correttivi. In caso di infestazione grave, l'amministratore ha l'obbligo di intervenire d'urgenza.",
       },
       {
-        q: "Quali prodotti si possono usare per la disinfestazione?",
-        a: "Si possono usare solo prodotti biocidi autorizzati dal Ministero della Salute e registrati nel Registro Europeo dei Biocidi. L'impresa professionale utilizza prodotti specifici per il tipo di infestazione, privilegiando l'approccio IPM con uso minimo di sostanze chimiche.",
+        q: "Offrite servizi di disinfestazione a Varese e provincia?",
+        a: "Sì, BP Cleaning effettua disinfestazioni professionali in tutta la provincia di Varese e Como, incluse Gallarate, Busto Arsizio, Saronno, Tradate e Sesto Calende. Interveniamo con metodi IPM certificati sia per aziende che per condomini e privati.",
       },
     ],
     internalLinks: [
@@ -495,7 +495,7 @@ export const normativaPosts: BlogPost[] = [
     title: "Pulizia dei luoghi di lavoro: obblighi del D.Lgs. 81/2008",
     metaTitle: "Pulizia luoghi lavoro: obblighi D.Lgs. 81/2008",
     metaDescription:
-      "Tutti gli obblighi di pulizia dei luoghi di lavoro previsti dal D.Lgs. 81/2008. Requisiti igienici, responsabilità del datore di lavoro e sanzioni previste.",
+      "Obblighi di pulizia dei luoghi di lavoro previsti dal D.Lgs. 81/2008 per aziende di Varese e Lombardia. Requisiti igienici, responsabilità e sanzioni.",
     date: "2025-12-15",
     category: "normativa",
     excerpt:
@@ -512,7 +512,7 @@ export const normativaPosts: BlogPost[] = [
       {
         heading: "Requisiti igienici specifici per tipologia di ambiente",
         content:
-          "La normativa distingue requisiti diversi in base alla tipologia di ambiente lavorativo. Gli uffici richiedono standard igienici base, mentre gli ambienti industriali hanno prescrizioni aggiuntive legate ai rischi specifici. Le strutture sanitarie e alimentari sono soggette a normative settoriali ancora più stringenti che si aggiungono agli obblighi generali.",
+          "La normativa distingue requisiti diversi in base alla tipologia di ambiente lavorativo. Gli uffici richiedono standard igienici base, mentre gli ambienti industriali hanno prescrizioni aggiuntive legate ai rischi specifici. Le strutture sanitarie e alimentari sono soggette a normative settoriali ancora più stringenti che si aggiungono agli obblighi generali. Le aziende di Varese, Monza e Busto Arsizio possono contare su imprese di pulizie certificate per adeguarsi a tutti questi requisiti.",
         list: [
           "Uffici: pulizia regolare di superfici, pavimenti, servizi igienici e aree comuni",
           "Ambienti industriali: depolverizzazione, gestione scarichi e pulizia macchinari",
@@ -547,8 +547,8 @@ export const normativaPosts: BlogPost[] = [
         a: "La normativa richiede che i servizi igienici siano mantenuti in condizioni di pulizia adeguate. Nella prassi, questo si traduce in una pulizia quotidiana minima, con sanificazione completa almeno settimanale. Per aziende con molti dipendenti, possono essere necessari più interventi giornalieri.",
       },
       {
-        q: "Le pulizie devono avvenire fuori dall'orario di lavoro?",
-        a: "L'Allegato IV prescrive che le operazioni di pulizia vengano effettuate per quanto possibile fuori dall'orario di lavoro, in modo da ridurre il sollevamento di polvere e l'interferenza con l'attività lavorativa. Questo non è un obbligo assoluto ma una prescrizione di buona prassi.",
+        q: "Offrite pulizie luoghi di lavoro a norma nella zona di Varese?",
+        a: "Sì, BP Cleaning garantisce la pulizia dei luoghi di lavoro in conformità al D.Lgs. 81/2008 per aziende di Varese, Gallarate, Saronno, Tradate, Como e tutta la Lombardia. Operiamo anche fuori orario lavorativo come previsto dalla normativa.",
       },
     ],
     internalLinks: [
@@ -562,14 +562,14 @@ export const normativaPosts: BlogPost[] = [
     title: "Sanificazione condizionatori: cosa prevede la normativa",
     metaTitle: "Sanificazione condizionatori: normativa vigente",
     metaDescription:
-      "Normativa sulla sanificazione dei condizionatori: obblighi per aziende e condomini, frequenze previste, rischi legionella e procedure professionali.",
+      "Normativa sanificazione condizionatori a Varese e provincia: obblighi per aziende e condomini, frequenze previste, rischi legionella e procedure.",
     date: "2026-01-05",
     category: "normativa",
     excerpt:
       "La manutenzione e sanificazione degli impianti di condizionamento è un obbligo normativo spesso sottovalutato. Scopri cosa prevede la legge e i rischi del mancato adeguamento.",
     readingTime: 6,
-    image: "/blog/sanitization.jpg",
-    imageAlt: "Sanificazione condizionatori normativa vigente",
+    image: "/blog/air-conditioner.jpg",
+    imageAlt: "Sanificazione condizionatori secondo normativa vigente",
     sections: [
       {
         heading: "Il quadro normativo sugli impianti di climatizzazione",
@@ -579,7 +579,7 @@ export const normativaPosts: BlogPost[] = [
       {
         heading: "Obblighi per aziende e datori di lavoro",
         content:
-          "Il datore di lavoro deve garantire la qualità dell'aria negli ambienti di lavoro come previsto dall'Allegato IV del D.Lgs. 81/2008. Questo include la manutenzione e sanificazione regolare degli impianti di climatizzazione. La mancata manutenzione può causare la Sindrome dell'Edificio Malato (Sick Building Syndrome) e, nei casi più gravi, la diffusione della legionella.",
+          "Il datore di lavoro deve garantire la qualità dell'aria negli ambienti di lavoro come previsto dall'Allegato IV del D.Lgs. 81/2008. Questo include la manutenzione e sanificazione regolare degli impianti di climatizzazione. La mancata manutenzione può causare la Sindrome dell'Edificio Malato (Sick Building Syndrome) e, nei casi più gravi, la diffusione della legionella. Negli uffici e nelle attività commerciali di Varese, Gallarate e Saronno, la sanificazione dei condizionatori è particolarmente importante durante i mesi estivi.",
         list: [
           "Manutenzione periodica obbligatoria degli impianti come da DPR 74/2013",
           "Sanificazione dei filtri e delle unità interne almeno stagionale",
@@ -614,8 +614,8 @@ export const normativaPosts: BlogPost[] = [
         a: "I filtri vanno puliti a ogni cambio di stagione. La sanificazione completa delle unità interne va effettuata almeno semestralmente. Per i condotti di ventilazione degli impianti centralizzati, è consigliata una pulizia approfondita almeno ogni due anni.",
       },
       {
-        q: "Cosa rischio se non sanifico i condizionatori aziendali?",
-        a: "Oltre alle sanzioni previste dal D.Lgs. 81/2008 per la mancata tutela della salute dei lavoratori, il datore di lavoro si espone a responsabilità civili e penali in caso di malattie correlate alla cattiva qualità dell'aria, compresa la legionellosi.",
+        q: "Effettuate sanificazione condizionatori a Varese e dintorni?",
+        a: "Sì, BP Cleaning effettua la sanificazione professionale di condizionatori e impianti di climatizzazione in tutta la provincia di Varese, Como, Busto Arsizio, Tradate e Monza, sia per aziende che per condomini, con rilascio di documentazione a norma.",
       },
     ],
     internalLinks: [
@@ -629,19 +629,19 @@ export const normativaPosts: BlogPost[] = [
     title: "Gestione dell'appalto di pulizie: guida normativa completa",
     metaTitle: "Gestione appalto pulizie: guida normativa",
     metaDescription:
-      "Come gestire un appalto di pulizie in conformità alla normativa: requisiti contrattuali, DUVRI, verifiche obbligatorie e clausole essenziali.",
+      "Gestione appalto pulizie a Varese e provincia: requisiti contrattuali, DUVRI, verifiche obbligatorie e clausole essenziali per la conformità normativa.",
     date: "2026-01-15",
     category: "normativa",
     excerpt:
       "Affidare il servizio di pulizie in appalto richiede il rispetto di norme precise. Ecco cosa deve sapere il committente per gestire l'appalto in modo conforme e sicuro.",
     readingTime: 8,
-    image: "/blog/office-cleaning.jpg",
-    imageAlt: "Gestione appalto servizio pulizie",
+    image: "/blog/contract-document.jpg",
+    imageAlt: "Gestione contratto appalto servizio pulizie",
     sections: [
       {
         heading: "L'appalto di servizi di pulizia: inquadramento giuridico",
         content:
-          "L'affidamento del servizio di pulizia a un'impresa esterna configura un appalto di servizi ai sensi dell'art. 1655 del Codice Civile. Il committente e l'appaltatore hanno obblighi reciproci in materia di sicurezza, come previsto dall'art. 26 del D.Lgs. 81/2008. La corretta gestione dell'appalto è fondamentale per evitare responsabilità solidali e garantire la qualità del servizio.",
+          "L'affidamento del servizio di pulizia a un'impresa esterna configura un appalto di servizi ai sensi dell'art. 1655 del Codice Civile. Il committente e l'appaltatore hanno obblighi reciproci in materia di sicurezza, come previsto dall'art. 26 del D.Lgs. 81/2008. Per le aziende di Varese, Castellanza e Busto Arsizio, la corretta gestione dell'appalto è fondamentale per evitare responsabilità solidali e garantire la qualità del servizio.",
       },
       {
         heading: "Verifiche obbligatorie prima dell'affidamento",
@@ -689,8 +689,8 @@ export const normativaPosts: BlogPost[] = [
         a: "Il committente ha una responsabilità solidale se non ha verificato l'idoneità tecnico-professionale dell'impresa o non ha predisposto il DUVRI. Una corretta gestione dell'appalto, con tutte le verifiche previste, limita significativamente questa responsabilità.",
       },
       {
-        q: "Il DUVRI è sempre obbligatorio per le pulizie?",
-        a: "Il DUVRI è obbligatorio quando l'impresa di pulizie opera all'interno dei locali del committente e vi è compresenza di lavoratori di entrambe le aziende. Non è richiesto per servizi di natura intellettuale o forniture di materiali senza posa in opera.",
+        q: "Gestite appalti di pulizie nella provincia di Varese?",
+        a: "Sì, BP Cleaning gestisce appalti di pulizie professionali in tutta la provincia di Varese e Como, incluse Gallarate, Saronno, Monza e Somma Lombardo. Forniamo tutta la documentazione contrattuale, il DUVRI e le certificazioni ISO richieste dai capitolati.",
       },
     ],
     internalLinks: [
@@ -704,7 +704,7 @@ export const normativaPosts: BlogPost[] = [
     title: "Igiene condominiale: responsabilità e obblighi di legge",
     metaTitle: "Igiene condominio: responsabilità e obblighi",
     metaDescription:
-      "Chi è responsabile dell'igiene nel condominio? Obblighi dell'amministratore, delibere assembleari, regolamento condominiale e normativa sanitaria.",
+      "Igiene condominiale a Varese e provincia: obblighi dell'amministratore, delibere assembleari, regolamento condominiale e normativa sanitaria.",
     date: "2026-01-22",
     category: "normativa",
     excerpt:
@@ -716,7 +716,7 @@ export const normativaPosts: BlogPost[] = [
       {
         heading: "Il quadro normativo dell'igiene condominiale",
         content:
-          "L'igiene delle parti comuni del condominio è regolata dal Codice Civile (artt. 1117 e seguenti), dal regolamento condominiale e dalle normative sanitarie locali. Il Testo Unico degli Enti Locali attribuisce ai Comuni il potere di emanare ordinanze in materia di igiene pubblica. I regolamenti comunali di igiene stabiliscono gli standard minimi che ogni condominio deve rispettare.",
+          "L'igiene delle parti comuni del condominio è regolata dal Codice Civile (artt. 1117 e seguenti), dal regolamento condominiale e dalle normative sanitarie locali. Il Testo Unico degli Enti Locali attribuisce ai Comuni il potere di emanare ordinanze in materia di igiene pubblica. Nei condomini della provincia di Varese e Como, i regolamenti comunali di igiene stabiliscono gli standard minimi che ogni condominio deve rispettare.",
       },
       {
         heading: "Responsabilità dell'amministratore di condominio",
@@ -756,8 +756,8 @@ export const normativaPosts: BlogPost[] = [
         a: "No, le spese di pulizia delle parti comuni sono obbligatorie per tutti i condomini in base ai millesimi di proprietà. Un condomino non può sottrarsi al pagamento anche se ritiene di non utilizzare determinate aree comuni.",
       },
       {
-        q: "Cosa fare se l'amministratore non provvede alla pulizia?",
-        a: "I condomini possono sollecitare formalmente l'amministratore, richiedere la convocazione di un'assemblea straordinaria e, in caso di perdurante inadempienza, avviare la procedura di revoca giudiziale dell'amministratore per gravi irregolarità.",
+        q: "Offrite servizi di pulizia condominiale a Varese e dintorni?",
+        a: "Sì, BP Cleaning offre servizi di pulizia condominiale professionali in tutta la provincia di Varese, incluse Gavirate, Tradate, Busto Arsizio, Gallarate e Saronno. Collaboriamo con gli amministratori di condominio per garantire igiene e conformità normativa.",
       },
     ],
     internalLinks: [
@@ -771,19 +771,19 @@ export const normativaPosts: BlogPost[] = [
     title: "Disinfestazione blatte: guida professionale completa",
     metaTitle: "Disinfestazione blatte: guida professionale",
     metaDescription:
-      "Guida completa alla disinfestazione professionale di blatte e scarafaggi. Normativa, metodi efficaci, prevenzione e quando è necessario l'intervento professionale.",
+      "Disinfestazione blatte a Varese e provincia: normativa, metodi professionali efficaci, prevenzione e quando è necessario l'intervento di esperti.",
     date: "2026-01-27",
     category: "normativa",
     excerpt:
       "Le blatte rappresentano un rischio sanitario serio che richiede interventi professionali mirati. Ecco la normativa di riferimento, i metodi più efficaci e come prevenire le infestazioni.",
     readingTime: 7,
-    image: "/blog/outdoor-maintenance.jpg",
+    image: "/blog/pest-control.jpg",
     imageAlt: "Disinfestazione professionale blatte e insetti",
     sections: [
       {
         heading: "Blatte negli ambienti: un problema sanitario",
         content:
-          "Le blatte (Blattella germanica, Blatta orientalis, Periplaneta americana) non sono solo un problema estetico ma un rischio concreto per la salute. Questi insetti sono vettori di agenti patogeni come Salmonella, E. coli e Staphylococcus, che possono contaminare alimenti e superfici. La normativa sanitaria classifica le infestazioni da blatte come un rischio per la salute pubblica che richiede interventi tempestivi.",
+          "Le blatte (Blattella germanica, Blatta orientalis, Periplaneta americana) non sono solo un problema estetico ma un rischio concreto per la salute. Questi insetti sono vettori di agenti patogeni come Salmonella, E. coli e Staphylococcus, che possono contaminare alimenti e superfici. La normativa sanitaria classifica le infestazioni da blatte come un rischio per la salute pubblica che richiede interventi tempestivi. Nelle zone urbane di Varese, Como e Busto Arsizio, le infestazioni da blatte sono particolarmente frequenti nei condomini e nelle attività commerciali.",
       },
       {
         heading: "Quando è obbligatorio intervenire",
@@ -830,8 +830,8 @@ export const normativaPosts: BlogPost[] = [
         a: "Un ciclo completo prevede generalmente un intervento iniziale seguito da uno o due interventi di controllo a distanza di 15-20 giorni. L'efficacia del gel insetticida si mantiene per diverse settimane. Un programma di monitoraggio periodico previene le recidive.",
       },
       {
-        q: "Le blatte possono tornare dopo la disinfestazione?",
-        a: "Sì, se non si eliminano le condizioni favorevoli alla loro presenza: umidità, fonti di cibo accessibili e punti di ingresso aperti. Per questo il trattamento professionale include sempre raccomandazioni preventive e, idealmente, un programma di monitoraggio periodico.",
+        q: "Effettuate disinfestazione blatte a Varese e provincia?",
+        a: "Sì, BP Cleaning effettua disinfestazioni professionali di blatte e scarafaggi in tutta la provincia di Varese e Como, incluse Gallarate, Saronno, Tradate, Monza e Sesto Calende. Interveniamo con metodo IPM e gel insetticidi di ultima generazione.",
       },
     ],
     internalLinks: [
