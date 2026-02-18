@@ -58,9 +58,9 @@ export const blogPosts: BlogPost[] = [
           "Richiedete referenze da clienti simili al vostro caso. Un'impresa che opera da molti anni e serve clienti nel vostro settore conosce già le problematiche specifiche. BP Cleaning, ad esempio, vanta oltre 18 anni di esperienza con clienti che spaziano da condomini a strutture sanitarie.",
       },
       {
-        heading: "Contratto e trasparenza dei costi",
+        heading: "Contratto e trasparenza",
         content:
-          "Diffidate da preventivi troppo vaghi. Un buon contratto specifica nel dettaglio le attività incluse, la frequenza degli interventi, i prodotti utilizzati e le condizioni di recesso. Il prezzo più basso non è sempre il migliore: valutate il rapporto qualità-prezzo complessivo.",
+          "Diffidate da preventivi troppo vaghi. Un buon contratto specifica nel dettaglio le attività incluse, la frequenza degli interventi, i prodotti utilizzati e le condizioni di recesso. Valutate la completezza del servizio offerto, non solo il preventivo.",
         list: [
           "Elenco dettagliato delle attività",
           "Frequenza e orari degli interventi",
@@ -76,8 +76,8 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [
       {
-        q: "Quanto costa un'impresa di pulizie professionale?",
-        a: "I costi variano in base alla metratura, al tipo di servizio e alla frequenza. Per un ufficio di 100 mq con pulizia bisettimanale, i prezzi partono da circa 300-400€ al mese. Il modo migliore è richiedere un preventivo personalizzato gratuito.",
+        q: "Come ottenere un preventivo per le pulizie professionali?",
+        a: "Il modo migliore è richiedere un sopralluogo gratuito. L'impresa valuterà metratura, tipo di ambiente e frequenza necessaria per formulare un preventivo personalizzato e dettagliato.",
       },
       {
         q: "Come verifico se un'impresa di pulizie è affidabile?",
@@ -95,33 +95,28 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "costo-pulizia-condominio",
-    title: "Quanto costa la pulizia di un condominio nel 2026",
-    metaTitle: "Quanto costa la pulizia di un condominio",
+    slug: "pulizia-condominio-guida-completa",
+    title: "Pulizia condominio: guida completa al servizio professionale",
+    metaTitle: "Pulizia condominio: guida completa",
     metaDescription:
-      "Scopri quanto costa la pulizia condominiale nel 2026: prezzi medi, fattori che influenzano il costo e come risparmiare senza rinunciare alla qualità.",
+      "Guida completa alla pulizia condominiale professionale: cosa include il servizio, frequenze consigliate, come valutare i preventivi e scegliere l'impresa giusta.",
     date: "2026-02-15",
     category: "guide",
     excerpt:
-      "I costi della pulizia condominiale dipendono da metratura, numero di piani e frequenza. Ecco una guida completa ai prezzi 2026 e come ottimizzare la spesa.",
+      "Cosa include la pulizia condominiale professionale? Dalle attività ordinarie ai servizi extra, ecco tutto quello che serve sapere per un condominio sempre in ordine.",
     readingTime: 6,
     sections: [
       {
-        heading: "Fattori che influenzano il costo",
+        heading: "Cosa valutare prima di scegliere il servizio",
         content:
-          "Il prezzo della pulizia condominiale non è standard: dipende da diversi fattori specifici del vostro edificio. Comprendere questi elementi vi aiuterà a valutare meglio i preventivi e a confrontare le offerte in modo consapevole.",
+          "Ogni condominio ha esigenze diverse. Prima di richiedere un preventivo, è utile valutare le caratteristiche del vostro edificio per ottenere una proposta davvero su misura.",
         list: [
           "Numero di piani e scale",
           "Metratura totale delle aree comuni",
           "Presenza di ascensore e garage",
-          "Frequenza degli interventi (settimanale, bisettimanale, mensile)",
-          "Servizi extra: pulizia vetri, lavaggio cortile, cura giardino",
+          "Frequenza degli interventi necessaria (settimanale, bisettimanale, mensile)",
+          "Servizi extra desiderati: pulizia vetri, lavaggio cortile, cura giardino",
         ],
-      },
-      {
-        heading: "Prezzi medi nel 2026",
-        content:
-          "Per un condominio medio di 6-8 appartamenti con 3 piani, i costi indicativi per la pulizia delle parti comuni sono: pulizia settimanale da 200 a 350€ al mese, bisettimanale da 150 a 250€, mensile da 80 a 150€. Condomini più grandi o con aree esterne hanno costi proporzionalmente superiori.",
       },
       {
         heading: "Cosa include la pulizia condominiale",
@@ -136,21 +131,22 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Come risparmiare senza perdere qualità",
+        heading: "Come scegliere la frequenza giusta",
         content:
-          "Potete ottimizzare i costi scegliendo la frequenza giusta per le vostre esigenze reali. Un condominio con pochi residenti può optare per una pulizia bisettimanale anziché settimanale. Potete anche prevedere interventi stagionali per i servizi extra come la pulizia delle aree esterne o il lavaggio vetri.",
+          "La frequenza ideale dipende dal numero di residenti e dal traffico nelle aree comuni. Un condominio con molte famiglie richiede interventi settimanali, mentre edifici più piccoli possono optare per una pulizia bisettimanale. Per i servizi extra come la pulizia delle aree esterne o il lavaggio vetri, si possono prevedere interventi stagionali mirati.",
       },
       {
         heading: "Ripartizione delle spese tra condomini",
         content:
-          "Le spese di pulizia vengono generalmente ripartite in base ai millesimi di proprietà o, in alcuni condomini, in parti uguali. Il regolamento condominiale stabilisce le modalità di ripartizione. Un preventivo chiaro aiuta l'amministratore a presentare la spesa in assemblea con trasparenza.",
+          "Le spese di pulizia vengono generalmente ripartite in base ai millesimi di proprietà o, in alcuni condomini, in parti uguali. Il regolamento condominiale stabilisce le modalità di ripartizione. Un preventivo chiaro e dettagliato aiuta l'amministratore a presentare il servizio in assemblea con trasparenza.",
+      },
+      {
+        heading: "Come valutare un preventivo condominiale",
+        content:
+          "Un buon preventivo deve specificare nel dettaglio le attività incluse, la frequenza, i prodotti utilizzati e le condizioni contrattuali. Confrontate le proposte non solo sul totale, ma sulla completezza del servizio offerto. Verificate anche le certificazioni dell'impresa, la copertura assicurativa e la disponibilità a un sopralluogo gratuito.",
       },
     ],
     faqs: [
-      {
-        q: "Quanto costa la pulizia scale di un condominio?",
-        a: "Per un condominio di 3 piani con 6-8 appartamenti, la pulizia settimanale delle scale costa mediamente 200-350€ al mese. Il costo varia in base alla metratura e ai servizi inclusi.",
-      },
       {
         q: "Con quale frequenza si puliscono le parti comuni?",
         a: "La frequenza ideale è settimanale per condomini con molti residenti, bisettimanale per edifici medi. In ogni caso, almeno una volta al mese è consigliata una pulizia più approfondita di ascensore e androni.",
@@ -158,6 +154,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "Chi decide quale impresa di pulizie assumere per il condominio?",
         a: "La decisione spetta all'assemblea condominiale, spesso su proposta dell'amministratore. Si confrontano più preventivi e si vota a maggioranza. L'amministratore gestisce poi il contratto e i pagamenti.",
+      },
+      {
+        q: "Come richiedere un preventivo per il condominio?",
+        a: "Contattate l'impresa per un sopralluogo gratuito. Fornite informazioni su numero di piani, metratura delle aree comuni e frequenza desiderata. Un preventivo personalizzato e dettagliato vi permetterà di valutare il servizio in modo trasparente.",
       },
     ],
     internalLinks: [
@@ -218,8 +218,8 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [
       {
-        q: "Quanto costa la sanificazione di un ufficio?",
-        a: "Il costo dipende dalla metratura: per un ufficio di 100 mq si parte da 150-250€ per intervento. Con contratti periodici il costo per singolo intervento si riduce significativamente.",
+        q: "Come richiedere la sanificazione dell'ufficio?",
+        a: "Contattate un'impresa specializzata per un sopralluogo gratuito. Verranno valutate metratura, tipologia degli ambienti e frequenza necessaria per formulare un preventivo personalizzato.",
       },
       {
         q: "Quanto tempo serve per sanificare un ufficio?",
@@ -268,9 +268,9 @@ export const blogPosts: BlogPost[] = [
           "Le pulizie post cantiere richiedono attrezzature che vanno oltre quelle domestiche. Aspiratori industriali con filtro HEPA trattengono la polvere sottile di cemento. Lavasciuga pavimenti professionali garantiscono risultati impossibili con il mocio tradizionale. Raschietti e prodotti chimici specifici rimuovono residui senza graffiare.",
       },
       {
-        heading: "Tempistiche e costi indicativi",
+        heading: "Tempistiche dell'intervento",
         content:
-          "Per un appartamento di 80-100 mq dopo ristrutturazione completa, servono in media 2-3 giornate di lavoro con una squadra di 2 operatori. I costi partono da 4-6€ al metro quadro per interventi standard, con variazioni in base alla complessità dei lavori effettuati e al tipo di superfici da trattare.",
+          "Per un appartamento di 80-100 mq dopo ristrutturazione completa, servono in media 2-3 giornate di lavoro con una squadra di 2 operatori. I tempi variano in base alla complessità dei lavori effettuati e al tipo di superfici da trattare. Un sopralluogo preventivo permette di stimare con precisione la durata dell'intervento.",
       },
       {
         heading: "Errori da evitare nel fai-da-te",
@@ -288,8 +288,8 @@ export const blogPosts: BlogPost[] = [
         a: "No, se eseguite da professionisti. Utilizziamo prodotti specifici per ogni tipo di superficie e testiamo sempre su una piccola area prima di procedere. Il rischio è semmai nel fai-da-te con prodotti inadatti.",
       },
       {
-        q: "Il costo delle pulizie post cantiere è detraibile?",
-        a: "Se le pulizie rientrano nelle spese di ristrutturazione, possono beneficiare delle detrazioni fiscali previste (bonus ristrutturazione). Conservate la fattura e verificate con il vostro commercialista.",
+        q: "Le pulizie post cantiere sono incluse nella ristrutturazione?",
+        a: "Le pulizie post cantiere sono un servizio separato, ma se rientrano nel progetto di ristrutturazione possono beneficiare delle detrazioni fiscali previste. Conservate la fattura e verificate con il vostro commercialista.",
       },
     ],
     internalLinks: [
@@ -302,7 +302,7 @@ export const blogPosts: BlogPost[] = [
     title: "Trattamento pavimenti in marmo: guida completa",
     metaTitle: "Trattamento pavimenti in marmo: guida",
     metaDescription:
-      "Come trattare i pavimenti in marmo: levigatura, lucidatura, cristallizzazione e manutenzione. Guida ai trattamenti professionali e ai costi.",
+      "Come trattare i pavimenti in marmo: levigatura, lucidatura, cristallizzazione e manutenzione. Guida completa ai trattamenti professionali.",
     date: "2026-02-08",
     category: "consigli-pratici",
     excerpt:
@@ -331,9 +331,9 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Costi dei trattamenti professionali",
+        heading: "Quando richiedere un trattamento professionale",
         content:
-          "La levigatura completa con lucidatura costa tra 15 e 30€ al metro quadro, a seconda delle condizioni del pavimento e della superficie totale. La sola cristallizzazione parte da 8-12€ al mq. Per grandi superfici (condomini, uffici) si applicano tariffe decrescenti. Il trattamento è un investimento che protegge il pavimento per anni.",
+          "Il trattamento va richiesto quando il pavimento perde visibilmente lucentezza, presenta graffi evidenti o macchie persistenti. Per ambienti domestici, un intervento ogni 2-3 anni è generalmente sufficiente. Per hall di condomini, uffici e spazi commerciali con alto passaggio, la frequenza consigliata è annuale. Un sopralluogo gratuito permette di valutare lo stato del pavimento e il tipo di intervento necessario.",
       },
       {
         heading: "Manutenzione quotidiana del marmo",
@@ -517,8 +517,8 @@ export const blogPosts: BlogPost[] = [
         a: "Sì, è fortemente raccomandato e in alcune regioni obbligatorio. Il registro documenta data, tipo di intervento e prodotti usati. È il primo documento richiesto in caso di ispezione ASL.",
       },
       {
-        q: "Quanto costa la pulizia di uno studio medico?",
-        a: "Per uno studio medico di 60-80 mq, la pulizia quotidiana con sanificazione mensile costa mediamente 500-800€ al mese. Il costo varia in base al numero di ambulatori e ai servizi specifici richiesti.",
+        q: "Come scegliere l'impresa di pulizie per lo studio medico?",
+        a: "Verificate che l'impresa abbia esperienza specifica in ambienti sanitari, utilizzi prodotti conformi alla normativa e rilasci il registro degli interventi. Richiedete un sopralluogo per valutare le esigenze specifiche del vostro studio.",
       },
       {
         q: "Lo studio medico può usare personale interno per le pulizie?",
