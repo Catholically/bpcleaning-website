@@ -118,14 +118,14 @@ const serviceContent: Record<string, {
     ],
   },
   "trattamento-pavimenti": {
-    heroText: "Levigatura, lucidatura e trattamento professionale di pavimenti in marmo, granito, cotto e parquet. Ridiamo splendore ai vostri pavimenti.",
+    heroText: "Pulizia, lucidatura e trattamento professionale di pavimenti in cotto, pietra, gres e ceramica. Ridiamo splendore ai vostri pavimenti.",
     features: ["Macchinari professionali", "Trattamenti specifici", "Risultato duraturo"],
     includes: [
-      "Levigatura marmo e granito",
+      "Pulizia e lucidatura cotto",
       "Lucidatura a specchio",
       "Cristallizzazione",
       "Trattamento cotto",
-      "Lamatura parquet",
+      "Trattamento gres e ceramica",
       "Applicazione protettivi",
     ],
     faqs: [

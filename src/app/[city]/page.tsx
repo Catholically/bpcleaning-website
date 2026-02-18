@@ -63,7 +63,7 @@ const mainServices = [
   {
     slug: "trattamento-pavimenti",
     title: "Trattamento Pavimenti",
-    description: "Levigatura e lucidatura marmo, granito, parquet",
+    description: "Pulizia e trattamento cotto, pietra, gres e ceramica",
     icon: Sparkles,
   },
   {

@@ -9,6 +9,9 @@ import {
   Layers,
   ArrowRight,
   CheckCircle,
+  Droplets,
+  Gem,
+  PaintBucket,
 } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
 
@@ -49,9 +52,9 @@ const services = [
   {
     icon: Layers,
     title: "Trattamento Pavimenti",
-    description: "Pulizia, levigatura e lucidatura di marmo, granito, cotto, parquet e altre superfici.",
+    description: "Pulizia, lucidatura e trattamento di cotto, pietra, gres e ceramica.",
     href: "/servizi/trattamento-pavimenti",
-    features: ["Marmo e granito", "Cotto e pietra", "Parquet", "Gres e ceramica"],
+    features: ["Cotto e pietra", "Gres e ceramica", "Trattamento protettivo", "Lucidatura"],
   },
   {
     icon: TreePine,
@@ -59,6 +62,34 @@ const services = [
     description: "Manutenzione giardini, potature, taglio erba e pulizia spazi esterni.",
     href: "/servizi/aree-verdi",
     features: ["Taglio erba", "Potature", "Pulizia foglie", "Irrigazione"],
+  },
+  {
+    icon: Droplets,
+    title: "Lavaggio Facciate",
+    description: "Lavaggio facciate con idropulitrice professionale ad alta pressione per condomini e aziende.",
+    href: "/servizi/lavaggio-facciate",
+    features: ["Facciate condominiali", "Edifici commerciali", "Pietra e mattoni", "Trattamento anti-muffa"],
+  },
+  {
+    icon: Droplets,
+    title: "Lavaggio Pavimenti Esterni",
+    description: "Pulizia pavimenti esterni: porfido, autobloccanti, cemento, pietra e gres con idropulitrice.",
+    href: "/servizi/lavaggio-pavimenti-esterni",
+    features: ["Porfido e cubetti", "Autobloccanti", "Cemento e calcestruzzo", "Pietra naturale"],
+  },
+  {
+    icon: Gem,
+    title: "Trattamento Marmo Esterno",
+    description: "Pulizia e trattamento di marmo, granito e pietre naturali per scalinate, facciate e pavimenti esterni.",
+    href: "/servizi/trattamento-marmo-esterno",
+    features: ["Scalinate in marmo", "Facciate in pietra", "Monumenti e fontane", "Trattamento protettivo"],
+  },
+  {
+    icon: PaintBucket,
+    title: "Rimozione Graffiti",
+    description: "Rimozione professionale di graffiti e scritte con idropulitrice e solventi specifici.",
+    href: "/servizi/rimozione-graffiti",
+    features: ["Intonaco e muratura", "Metallo e saracinesche", "Pietra e marmo", "Trattamento anti-graffiti"],
   },
 ];
 

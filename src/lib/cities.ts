@@ -88,7 +88,7 @@ export const cityServices: CityService[] = [
   {
     slug: 'trattamento-pavimenti',
     name: 'Trattamento Pavimenti',
-    description: 'Levigatura, lucidatura e trattamento di marmo, granito e parquet'
+    description: 'Pulizia, lucidatura e trattamento di cotto, pietra, gres e ceramica'
   },
   {
     slug: 'pulizia-vetri',

@@ -5,23 +5,11 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Trattamento Pavimenti - Marmo, Granito, Parquet | BP Cleaning Varese",
-  description: "Servizio professionale di pulizia, levigatura e lucidatura pavimenti in marmo, granito, cotto e parquet a Varese e Milano.",
+  title: "Trattamento Pavimenti Interni Varese | BP Cleaning",
+  description: "Pulizia e trattamento professionale pavimenti in cotto, pietra, gres e ceramica a Varese e provincia. Lucidatura, protezione e manutenzione.",
 };
 
 const serviceTypes = [
-  {
-    title: "Marmo e Granito",
-    description: "Trattamento completo per superfici in pietra",
-    includes: [
-      "Levigatura e lucidatura",
-      "Rimozione graffi e macchie",
-      "Cristallizzazione",
-      "Trattamento antimacchia",
-      "Ripristino brillantezza",
-      "Manutenzione periodica",
-    ],
-  },
   {
     title: "Cotto e Pietra",
     description: "Recupero e protezione materiali porosi",
@@ -32,18 +20,6 @@ const serviceTypes = [
       "Cera naturale",
       "Ravvivamento colore",
       "Protezione duratura",
-    ],
-  },
-  {
-    title: "Parquet e Legno",
-    description: "Cura e manutenzione pavimenti in legno",
-    includes: [
-      "Levigatura e lamatura",
-      "Verniciatura/oliatura",
-      "Riparazione graffi",
-      "Lucidatura",
-      "Trattamento antitarlo",
-      "Manutenzione periodica",
     ],
   },
   {
@@ -62,20 +38,20 @@ const serviceTypes = [
 
 const faqs = [
   {
-    q: "Ogni quanto va trattato un pavimento in marmo?",
-    a: "Dipende dal traffico. Per abitazioni private consigliamo una lucidatura ogni 2-3 anni, per attività commerciali anche annuale. La manutenzione ordinaria può essere più frequente.",
-  },
-  {
-    q: "È possibile rimuovere graffi profondi dal marmo?",
-    a: "Sì, con la levigatura professionale possiamo rimuovere graffi, macchie e segni di usura, riportando il pavimento alle condizioni originali.",
+    q: "Ogni quanto va trattato un pavimento in cotto?",
+    a: "Dipende dal traffico e dall'esposizione. Per abitazioni private consigliamo un trattamento ogni 3-5 anni, per attività commerciali anche ogni 1-2 anni. La manutenzione ordinaria può essere più frequente.",
   },
   {
     q: "Trattate anche scale e davanzali?",
-    a: "Certamente, trattiamo tutte le superfici in pietra: pavimenti, scale, davanzali, top cucina, bagni e rivestimenti.",
+    a: "Certamente, trattiamo tutte le superfici: pavimenti, scale, davanzali, rivestimenti in cotto, pietra e gres.",
   },
   {
     q: "Quanto tempo richiede il trattamento?",
-    a: "Per una lucidatura standard di un appartamento servono 1-2 giorni. Per levigature complete i tempi sono maggiori. Forniamo sempre una stima precisa dopo il sopralluogo.",
+    a: "Per un trattamento standard di un appartamento servono 1-2 giorni. Forniamo sempre una stima precisa dopo il sopralluogo.",
+  },
+  {
+    q: "Il trattamento protettivo è duraturo?",
+    a: "Sì, i nostri trattamenti idrorepellenti e antimacchia durano diversi anni. Offriamo anche programmi di manutenzione periodica per mantenere i pavimenti in condizioni ottimali.",
   },
 ];
 
@@ -98,8 +74,8 @@ export default function TrattamentoPavimentiPage() {
             ]} />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Trattamento Pavimenti</h1>
             <p className="text-xl text-gray-300 mb-6">
-              Levigatura, lucidatura e trattamento professionale per marmo, granito,
-              cotto, parquet e gres. Riportiamo i tuoi pavimenti allo splendore originale.
+              Pulizia, lucidatura e trattamento professionale per pavimenti in cotto,
+              pietra, gres e ceramica. Riportiamo i tuoi pavimenti allo splendore originale.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

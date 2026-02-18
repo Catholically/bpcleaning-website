@@ -46,7 +46,7 @@ const services = [
   {
     icon: Layers,
     title: "Trattamento Pavimenti",
-    description: "Pulizia, levigatura e lucidatura marmo, granito, parquet.",
+    description: "Pulizia e trattamento cotto, pietra, gres e ceramica.",
     href: "/servizi/trattamento-pavimenti",
   },
   {
@@ -85,7 +85,7 @@ const heroServices = [
   {
     icon: Layers,
     title: "Pavimenti",
-    subtitle: "Marmo e parquet",
+    subtitle: "Cotto e gres",
     href: "/servizi/trattamento-pavimenti",
   },
   {

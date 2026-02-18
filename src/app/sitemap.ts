@@ -68,6 +68,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'pulizie-post-cantiere',
     'pulizie-studi-medici',
     'pulizia-vetrine',
+    'lavaggio-facciate',
+    'lavaggio-pavimenti-esterni',
+    'trattamento-marmo-esterno',
+    'rimozione-graffiti',
   ].map((service) => ({
     url: `${baseUrl}/servizi/${service}`,
     lastModified: new Date(),
