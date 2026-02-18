@@ -10,6 +10,7 @@ import {
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Servizi di Pulizia Professionale | BP Cleaning",
@@ -66,12 +67,18 @@ export default function ServiziPage() {
     <>
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4">
+          <Breadcrumb items={[
+            { label: "Home", href: "/" },
+            { label: "Servizi" },
+          ]} />
+          <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">I Nostri Servizi</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Soluzioni complete di pulizia e sanificazione per privati e aziende.
             Qualità professionale e affidabilità garantita.
           </p>
+          </div>
         </div>
       </section>
 

@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Clock, Shield, Heart, Phone, Stethoscope, FileCheck } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Pulizie Studi Medici e Dentistici | BP Cleaning Varese",
@@ -89,15 +91,20 @@ const faqs = [
 export default function PulizieStudiMediciPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }}
+      />
+
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl">
-            <nav className="text-sm text-gray-400 mb-4">
-              <Link href="/servizi" className="hover:text-white">Servizi</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Pulizie Studi Medici</span>
-            </nav>
+            <Breadcrumb items={[
+              { label: "Home", href: "/" },
+              { label: "Servizi", href: "/servizi" },
+              { label: "Pulizie Studi Medici" },
+            ]} />
             <div className="flex items-center gap-2 text-[#0d9488] mb-4">
               <Stethoscope className="w-6 h-6" />
               <span className="font-medium">Settore Sanitario</span>

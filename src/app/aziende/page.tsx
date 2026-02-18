@@ -10,6 +10,7 @@ import {
   Users,
   Phone,
 } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Pulizie per Aziende | BP Cleaning - Servizi B2B",
@@ -73,6 +74,10 @@ export default function AziendePage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
+          <Breadcrumb items={[
+            { label: "Home", href: "/" },
+            { label: "Aziende" },
+          ]} />
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-[#0d9488]/20 px-4 py-2 rounded-full text-sm mb-6">

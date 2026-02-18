@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Award, Shield, Users, Clock, CheckCircle } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Chi Siamo | BP Cleaning - Impresa di Pulizie Varese",
@@ -56,6 +57,10 @@ export default function ChiSiamoPage() {
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl">
+            <Breadcrumb items={[
+              { label: "Home", href: "/" },
+              { label: "Chi Siamo" },
+            ]} />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Chi Siamo</h1>
             <p className="text-xl text-gray-300">
               Dal 2008 siamo il punto di riferimento per le pulizie professionali

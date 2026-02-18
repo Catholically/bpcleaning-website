@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, CheckCircle, Phone, MapPin, Clock, Shield, Leaf } from "lucide-react";
 import { cities, cityServices, getCityBySlug, getServiceBySlug } from "@/lib/cities";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateFAQSchema } from "@/lib/schema";
 
 interface PageProps {
   params: Promise<{ city: string; service: string }>;
@@ -35,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${service.name} ${city.name} | BP Cleaning - Servizio Professionale`,
+    title: `${service.name} ${city.name} | BP Cleaning`,
     description: `${service.description} a ${city.name}. Risposta entro 2 ore. Personale qualificato e assicurato. BP Cleaning - La tua impresa di pulizie di fiducia.`,
     openGraph: {
       title: `${service.name} ${city.name} | BP Cleaning`,
@@ -229,18 +231,22 @@ export default async function CityServicePage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {content.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(content.faqs)) }}
+        />
+      )}
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl">
-            <nav className="text-sm text-gray-400 mb-4">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <span className="mx-2">/</span>
-              <Link href={`/${city.slug}`} className="hover:text-white">{city.name}</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">{service.name}</span>
-            </nav>
+            <Breadcrumb items={[
+              { label: "Home", href: "/" },
+              { label: city.name, href: `/${city.slug}` },
+              { label: service.name },
+            ]} />
             <div className="flex items-center gap-2 text-[#0d9488] mb-4">
               <MapPin className="w-5 h-5" />
               <span className="font-medium">{city.name}, Provincia di {provinciaName}</span>

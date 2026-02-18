@@ -16,6 +16,7 @@ import {
   Home,
   Phone,
 } from "lucide-react";
+import { generateOrganizationSchema } from "@/lib/schema";
 
 const services = [
   {
@@ -147,8 +148,15 @@ const testimonials = [
 ];
 
 export default function HomePage() {
+  const organizationJsonLd = generateOrganizationSchema();
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
@@ -504,18 +512,20 @@ export default function HomePage() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Varese e provincia",
-              "Milano",
-              "Monza Brianza",
-              "Svizzera",
-              "Como",
-            ].map((city) => (
-              <span
-                key={city}
-                className="px-4 py-2 bg-white rounded-full text-gray-700 border border-gray-200 hover:border-[#0d9488] hover:text-[#0d9488] transition cursor-pointer"
+              { label: "Varese e provincia", href: "/varese" },
+              { label: "Monza Brianza", href: "/monza" },
+              { label: "Como", href: "/como" },
+              { label: "Busto Arsizio", href: "/busto-arsizio" },
+              { label: "Gallarate", href: "/gallarate" },
+              { label: "Saronno", href: "/saronno" },
+            ].map((zone) => (
+              <Link
+                key={zone.label}
+                href={zone.href}
+                className="px-4 py-2 bg-white rounded-full text-gray-700 border border-gray-200 hover:border-[#0d9488] hover:text-[#0d9488] transition"
               >
-                {city}
-              </span>
+                {zone.label}
+              </Link>
             ))}
           </div>
         </div>

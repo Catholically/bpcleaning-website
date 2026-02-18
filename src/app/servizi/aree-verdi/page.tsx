@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, TreePine, Shield, Phone, Leaf } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Manutenzione Aree Verdi e Giardini | BP Cleaning Varese",
@@ -80,15 +82,20 @@ const faqs = [
 export default function AreeVerdiPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }}
+      />
+
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl">
-            <nav className="text-sm text-gray-400 mb-4">
-              <Link href="/servizi" className="hover:text-white">Servizi</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Aree Verdi</span>
-            </nav>
+            <Breadcrumb items={[
+              { label: "Home", href: "/" },
+              { label: "Servizi", href: "/servizi" },
+              { label: "Aree Verdi" },
+            ]} />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Manutenzione Aree Verdi</h1>
             <p className="text-xl text-gray-300 mb-6">
               Cura professionale di giardini, potature, pulizia spazi esterni.

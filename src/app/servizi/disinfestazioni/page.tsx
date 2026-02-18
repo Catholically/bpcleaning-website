@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Shield, Bug, Phone, AlertTriangle } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Disinfestazioni e Derattizzazioni | BP Cleaning Varese",
@@ -77,15 +79,20 @@ const faqs = [
 export default function DisinfestazioniPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }}
+      />
+
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl">
-            <nav className="text-sm text-gray-400 mb-4">
-              <Link href="/servizi" className="hover:text-white">Servizi</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Disinfestazioni</span>
-            </nav>
+            <Breadcrumb items={[
+              { label: "Home", href: "/" },
+              { label: "Servizi", href: "/servizi" },
+              { label: "Disinfestazioni" },
+            ]} />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Disinfestazioni e Derattizzazioni</h1>
             <p className="text-xl text-gray-300 mb-6">
               Eliminazione professionale di insetti, roditori e volatili.

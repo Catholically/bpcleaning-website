@@ -1,18 +1,49 @@
 import { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import { MessageSquare, Phone, Clock, Shield, CheckCircle } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Richiedi Preventivo Gratuito | BP Cleaning",
   description: "Richiedi un preventivo gratuito per pulizie professionali. Compila il form e ricevi risposta entro 2 ore. Sopralluogo gratuito.",
 };
 
+const preventivoFaqs = [
+  {
+    q: "Quanto costa il preventivo?",
+    a: "Il preventivo è sempre gratuito e senza impegno. Anche il sopralluogo, se necessario, è completamente gratuito.",
+  },
+  {
+    q: "Quanto tempo ci vuole per ricevere il preventivo?",
+    a: "Rispondiamo a tutte le richieste entro 2 ore lavorative. Per preventivi complessi che richiedono sopralluogo, fisseremo un appuntamento entro 48 ore.",
+  },
+  {
+    q: "Quali zone servite?",
+    a: "Operiamo in tutta la provincia di Varese, Milano e Monza Brianza, oltre che nel Canton Ticino (Svizzera). Contattaci per verificare la copertura nella tua zona.",
+  },
+  {
+    q: "Posso richiedere una pulizia urgente?",
+    a: "Sì, offriamo anche servizi di pulizia urgente con intervento entro 24-48 ore, compatibilmente con la disponibilità del nostro team.",
+  },
+];
+
 export default function PreventivePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(preventivoFaqs)) }}
+      />
+
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4">
+          <Breadcrumb items={[
+            { label: "Home", href: "/" },
+            { label: "Preventivo" },
+          ]} />
+          <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Richiedi un Preventivo Gratuito
           </h1>
@@ -33,6 +64,7 @@ export default function PreventivePage() {
               <CheckCircle className="w-5 h-5 text-[#0d9488]" />
               <span>Sopralluogo gratuito</span>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -83,24 +115,7 @@ export default function PreventivePage() {
             Domande Frequenti
           </h2>
           <div className="space-y-6">
-            {[
-              {
-                q: "Quanto costa il preventivo?",
-                a: "Il preventivo è sempre gratuito e senza impegno. Anche il sopralluogo, se necessario, è completamente gratuito.",
-              },
-              {
-                q: "Quanto tempo ci vuole per ricevere il preventivo?",
-                a: "Rispondiamo a tutte le richieste entro 2 ore lavorative. Per preventivi complessi che richiedono sopralluogo, fisseremo un appuntamento entro 48 ore.",
-              },
-              {
-                q: "Quali zone servite?",
-                a: "Operiamo in tutta la provincia di Varese, Milano e Monza Brianza, oltre che nel Canton Ticino (Svizzera). Contattaci per verificare la copertura nella tua zona.",
-              },
-              {
-                q: "Posso richiedere una pulizia urgente?",
-                a: "Sì, offriamo anche servizi di pulizia urgente con intervento entro 24-48 ore, compatibilmente con la disponibilità del nostro team.",
-              },
-            ].map((faq, i) => (
+            {preventivoFaqs.map((faq, i) => (
               <div key={i} className="bg-white rounded-xl p-6 shadow-sm">
                 <h3 className="font-semibold text-gray-900 mb-2">{faq.q}</h3>
                 <p className="text-gray-600">{faq.a}</p>

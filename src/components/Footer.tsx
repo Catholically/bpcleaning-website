@@ -12,11 +12,11 @@ const services = [
 ];
 
 const areas = [
-  "Varese e provincia",
-  "Milano",
-  "Monza Brianza",
-  "Svizzera",
-  "Como",
+  { name: "Varese e provincia", href: "/varese" },
+  { name: "Busto Arsizio", href: "/busto-arsizio" },
+  { name: "Gallarate", href: "/gallarate" },
+  { name: "Monza Brianza", href: "/monza" },
+  { name: "Como", href: "/como" },
 ];
 
 export default function Footer() {
@@ -72,8 +72,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Zone Servite</h3>
             <ul className="space-y-2">
               {areas.map((area) => (
-                <li key={area} className="text-gray-300">
-                  {area}
+                <li key={area.name}>
+                  <Link
+                    href={area.href}
+                    className="text-gray-300 hover:text-[#0d9488] transition"
+                  >
+                    {area.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -129,6 +134,9 @@ export default function Footer() {
             © {new Date().getFullYear()} BP Cleaning SRL - P.IVA 03661340129 - Sede Legale: Piazza Giovine Italia 4, 21100 Varese
           </p>
           <div className="flex gap-4 text-sm">
+            <Link href="/blog" className="text-gray-400 hover:text-white transition">
+              Blog
+            </Link>
             <Link href="/privacy" className="text-gray-400 hover:text-white transition">
               Privacy Policy
             </Link>

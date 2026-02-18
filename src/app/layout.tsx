@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.bpcleaning.it"),
   title: "BP Cleaning - Pulizie Professionali Varese e Milano",
   description: "Impresa di pulizie professionali a Varese e Milano. Pulizie civili, industriali, sanificazioni, disinfestazioni. Risposta entro 2 ore. Oltre 18 anni di esperienza.",
   keywords: "pulizie varese, pulizie milano, impresa pulizie, sanificazione, disinfestazione, pulizie uffici, pulizie condomini",
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
     description: "Impresa di pulizie professionali. Risposta entro 2 ore.",
     locale: "it_IT",
     type: "website",
+    siteName: "BP Cleaning",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BP Cleaning - Pulizie Professionali Varese e Milano",
+    description: "Impresa di pulizie professionali. Risposta entro 2 ore.",
   },
 };
 

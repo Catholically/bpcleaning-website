@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Contatti | BP Cleaning - Pulizie Varese e Milano",
@@ -48,12 +49,18 @@ export default function ContattiPage() {
     <>
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4">
+          <Breadcrumb items={[
+            { label: "Home", href: "/" },
+            { label: "Contatti" },
+          ]} />
+          <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contattaci</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Siamo a tua disposizione per preventivi, informazioni o qualsiasi domanda.
             Rispondiamo entro 2 ore lavorative.
           </p>
+          </div>
         </div>
       </section>
 

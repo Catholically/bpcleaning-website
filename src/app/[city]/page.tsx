@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, CheckCircle, Phone, MapPin, Building2, Home, Sparkles } from "lucide-react";
 import { cities, cityServices, getCityBySlug } from "@/lib/cities";
+import Breadcrumb from "@/components/Breadcrumb";
 
 interface PageProps {
   params: Promise<{ city: string }>;
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Impresa di Pulizie ${city.name} | BP Cleaning - Pulizie Professionali`,
+    title: `Pulizie Professionali ${city.name} | BP Cleaning`,
     description: `Impresa di pulizie professionali a ${city.name}. Pulizie civili, industriali, sanificazioni, disinfestazioni. Risposta entro 2 ore. Servizio rapido e affidabile.`,
     openGraph: {
       title: `Impresa di Pulizie ${city.name} | BP Cleaning`,
@@ -99,6 +100,7 @@ export default async function CityPage({ params }: PageProps) {
     "name": `BP Cleaning - Pulizie ${city.name}`,
     "description": `Impresa di pulizie professionali a ${city.name}. Pulizie civili, industriali, sanificazioni.`,
     "url": `https://www.bpcleaning.it/${city.slug}`,
+    "image": "https://www.bpcleaning.it/drop.png",
     "telephone": "+39 346 748 3943",
     "email": "info@bpcleaning.it",
     "address": {
@@ -126,7 +128,19 @@ export default async function CityPage({ params }: PageProps) {
         "opens": "09:00",
         "closes": "13:00"
       }
-    ]
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servizi di pulizia",
+      "itemListElement": cityServices.map((s) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": `${s.name} ${city.name}`,
+          "url": `https://www.bpcleaning.it/${city.slug}/${s.slug}`
+        }
+      }))
+    }
   };
 
   return (
@@ -140,11 +154,10 @@ export default async function CityPage({ params }: PageProps) {
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl">
-            <nav className="text-sm text-gray-400 mb-4">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">{city.name}</span>
-            </nav>
+            <Breadcrumb items={[
+              { label: "Home", href: "/" },
+              { label: city.name },
+            ]} />
             <div className="flex items-center gap-2 text-[#0d9488] mb-4">
               <MapPin className="w-5 h-5" />
               <span className="font-medium">Provincia di {provinciaName}</span>
