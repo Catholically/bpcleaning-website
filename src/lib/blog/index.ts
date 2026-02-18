@@ -4,6 +4,7 @@ import { existingPosts } from "./posts-existing";
 import { guidePosts } from "./posts-guide";
 import { consigliPosts } from "./posts-consigli";
 import { normativaPosts } from "./posts-normativa";
+import { idropulitricePosts } from "./posts-idropulitrice";
 import type { BlogPost } from "./types";
 
 const allPosts: BlogPost[] = [
@@ -11,6 +12,7 @@ const allPosts: BlogPost[] = [
   ...guidePosts,
   ...consigliPosts,
   ...normativaPosts,
+  ...idropulitricePosts,
 ];
 
 export function getAllPosts(): BlogPost[] {
