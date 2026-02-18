@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, ArrowRight } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
-import { getAllPosts, getPostBySlug, categoryLabels } from "@/lib/blog";
+import { getAllPosts, getPostBySlug, categoryLabels } from "@/lib/blog/index";
 import { generateArticleSchema, generateFAQSchema } from "@/lib/schema";
 
 export function generateStaticParams() {
@@ -89,6 +90,22 @@ export default async function BlogPostPage({
           </div>
         </div>
       </section>
+
+      {/* Featured Image */}
+      <div className="relative w-full h-64 md:h-96 -mt-8">
+        <div className="max-w-4xl mx-auto px-4 h-full">
+          <div className="relative h-full rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src={post.image}
+              alt={post.imageAlt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+              priority
+            />
+          </div>
+        </div>
+      </div>
 
       {/* Article Content */}
       <article className="py-16 bg-gray-50">

@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Clock, BookOpen } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
-import { getAllPosts, categoryLabels, type BlogPost } from "@/lib/blog";
+import { getAllPosts, categoryLabels, type BlogPost } from "@/lib/blog/index";
 
 export const metadata: Metadata = {
   title: "Blog Pulizie Professionali | Guide e Consigli | BP Cleaning",
@@ -83,38 +84,49 @@ export default async function BlogPage({
             {posts.map((post) => (
               <article
                 key={post.slug}
-                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition flex flex-col"
+                className="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition flex flex-col overflow-hidden"
               >
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#0d9488] bg-teal-50 px-3 py-1 rounded-full">
-                    {categoryLabels[post.category]}
-                  </span>
-                  <span className="flex items-center gap-1 text-xs text-gray-400">
-                    <Clock className="w-3 h-3" />
-                    {post.readingTime} min
-                  </span>
-                </div>
-                <h2 className="text-xl font-bold text-gray-900 mb-2">
-                  {post.title}
-                </h2>
-                <p className="text-gray-600 mb-4 flex-1">{post.excerpt}</p>
-                <div className="flex items-center justify-between">
-                  <time
-                    dateTime={post.date}
-                    className="text-sm text-gray-400"
-                  >
-                    {new Date(post.date).toLocaleDateString("it-IT", {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    })}
-                  </time>
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="inline-flex items-center gap-1 text-[#0d9488] font-semibold hover:text-[#0f766e] transition text-sm"
-                  >
-                    Leggi <ArrowRight className="w-4 h-4" />
-                  </Link>
+                <Link href={`/blog/${post.slug}`} className="relative h-48 block">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </Link>
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[#0d9488] bg-teal-50 px-3 py-1 rounded-full">
+                      {categoryLabels[post.category]}
+                    </span>
+                    <span className="flex items-center gap-1 text-xs text-gray-400">
+                      <Clock className="w-3 h-3" />
+                      {post.readingTime} min
+                    </span>
+                  </div>
+                  <h2 className="text-xl font-bold text-gray-900 mb-2">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-600 mb-4 flex-1 text-sm">{post.excerpt}</p>
+                  <div className="flex items-center justify-between">
+                    <time
+                      dateTime={post.date}
+                      className="text-sm text-gray-400"
+                    >
+                      {new Date(post.date).toLocaleDateString("it-IT", {
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      })}
+                    </time>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="inline-flex items-center gap-1 text-[#0d9488] font-semibold hover:text-[#0f766e] transition text-sm"
+                    >
+                      Leggi <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

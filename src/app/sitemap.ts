@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { cities, cityServices } from '@/lib/cities';
-import { getAllPosts } from '@/lib/blog';
+import { getAllPosts } from '@/lib/blog/index';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.bpcleaning.it';
