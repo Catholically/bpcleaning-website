@@ -183,68 +183,6 @@ export const idropulitricePosts: BlogPost[] = [
     ],
   },
   {
-    slug: "rimozione-graffiti-professionale",
-    title: "Rimozione graffiti professionale: metodi e risultati",
-    metaTitle: "Rimozione graffiti professionale: guida",
-    metaDescription:
-      "Come rimuovere graffiti in modo professionale a Varese e provincia. Metodi, prodotti specifici e trattamento anti-graffiti preventivo per ogni tipo di superficie.",
-    date: "2026-02-12",
-    category: "guide",
-    excerpt:
-      "I graffiti deturpano l'aspetto degli edifici e attirano ulteriori atti vandalici. Scopri i metodi professionali per rimuoverli efficacemente da ogni tipo di superficie e come prevenire recidive.",
-    readingTime: 6,
-    image: "/blog/construction-cleanup.jpg",
-    imageAlt: "Rimozione graffiti da muro con idropulitrice e solventi professionali",
-    sections: [
-      {
-        heading: "Perché è importante rimuovere i graffiti rapidamente",
-        content:
-          "La rimozione tempestiva dei graffiti è fondamentale per due motivi. Primo, una vernice spray fresca è molto più facile da rimuovere rispetto a una invecchiata e polimerizzata. Secondo, studi sulla criminalità urbana dimostrano che i muri imbrattati attirano altri atti vandalici: la cosiddetta \"teoria delle finestre rotte\". Per condomini, negozi e uffici a Varese, Gallarate, Busto Arsizio e Saronno, una rimozione rapida protegge il valore dell'immobile e il decoro del quartiere.",
-      },
-      {
-        heading: "Metodi di rimozione per ogni superficie",
-        content:
-          "Non esiste un metodo unico: ogni superficie richiede un approccio specifico. Per intonaco poroso si utilizzano solventi chimici abbinati a lavaggio a bassa pressione. Per metallo e saracinesche, solventi più aggressivi seguiti da idropulitrice ad alta pressione. Per pietra e marmo, prodotti delicati e pressione calibrata per non danneggiare il materiale.",
-        list: [
-          "Intonaco: solvente specifico + lavaggio a bassa pressione",
-          "Mattoni: gel anti-graffiti + idropulitrice a media pressione",
-          "Metallo e saracinesche: solvente forte + lavaggio ad alta pressione",
-          "Pietra e marmo: prodotto delicato + pressione calibrata",
-          "Cemento: idropulitrice ad alta pressione fino a 250 bar",
-        ],
-      },
-      {
-        heading: "Trattamento anti-graffiti preventivo",
-        content:
-          "Il trattamento anti-graffiti è un rivestimento trasparente che impedisce alla vernice spray di aderire alla superficie. Esistono due tipologie: sacrificali (si rimuovono insieme al graffito e vanno riapplicati) e permanenti (resistono a più cicli di pulizia). Per edifici frequentemente soggetti a vandalismo a Varese e provincia, il trattamento preventivo è un investimento che riduce drasticamente tempi e difficoltà di futuri interventi.",
-      },
-      {
-        heading: "Il nostro servizio di rimozione graffiti",
-        content:
-          "Offriamo interventi rapidi entro 24-48 ore dalla segnalazione in tutta la provincia di Varese, Como e Monza Brianza. Ogni intervento include una valutazione della superficie, la scelta del metodo più adatto e, su richiesta, l'applicazione del trattamento anti-graffiti preventivo. Collaboriamo con Comuni, condomini, scuole e attività commerciali.",
-      },
-    ],
-    faqs: [
-      {
-        q: "Si riesce a rimuovere completamente un graffito?",
-        a: "Nella maggior parte dei casi sì. Il risultato dipende dal tipo di superficie, dalla vernice e dal tempo trascorso. Su superfici lisce come metallo otteniamo risultati eccellenti. Su intonaco molto poroso potrebbe restare un'ombra lieve.",
-      },
-      {
-        q: "Quanto dura il trattamento anti-graffiti?",
-        a: "I trattamenti permanenti durano 5-10 anni e resistono a più cicli di pulizia. I trattamenti sacrificali vanno riapplicati dopo ogni rimozione, ma sono più economici e adatti a superfici meno esposte.",
-      },
-      {
-        q: "Lavorate anche per amministrazioni pubbliche?",
-        a: "Sì, collaboriamo con Comuni e amministrazioni pubbliche in provincia di Varese (Gallarate, Busto Arsizio, Saronno, Tradate), Como e Monza per interventi di rimozione graffiti e ripristino del decoro urbano.",
-      },
-    ],
-    internalLinks: [
-      { text: "Servizio rimozione graffiti", href: "/servizi/rimozione-graffiti" },
-      { text: "Lavaggio facciate con idropulitrice", href: "/servizi/lavaggio-facciate" },
-      { text: "Pulizia facciata condominio", href: "/blog/pulizia-facciata-condominio-guida" },
-    ],
-  },
-  {
     slug: "trattamento-idrorepellente-facciate",
     title: "Trattamento idrorepellente facciate: protezione duratura",
     metaTitle: "Trattamento idrorepellente facciate: guida",

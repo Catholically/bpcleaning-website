@@ -11,7 +11,6 @@ import {
   CheckCircle,
   Droplets,
   Gem,
-  PaintBucket,
 } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
 
@@ -83,13 +82,6 @@ const services = [
     description: "Pulizia e trattamento di marmo, granito e pietre naturali per scalinate, facciate e pavimenti esterni.",
     href: "/servizi/trattamento-marmo-esterno",
     features: ["Scalinate in marmo", "Facciate in pietra", "Monumenti e fontane", "Trattamento protettivo"],
-  },
-  {
-    icon: PaintBucket,
-    title: "Rimozione Graffiti",
-    description: "Rimozione professionale di graffiti e scritte con idropulitrice e solventi specifici.",
-    href: "/servizi/rimozione-graffiti",
-    features: ["Intonaco e muratura", "Metallo e saracinesche", "Pietra e marmo", "Trattamento anti-graffiti"],
   },
 ];
 

@@ -12,7 +12,6 @@ const services = [
   { name: "Lavaggio Facciate", href: "/servizi/lavaggio-facciate" },
   { name: "Pavimenti Esterni", href: "/servizi/lavaggio-pavimenti-esterni" },
   { name: "Trattamento Marmo", href: "/servizi/trattamento-marmo-esterno" },
-  { name: "Rimozione Graffiti", href: "/servizi/rimozione-graffiti" },
 ];
 
 const areas = [

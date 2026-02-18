@@ -71,7 +71,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'lavaggio-facciate',
     'lavaggio-pavimenti-esterni',
     'trattamento-marmo-esterno',
-    'rimozione-graffiti',
   ].map((service) => ({
     url: `${baseUrl}/servizi/${service}`,
     lastModified: new Date(),
