@@ -181,6 +181,38 @@ const serviceContent: Record<string, {
       { q: "Offrite contratti annuali?", a: "Sì, offriamo contratti di manutenzione annuale con interventi programmati stagionali." },
     ],
   },
+  "lavaggio-facciate": {
+    heroText: "Lavaggio facciate con idropulitrice professionale ad alta pressione. Rimuoviamo smog, muschio, alghe e depositi atmosferici da condomini, ville e edifici commerciali.",
+    features: ["Idropulitrice professionale", "Pressione regolabile", "Trattamento protettivo"],
+    includes: [
+      "Rimozione smog e depositi atmosferici",
+      "Eliminazione muschio, alghe e licheni",
+      "Pulizia balconi e cornicioni",
+      "Lavaggio grondaie e pluviali",
+      "Trattamento anti-muffa",
+      "Trattamento idrorepellente opzionale",
+    ],
+    faqs: [
+      { q: "Ogni quanto va lavata la facciata?", a: "Consigliamo un lavaggio ogni 3-5 anni, a seconda dell'esposizione agli agenti atmosferici e dell'inquinamento della zona." },
+      { q: "Servono ponteggi per il lavaggio?", a: "Per facciate fino a 3-4 piani utilizziamo lance telescopiche. Per edifici più alti, piattaforme aeree o ponteggi nel rispetto delle normative di sicurezza." },
+    ],
+  },
+  "lavaggio-pavimenti-esterni": {
+    heroText: "Pulizia professionale di pavimenti esterni con idropulitrice ad alta pressione. Porfido, autobloccanti, cemento e pietra: restituiamo l'aspetto originale a cortili, vialetti e piazzali.",
+    features: ["Pressione fino a 250 bar", "Ogni tipo di superficie", "Trattamento anti-muschio"],
+    includes: [
+      "Lavaggio porfido e cubetti",
+      "Pulizia autobloccanti e betonelle",
+      "Sgrassatura cemento e calcestruzzo",
+      "Rimozione muschio ed erbacce dalle fughe",
+      "Trattamento anti-muschio preventivo",
+      "Applicazione idrorepellente opzionale",
+    ],
+    faqs: [
+      { q: "Il lavaggio rimuove il muschio tra le fughe?", a: "Sì, l'idropulitrice ad alta pressione è particolarmente efficace nel rimuovere muschio ed erbacce dalle fughe. Possiamo anche applicare un trattamento preventivo." },
+      { q: "Ogni quanto va lavato un pavimento esterno?", a: "Consigliamo almeno un lavaggio annuale in primavera. Per aree molto trafficate, un intervento semestrale mantiene le superfici in condizioni ottimali." },
+    ],
+  },
 };
 
 export default async function CityServicePage({ params }: PageProps) {

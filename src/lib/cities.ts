@@ -105,6 +105,16 @@ export const cityServices: CityService[] = [
     name: 'Manutenzione Aree Verdi',
     description: 'Cura giardini, potature e manutenzione spazi esterni'
   },
+  {
+    slug: 'lavaggio-facciate',
+    name: 'Lavaggio Facciate',
+    description: 'Lavaggio facciate con idropulitrice professionale ad alta pressione'
+  },
+  {
+    slug: 'lavaggio-pavimenti-esterni',
+    name: 'Lavaggio Pavimenti Esterni',
+    description: 'Pulizia pavimenti esterni, porfido, autobloccanti e cemento con idropulitrice'
+  },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

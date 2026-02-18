@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, CheckCircle, Phone, MapPin, Building2, Home, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle, Phone, MapPin, Building2, Home, Sparkles, Droplets } from "lucide-react";
 import { cities, cityServices, getCityBySlug } from "@/lib/cities";
 import Breadcrumb from "@/components/Breadcrumb";
 
@@ -71,6 +71,18 @@ const mainServices = [
     title: "Pulizia Vetri",
     description: "Vetrate, vetrine e finestre per privati e aziende",
     icon: Sparkles,
+  },
+  {
+    slug: "lavaggio-facciate",
+    title: "Lavaggio Facciate",
+    description: "Lavaggio facciate con idropulitrice ad alta pressione",
+    icon: Droplets,
+  },
+  {
+    slug: "lavaggio-pavimenti-esterni",
+    title: "Lavaggio Pavimenti Esterni",
+    description: "Pulizia porfido, autobloccanti, cemento con idropulitrice",
+    icon: Droplets,
   },
 ];
 
