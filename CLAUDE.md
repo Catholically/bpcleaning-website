@@ -1,6 +1,6 @@
 # CLAUDE.md - bpcleaning-website
 
-> **Ultimo aggiornamento**: 2026-02-08
+> **Ultimo aggiornamento**: 2026-02-27
 
 ## Descrizione
 
@@ -10,7 +10,7 @@ Sito professionale per BP Cleaning SRL Multiservice (pulizie commerciali zona Va
 
 - Next.js 16, TypeScript, Tailwind CSS v4, Vercel
 - **URL**: https://bpcleaning-website.vercel.app
-- **Dominio pianificato**: bpcleaning.it
+- **Dominio**: bpcleaning.it (live)
 - **Vercel teamId**: `team_qcj15fBleoIF0nR9jXp5WUHi`
 
 ## Funzionalità
@@ -21,6 +21,22 @@ Sito professionale per BP Cleaning SRL Multiservice (pulizie commerciali zona Va
 - 15+ pagine SEO per città (Varese, Como, Gallarate, ecc.)
 - 52+ redirect da vecchio sito WordPress per preservare SEO
 - Sezione B2B per clienti corporate (`/aziende`)
+- GA4 event tracking custom (`public/ga4-events.js`) + Microsoft Clarity
+
+## Analytics & Tracking
+
+- **GA4**: `G-PQZ2RSSQEB` — caricato via `next/script` in `layout.tsx`
+- **Microsoft Clarity**: `v836wdtr8m` — caricato via `next/script` in `layout.tsx`
+- **Custom GA4 Events** (`public/ga4-events.js`): Script esterno caricato con `afterInteractive`
+  - `click_phone` — click su link tel:
+  - `click_email` — click su link mailto:
+  - `click_whatsapp` — click su link WhatsApp
+  - `click_cta` — click su bottoni CTA (arancioni/teal)
+  - `form_submit_contact` — submit form contatti
+  - `form_submit_quote` — submit form preventivo
+  - `view_service` — visita pagina `/servizi/*`
+  - `scroll_50` — scroll al 50% della pagina
+  - Include `observeRouteChanges()` per navigazione client-side Next.js
 
 ## Regole per la creazione di Blog Post
 
