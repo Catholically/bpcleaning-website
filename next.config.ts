@@ -345,6 +345,13 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // Privacy policy vecchio URL WordPress
+      {
+        source: '/privacy-policy',
+        destination: '/privacy',
+        permanent: true,
+      },
+
       // Catch-all per URL con trailing slash
       {
         source: '/2025/:path*/',

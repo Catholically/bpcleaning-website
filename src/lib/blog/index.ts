@@ -8,6 +8,9 @@ import { idropulitricePosts } from "./posts-idropulitrice";
 import { settorialiPosts } from "./posts-settoriali";
 import { normativa2Posts } from "./posts-normativa-2";
 import { stagionaliPosts } from "./posts-stagionali";
+import { trafficoT1Posts } from "./posts-traffico-t1";
+import { trafficoT2Posts } from "./posts-traffico-t2";
+import { trafficoT3Posts } from "./posts-traffico-t3";
 import type { BlogPost } from "./types";
 
 const allPosts: BlogPost[] = [
@@ -19,6 +22,9 @@ const allPosts: BlogPost[] = [
   ...settorialiPosts,
   ...normativa2Posts,
   ...stagionaliPosts,
+  ...trafficoT1Posts,
+  ...trafficoT2Posts,
+  ...trafficoT3Posts,
 ];
 
 export function getAllPosts(): BlogPost[] {
