@@ -1,18 +1,21 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Clock, BookOpen } from "lucide-react";
+import { ArrowRight, Clock, ArrowLeft } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
-import { getAllPosts, categoryLabels } from "@/lib/blog/index";
+import { getPostsByCategory, categoryLabels } from "@/lib/blog/index";
 
 export const metadata: Metadata = {
-  title: "Blog Pulizie Professionali | Guide e Consigli | BP Cleaning",
+  title: "Consigli Pulizie Professionali | BP Cleaning",
   description:
-    "Guide, consigli pratici e normativa sulle pulizie professionali. Articoli su pulizia uffici, condomini, studi medici, trattamento pavimenti e sanificazione.",
+    "Consigli pratici per la pulizia e manutenzione di uffici, condomini e ambienti professionali. Trucchi, prodotti e tecniche dei professionisti.",
+  alternates: {
+    canonical: "https://www.bpcleaning.it/blog/consigli-pratici",
+  },
 };
 
-export default function BlogPage() {
-  const posts = getAllPosts();
+export default function ConsigliPraticiCategoryPage() {
+  const posts = getPostsByCategory("consigli-pratici");
 
   return (
     <>
@@ -20,28 +23,36 @@ export default function BlogPage() {
       <section className="bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <Breadcrumb
-            items={[{ label: "Home", href: "/" }, { label: "Blog" }]}
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label: "Consigli Pratici" },
+            ]}
           />
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Blog Pulizie Professionali
+              Consigli Pratici per le Pulizie
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Guide pratiche, normativa e consigli per la pulizia e
-              sanificazione di uffici, condomini e ambienti professionali.
+              Trucchi del mestiere, prodotti consigliati e tecniche professionali
+              per mantenere ogni ambiente pulito e igienizzato.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Category Filter */}
+      {/* Back to Blog */}
       <section className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="text-sm font-medium text-gray-500">Filtra:</span>
-            <span className="px-4 py-2 rounded-full text-sm font-medium bg-[#1e3a5f] text-white">
-              Tutti
-            </span>
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-[#0d9488] transition"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Tutti gli articoli
+            </Link>
+            <span className="text-gray-300">|</span>
             <Link
               href="/blog/guide"
               className="px-4 py-2 rounded-full text-sm font-medium bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition"
@@ -53,12 +64,6 @@ export default function BlogPage() {
               className="px-4 py-2 rounded-full text-sm font-medium bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition"
             >
               Normativa
-            </Link>
-            <Link
-              href="/blog/consigli-pratici"
-              className="px-4 py-2 rounded-full text-sm font-medium bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition"
-            >
-              Consigli Pratici
             </Link>
           </div>
         </div>
@@ -118,21 +123,6 @@ export default function BlogPage() {
               </article>
             ))}
           </div>
-
-          {posts.length === 0 && (
-            <div className="text-center py-12">
-              <BookOpen className="w-12 h-12 text-gray-300 mx-auto mb-4" />
-              <p className="text-gray-500 text-lg">
-                Nessun articolo in questa categoria.
-              </p>
-              <Link
-                href="/blog"
-                className="inline-block mt-4 text-[#0d9488] font-semibold hover:text-[#0f766e] transition"
-              >
-                Vedi tutti gli articoli
-              </Link>
-            </div>
-          )}
         </div>
       </section>
 
