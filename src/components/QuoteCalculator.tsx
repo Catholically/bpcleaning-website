@@ -46,6 +46,8 @@ export default function QuoteCalculator() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [capError, setCapError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const calculatePrice = (): { min: number; max: number } | null => {
     if (!formData.serviceType || !formData.frequency) return null;
@@ -72,12 +74,40 @@ export default function QuoteCalculator() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
+    setSubmitError(null);
 
-    // Simulazione invio - in produzione connettere a Supabase/API
-    console.log("Submitted:", formData);
-    trackQuoteStep(4, 'contact_info', formData.serviceType ?? undefined);
-    trackFormSubmitted('quote', formData.serviceType ?? undefined);
-    setSubmitted(true);
+    try {
+      const estimate = calculatePrice();
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "quote",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          serviceType: formData.serviceType,
+          sqm: formData.sqm,
+          frequency: formData.frequency,
+          cap: formData.cap,
+          priceMin: estimate?.min ?? null,
+          priceMax: estimate?.max ?? null,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error("Errore invio");
+      }
+
+      trackQuoteStep(4, 'contact_info', formData.serviceType ?? undefined);
+      trackFormSubmitted('quote', formData.serviceType ?? undefined);
+      setSubmitted(true);
+    } catch {
+      setSubmitError("Invio non riuscito. Riprova o contattaci via telefono/WhatsApp.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const price = calculatePrice();
@@ -343,12 +373,19 @@ export default function QuoteCalculator() {
               </button>
               <button
                 type="submit"
-                className="flex-1 px-6 py-3 bg-[#f97316] text-white rounded-lg font-semibold hover:bg-[#ea580c] transition flex items-center justify-center gap-2"
+                disabled={loading}
+                className="flex-1 px-6 py-3 bg-[#f97316] text-white rounded-lg font-semibold hover:bg-[#ea580c] transition flex items-center justify-center gap-2 disabled:opacity-50"
               >
                 <Send className="w-5 h-5" />
-                Richiedi Preventivo
+                {loading ? "Invio in corso..." : "Richiedi Preventivo"}
               </button>
             </div>
+
+            {submitError && (
+              <p className="text-red-600 text-sm text-center mt-3" role="alert">
+                {submitError}
+              </p>
+            )}
 
             <p className="text-xs text-gray-500 text-center mt-4">
               Cliccando accetti la nostra Privacy Policy. Ti contatteremo entro 2 ore.
