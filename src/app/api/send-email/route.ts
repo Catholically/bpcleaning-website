@@ -3,8 +3,6 @@ import { Resend } from "resend";
 
 export const runtime = "nodejs";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "info@bpcleaning.it";
 const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || "BP Cleaning <onboarding@resend.dev>";
 
@@ -75,7 +73,9 @@ function buildQuoteEmail(data: QuotePayload) {
 }
 
 export async function POST(request: Request) {
-  if (!process.env.RESEND_API_KEY) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("RESEND_API_KEY is not set");
     return NextResponse.json(
       { error: "Email service not configured" },
       { status: 500 },
@@ -97,6 +97,7 @@ export async function POST(request: Request) {
     payload.type === "contact" ? buildContactEmail(payload) : buildQuoteEmail(payload);
 
   try {
+    const resend = new Resend(apiKey);
     const { data, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: [TO_EMAIL],
@@ -106,13 +107,20 @@ export async function POST(request: Request) {
     });
 
     if (error) {
-      console.error("Resend error:", error);
-      return NextResponse.json({ error: error.message }, { status: 502 });
+      console.error("Resend error:", JSON.stringify(error));
+      return NextResponse.json(
+        { error: error.message, name: error.name },
+        { status: 502 },
+      );
     }
 
     return NextResponse.json({ ok: true, id: data?.id });
   } catch (err) {
-    console.error("Send email failed:", err);
-    return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("Send email failed:", message, err);
+    return NextResponse.json(
+      { error: "Failed to send email", detail: message },
+      { status: 500 },
+    );
   }
 }
