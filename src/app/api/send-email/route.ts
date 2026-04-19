@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
+export const runtime = "nodejs";
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "info@bpcleaning.it";
