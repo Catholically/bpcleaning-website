@@ -38,18 +38,39 @@ export default function ContactForm() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError(null);
 
-    // Simulazione invio - in produzione connettere a API/Supabase
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log("Form submitted:", formData);
-    trackFormSubmitted('contact', formData.service);
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "contact",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          service: formData.service,
+          message: formData.message,
+        }),
+      });
 
-    setLoading(false);
-    setSubmitted(true);
+      if (!res.ok) {
+        throw new Error("Errore invio");
+      }
+
+      trackFormSubmitted('contact', formData.service);
+      setSubmitted(true);
+    } catch {
+      setError("Invio non riuscito. Riprova o contattaci via telefono/WhatsApp.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -213,6 +234,11 @@ export default function ContactForm() {
             </>
           )}
         </button>
+        {error && (
+          <p className="text-red-600 text-sm text-center" role="alert">
+            {error}
+          </p>
+        )}
       </div>
     </form>
   );
